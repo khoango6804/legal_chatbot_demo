@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  chatbot-app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount checkpoint directory if you have model files
+      - ./checkpoint:/app/checkpoint
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped 
