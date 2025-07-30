@@ -2,7 +2,7 @@
 
 Một ứng dụng web sử dụng AI để tư vấn các vấn đề pháp luật Việt Nam, được xây dựng với FastAPI và Qwen2 model.
 
-## 🚀 Tính năng
+## Tính năng
 
 - **Tư vấn pháp luật chuyên nghiệp**: Trả lời các câu hỏi về pháp luật Việt Nam
 - **Giao diện web thân thiện**: Chat interface dễ sử dụng
@@ -10,7 +10,7 @@ Một ứng dụng web sử dụng AI để tư vấn các vấn đề pháp lu�
 - **Hỗ trợ GPU**: Tối ưu hóa cho NVIDIA GPU (RTX 4080)
 - **Lịch sử chat**: Lưu trữ và hiển thị lịch sử trò chuyện
 
-## 🛠️ Công nghệ sử dụng
+## Công nghệ sử dụng
 
 - **Backend**: FastAPI, Python
 - **AI Model**: Qwen2 (trained checkpoint)
@@ -18,7 +18,7 @@ Một ứng dụng web sử dụng AI để tư vấn các vấn đề pháp lu�
 - **Deep Learning**: PyTorch, Transformers
 - **GPU Support**: CUDA 12.1, NVIDIA RTX 4080
 
-## 📋 Yêu cầu hệ thống
+## Yêu cầu hệ thống
 
 - Python 3.11+
 - NVIDIA GPU (khuyến nghị RTX 4080 hoặc tương đương)
@@ -26,12 +26,12 @@ Một ứng dụng web sử dụng AI để tư vấn các vấn đề pháp lu�
 - RAM: 16GB+
 - VRAM: 8GB+ (cho GPU)
 
-## 🚀 Cài đặt
+## Cài đặt
 
 ### 1. Clone repository
 ```bash
 git clone <your-repository-url>
-cd inference_simpleQA_dsp391m
+cd your-path
 ```
 
 ### 2. Cài đặt dependencies
@@ -49,7 +49,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install qwen
 ```
 
-## 🎯 Sử dụng
+## Sử dụng
 
 ### Khởi động ứng dụng
 ```bash
@@ -82,7 +82,7 @@ inference_simpleQA_dsp391m/
 └── README.md           # This file
 ```
 
-## 🔧 Cấu hình
+## Cấu hình
 
 ### Model Configuration
 - **Model Type**: Qwen2
@@ -100,7 +100,7 @@ inference_simpleQA_dsp391m/
 - **Repetition Penalty**: 1.1
 - **Beam Search**: 1
 
-## 🎨 Giao diện
+## Giao diện
 
 Ứng dụng có giao diện web hiện đại với:
 - Chat interface thân thiện
@@ -109,14 +109,14 @@ inference_simpleQA_dsp391m/
 - Dark/Light theme
 - Custom background support
 
-## 📊 Hiệu suất
+## Hiệu suất
 
 - **CPU Mode**: ~12-15 giây/câu trả lời
 - **GPU Mode**: ~4-5 giây/câu trả lời (RTX 4080)
 - **Memory Usage**: ~8GB VRAM
 - **Model Size**: ~3GB (float16)
 
-## 🔍 Các chủ đề pháp luật được hỗ trợ
+## Các chủ đề pháp luật được hỗ trợ
 
 - Quyền lao động
 - Hợp đồng
@@ -165,7 +165,7 @@ python test_model.py
 - Sử dụng `torch.float16` thay vì `torch.float32`
 - Tăng swap memory
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### POST /chat
 Gửi câu hỏi và nhận câu trả lời
@@ -182,42 +182,4 @@ Gửi câu hỏi và nhận câu trả lời
 ```
 Streaming text response
 ```
-
-### GET /
-Trang chủ của ứng dụng
-
-## 🤝 Đóng góp
-
-1. Fork repository
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Tạo Pull Request
-
-## 📄 License
-
-Dự án này được phát hành dưới MIT License - xem file [LICENSE](LICENSE) để biết thêm chi tiết.
-
-## 👨‍💻 Tác giả
-
-- **Tên**: [Your Name]
-- **Email**: [your.email@example.com]
-- **GitHub**: [@yourusername]
-
-## 🙏 Cảm ơn
-
-- Hugging Face Transformers
-- Alibaba Qwen team
-- FastAPI community
-- PyTorch team
-
-## 📞 Hỗ trợ
-
-Nếu gặp vấn đề, vui lòng:
-1. Kiểm tra [Issues](../../issues)
-2. Tạo issue mới với mô tả chi tiết
-3. Liên hệ qua email: [your.email@example.com]
-
----
-
 ⭐ Nếu dự án này hữu ích, hãy cho một star! 
