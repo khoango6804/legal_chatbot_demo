@@ -5,6 +5,7 @@ import io
 import threading
 import os
 import json
+import time
 
 device = (
     "cuda"
@@ -214,11 +215,43 @@ def get_answer_stream(question, chat_history=None):
             num_beams=1,  # Thêm beam search
         )
         
+        # Bắt đầu đo thời gian
+        start_time = time.time()
+        token_count = 0
+        speed_displayed = False
+        generation_start_time = None
+        
         thread = threading.Thread(target=model.generate, kwargs=generation_kwargs)
         thread.start()
         
         for new_text in streamer:
-            yield new_text
+            # Đếm số token trong chunk mới (ước tính: 1 token ≈ 4 ký tự)
+            estimated_tokens = len(new_text.encode('utf-8')) // 4
+            token_count += estimated_tokens
+            
+            # Ghi nhận thời điểm bắt đầu có output thực sự
+            if generation_start_time is None and estimated_tokens > 0:
+                generation_start_time = time.time()
+            
+            # Tính tốc độ token/s
+            elapsed_time = time.time() - start_time
+            
+            # Hiển thị tốc độ khi có đủ dữ liệu và chưa hiển thị
+            if not speed_displayed and token_count > 5:
+                if generation_start_time is not None:
+                    # Tính tốc độ từ khi bắt đầu có output
+                    generation_elapsed = time.time() - generation_start_time
+                    if generation_elapsed > 0.1:  # Đảm bảo có đủ thời gian để tính
+                        tokens_per_second = token_count / generation_elapsed
+                    else:
+                        tokens_per_second = token_count / elapsed_time
+                else:
+                    tokens_per_second = token_count / elapsed_time
+                
+                yield f"[Tốc độ: {tokens_per_second:.2f} token/s] {new_text}"
+                speed_displayed = True
+            else:
+                yield new_text
             
     except Exception as e:
         print(f"Error in streaming: {e}")

@@ -34,6 +34,14 @@ async def chat_endpoint(req: ChatRequest):
             yield chunk
     return StreamingResponse(answer_stream(), media_type="text/plain")
 
+@app.get("/speed")
+async def get_speed_info():
+    """Trả về thông tin về tốc độ xử lý của model"""
+    return JSONResponse({
+        "info": "Sử dụng endpoint /chat để xem tốc độ token/s thực tế",
+        "note": "Tốc độ sẽ được hiển thị ở đầu câu trả lời"
+    })
+
 @app.get("/")
 async def root():
     return FileResponse("static/index.html")
