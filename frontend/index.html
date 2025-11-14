@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Legal Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <!-- API URL Configuration - Update this when deploying -->
+    <script>
+        // Set API URL for production
+        // For local: window.API_BASE_URL = 'http://localhost:8000';
+        // For production: window.API_BASE_URL = 'https://your-backend.onrender.com';
+        // Leave empty for same-origin (if frontend and backend on same domain)
+        window.API_BASE_URL = window.API_BASE_URL || '';
+    </script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">⚖️</div>
+                <div class="logo-text">Legal AI</div>
+            </div>
+            <button class="new-chat-btn" id="new-chat-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                New Chat
+            </button>
+        </div>
+        
+        <div class="sidebar-content">
+            <div class="chat-history" id="chat-list">
+                <!-- Chat items will be populated here -->
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="sidebar-actions">
+                <button class="action-btn" id="clear-history-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6h14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Clear All
+                </button>
+                <button class="action-btn" id="export-chat-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Export
+                </button>
+                <button class="action-btn" id="dark-mode-toggle">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="chat-container">
+            <!-- Welcome Screen -->
+            <div class="welcome-container" id="welcome-container">
+                <div class="welcome-content">
+                    <div class="welcome-icon">⚖️</div>
+                    <h1>Legal AI Assistant</h1>
+                    <p>Bố mày sẵn sàng rồi. Hỏi đi con chó.</p>
+                    
+                    <div class="suggestions-grid">
+                        <button class="suggestion-card" data-suggestion="Quyền lợi cơ bản của người lao động tại Việt Nam là gì?">
+                            <div class="suggestion-icon">👥</div>
+                            <div class="suggestion-content">
+                                <h3>Quyền Lao Động</h3>
+                                <p>Tìm hiểu về quyền lợi cơ bản của người lao động</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Thủ tục đăng ký kinh doanh tại Việt Nam như thế nào?">
+                            <div class="suggestion-icon">🏢</div>
+                            <div class="suggestion-content">
+                                <h3>Đăng Ký Kinh Doanh</h3>
+                                <p>Các bước đăng ký doanh nghiệp hợp pháp</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Những yêu cầu để có một hợp đồng hợp lệ là gì?">
+                            <div class="suggestion-icon">📄</div>
+                            <div class="suggestion-content">
+                                <h3>Yêu Cầu Hợp Đồng</h3>
+                                <p>Các yếu tố cần thiết của hợp đồng hợp lệ</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Làm thế nào để bảo vệ quyền sở hữu trí tuệ?">
+                            <div class="suggestion-icon">🔒</div>
+                            <div class="suggestion-content">
+                                <h3>Bảo Vệ Sở Hữu Trí Tuệ</h3>
+                                <p>Bảo vệ tài sản trí tuệ của bạn</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Nghĩa vụ thuế đối với doanh nghiệp nhỏ là gì?">
+                            <div class="suggestion-icon">💰</div>
+                            <div class="suggestion-content">
+                                <h3>Nghĩa Vụ Thuế</h3>
+                                <p>Hiểu về yêu cầu thuế</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Cách xử lý tranh chấp lao động như thế nào?">
+                            <div class="suggestion-icon">⚖️</div>
+                            <div class="suggestion-content">
+                                <h3>Tranh Chấp Lao Động</h3>
+                                <p>Giải quyết xung đột tại nơi làm việc</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Luật bảo vệ người tiêu dùng quy định như thế nào?">
+                            <div class="suggestion-icon">🛡️</div>
+                            <div class="suggestion-content">
+                                <h3>Quyền Người Tiêu Dùng</h3>
+                                <p>Quyền lợi của bạn với tư cách người tiêu dùng</p>
+                            </div>
+                        </button>
+                        
+                        <button class="suggestion-card" data-suggestion="Cách nộp đơn khiếu nại pháp lý như thế nào?">
+                            <div class="suggestion-icon">📋</div>
+                            <div class="suggestion-content">
+                                <h3>Khiếu Nại Pháp Lý</h3>
+                                <p>Nộp đơn khiếu nại chính thức</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here -->
+            </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <textarea 
+                        id="chat-input" 
+                        placeholder="Hỏi tôi về các vấn đề pháp lý..."
+                        rows="1"
+                    ></textarea>
+                    <button class="send-button" id="send-button" disabled>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="input-hint">Nhấn Enter để gửi, Shift+Enter để xuống dòng</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rating Panel -->
+        <div class="rating-panel" id="rating-panel" style="display: none;">
+            <div class="rating-content">
+                <div class="rating-text">Bạn có hài lòng với câu trả lời này không?</div>
+                <div class="rating-stars">
+                    <span class="star" data-rating="1">★</span>
+                    <span class="star" data-rating="2">★</span>
+                    <span class="star" data-rating="3">★</span>
+                    <span class="star" data-rating="4">★</span>
+                    <span class="star" data-rating="5">★</span>
+                </div>
+                <button class="feedback-btn" id="feedback-btn">Báo lỗi / Góp ý</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sidebar Toggle for Mobile -->
+    <button class="sidebar-toggle" id="sidebar-toggle">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- Chat Rename Modal -->
+    <div class="modal-overlay" id="rename-modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Đổi Tên Cuộc Trò Chuyện</h3>
+            <input type="text" id="rename-input" placeholder="Nhập tên mới">
+            <div class="modal-actions">
+                <button class="modal-btn secondary" id="cancel-rename">Hủy</button>
+                <button class="modal-btn primary" id="save-rename">Lưu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div class="modal-overlay" id="feedback-modal" style="display: none;">
+        <div class="modal-content feedback-modal-content">
+            <h3>Gửi Phản Hồi</h3>
+            <p class="feedback-description">Vui lòng cho chúng tôi biết vấn đề với câu trả lời này:</p>
+            
+            <div class="feedback-preview">
+                <div class="feedback-preview-item">
+                    <strong>Câu hỏi:</strong>
+                    <p id="feedback-question-preview"></p>
+                </div>
+                <div class="feedback-preview-item">
+                    <strong>Câu trả lời:</strong>
+                    <p id="feedback-answer-preview"></p>
+                </div>
+            </div>
+
+            <div class="feedback-form">
+                <label for="feedback-type">Loại phản hồi:</label>
+                <select id="feedback-type" class="feedback-select">
+                    <option value="wrong">Câu trả lời sai</option>
+                    <option value="error">Lỗi kỹ thuật</option>
+                    <option value="improvement">Cần cải thiện</option>
+                </select>
+
+                <label for="feedback-message">Chi tiết (tùy chọn):</label>
+                <textarea 
+                    id="feedback-message" 
+                    class="feedback-textarea"
+                    placeholder="Mô tả chi tiết vấn đề hoặc đề xuất cải thiện..."
+                    rows="4"
+                ></textarea>
+
+                <div class="modal-actions">
+                    <button class="modal-btn secondary" id="cancel-feedback">Hủy</button>
+                    <button class="modal-btn primary" id="submit-feedback">Gửi Phản Hồi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="chat.js"></script>
+    <script src="sidebar-toggle.js"></script>
+</body>
+</html> 

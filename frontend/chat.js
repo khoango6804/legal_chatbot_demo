@@ -3,6 +3,8 @@ let chatHistory = [];
 let savedChats = [];
 let currentChatId = null;
 let isDarkMode = false;
+let lastQuestion = '';  // Lưu câu hỏi gần nhất để feedback
+let lastAnswer = '';    // Lưu câu trả lời gần nhất để feedback
 
 // DOM elements
 const chatMessages = document.getElementById('chat-messages');
@@ -23,6 +25,16 @@ const renameModal = document.getElementById('rename-modal');
 const renameInput = document.getElementById('rename-input');
 const cancelRename = document.getElementById('cancel-rename');
 const saveRename = document.getElementById('save-rename');
+
+// Feedback elements
+const feedbackModal = document.getElementById('feedback-modal');
+const feedbackBtn = document.getElementById('feedback-btn');
+const cancelFeedback = document.getElementById('cancel-feedback');
+const submitFeedback = document.getElementById('submit-feedback');
+const feedbackType = document.getElementById('feedback-type');
+const feedbackMessage = document.getElementById('feedback-message');
+const feedbackQuestionPreview = document.getElementById('feedback-question-preview');
+const feedbackAnswerPreview = document.getElementById('feedback-answer-preview');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
@@ -74,6 +86,17 @@ function setupEventListeners() {
             rateResponse(rating);
         }
     });
+
+    // Feedback button
+    if (feedbackBtn) {
+        feedbackBtn.addEventListener('click', showFeedbackModal);
+    }
+    if (cancelFeedback) {
+        cancelFeedback.addEventListener('click', closeFeedbackModal);
+    }
+    if (submitFeedback) {
+        submitFeedback.addEventListener('click', submitFeedbackForm);
+    }
 }
 
 function handleKeyDown(e) {
@@ -95,6 +118,9 @@ function handleInputChange() {
 function sendMessage() {
     const message = chatInput.value.trim();
     if (!message) return;
+
+    // Lưu câu hỏi để có thể gửi feedback
+    lastQuestion = message;
 
     // Add user message
     addMessage('user', message);
@@ -155,6 +181,8 @@ function sendMessage() {
                 // Update chat history with the complete AI response
                 if (chatHistory.length > 0) {
                     chatHistory[chatHistory.length - 1][1] = aiMessage;
+                    // Lưu để có thể gửi feedback
+                    lastAnswer = aiMessage;
                 }
 
                 // Scroll to bottom
@@ -589,4 +617,83 @@ function rateResponse(rating) {
     setTimeout(() => {
         ratingPanel.style.display = 'none';
     }, 2000);
+}
+
+function showFeedbackModal() {
+    if (!lastQuestion || !lastAnswer) {
+        alert('Không có câu hỏi hoặc câu trả lời để gửi phản hồi.');
+        return;
+    }
+
+    // Hiển thị preview
+    feedbackQuestionPreview.textContent = lastQuestion;
+    feedbackAnswerPreview.textContent = lastAnswer;
+
+    // Reset form
+    feedbackType.value = 'wrong';
+    feedbackMessage.value = '';
+
+    // Hiển thị modal
+    feedbackModal.style.display = 'flex';
+}
+
+function closeFeedbackModal() {
+    feedbackModal.style.display = 'none';
+}
+
+function submitFeedbackForm() {
+    const type = feedbackType.value;
+    const message = feedbackMessage.value.trim();
+
+    if (!lastQuestion || !lastAnswer) {
+        alert('Lỗi: Không tìm thấy câu hỏi hoặc câu trả lời.');
+        return;
+    }
+
+    // Disable button while submitting
+    submitFeedback.disabled = true;
+    submitFeedback.textContent = 'Đang gửi...';
+
+    // Gửi feedback đến backend
+    const apiUrl = typeof getAPIUrl !== 'undefined' ? getAPIUrl('/feedback') : '/feedback';
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            question: lastQuestion,
+            answer: lastAnswer,
+            feedback_type: type,
+            message: message
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert(data.message || 'Cảm ơn bạn đã gửi phản hồi!');
+            closeFeedbackModal();
+            // Ẩn rating panel sau khi gửi feedback
+            ratingPanel.style.display = 'none';
+        } else {
+            alert('Lỗi khi gửi phản hồi. Vui lòng thử lại.');
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting feedback:', error);
+        alert('Lỗi khi gửi phản hồi. Vui lòng thử lại.');
+    })
+    .finally(() => {
+        submitFeedback.disabled = false;
+        submitFeedback.textContent = 'Gửi Phản Hồi';
+    });
+}
+
+// Close modal when clicking outside
+if (feedbackModal) {
+    feedbackModal.addEventListener('click', function(e) {
+        if (e.target === feedbackModal) {
+            closeFeedbackModal();
+        }
+    });
 } 

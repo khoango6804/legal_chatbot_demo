@@ -1,0 +1,36 @@
+services:
+  # Backend API Service
+  - type: web
+    name: legal-ai-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python app.py
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
+      - key: MODEL_HF_REPO
+        value: sigmaloop/qwen3-0.6B-instruct-trafficlaws
+      - key: MODEL_HF_SUBFOLDER
+        value: model
+      - key: HF_TOKEN
+        sync: false  # Set manually in Render Dashboard
+      - key: CORS_ORIGINS
+        value: "*"  # Thay bằng frontend URL sau khi deploy
+      - key: DATABASE_URL
+        value: sqlite:///./feedback.db
+        # Hoặc set PostgreSQL URL sau khi tạo database
+    plan: standard  # Khuyến nghị: standard (2GB RAM) hoặc starter (512MB)
+
+  # Frontend Static Site
+  - type: web
+    name: legal-ai-frontend
+    env: static
+    buildCommand: echo "No build needed"
+    staticPublishPath: ./frontend
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+

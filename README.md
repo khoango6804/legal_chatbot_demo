@@ -1,190 +1,205 @@
-# 🤖 AI Legal Assistant - Trợ lý AI Tư vấn Pháp luật
+# 🤖 AI Legal Assistant - Trợ lý AI Tư vấn Pháp luật Giao thông
 
-Một ứng dụng web sử dụng AI để tư vấn các vấn đề pháp luật Việt Nam, được xây dựng với FastAPI và Qwen2 model.
+Một ứng dụng web sử dụng AI để tư vấn các vấn đề pháp luật về giao thông tại Việt Nam, được xây dựng với FastAPI và Qwen3 model.
 
 ## 🚀 Tính năng
 
-- **Tư vấn pháp luật chuyên nghiệp**: Trả lời các câu hỏi về pháp luật Việt Nam
-- **Giao diện web thân thiện**: Chat interface dễ sử dụng
+- **Tư vấn pháp luật chuyên nghiệp**: Trả lời các câu hỏi về pháp luật giao thông Việt Nam
+- **Giao diện web hiện đại**: Chat interface với design Apple-inspired
 - **Streaming response**: Hiển thị câu trả lời theo thời gian thực
-- **Hỗ trợ GPU**: Tối ưu hóa cho NVIDIA GPU (RTX 4080)
-- **Lịch sử chat**: Lưu trữ và hiển thị lịch sử trò chuyện
+- **Hỗ trợ CPU/GPU**: Tối ưu hóa cho cả CPU và GPU
+- **Lịch sử chat**: Lưu trữ và quản lý lịch sử trò chuyện
+- **Feedback system**: Người dùng có thể báo lỗi và góp ý
+- **Dark/Light mode**: Hỗ trợ chế độ sáng/tối
+- **Responsive design**: Hoạt động tốt trên mobile và desktop
+
+## 🏗️ Cấu Trúc Dự Án
+
+```
+.
+├── backend/                    # Backend API (FastAPI)
+│   ├── app.py                 # Main application
+│   ├── inference.py           # AI model inference
+│   ├── database.py            # Database models
+│   └── requirements.txt       # Python dependencies
+│
+├── frontend/                   # Frontend (Static)
+│   ├── index.html             # Main HTML
+│   ├── style.css              # Styles
+│   ├── chat.js                # Chat functionality
+│   ├── config.js              # API configuration
+│   └── img/                   # Images
+│
+├── qwen3-0.6B-instruct-trafficlaws/  # Model checkpoint
+│   └── model/
+│
+├── DEPLOYMENT.md              # Hướng dẫn deploy
+├── FEEDBACK_SYSTEM.md         # Hướng dẫn feedback system
+├── OPTIMIZATION_GUIDE.md      # Hướng dẫn tối ưu hóa
+└── README.md                  # File này
+```
 
 ## 🛠️ Công nghệ sử dụng
 
-- **Backend**: FastAPI, Python
-- **AI Model**: Qwen2 (trained checkpoint)
-- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: FastAPI, Python 3.11+
+- **AI Model**: Qwen3 0.6B (trained on traffic laws)
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Database**: SQLite (dev) / PostgreSQL (production)
 - **Deep Learning**: PyTorch, Transformers
-- **GPU Support**: CUDA 12.1, NVIDIA RTX 4080
+- **Deployment**: Render.com
 
 ## 📋 Yêu cầu hệ thống
 
+### Development
 - Python 3.11+
-- NVIDIA GPU (khuyến nghị RTX 4080 hoặc tương đương)
-- CUDA 12.1+
-- RAM: 16GB+
-- VRAM: 8GB+ (cho GPU)
+- RAM: 8GB+ (khuyến nghị 16GB+)
+- Disk: 5GB+ (cho model)
 
-## 🚀 Cài đặt
+### Production (Render)
+- Starter plan: 512MB RAM (có thể không đủ)
+- Standard plan: 2GB RAM (khuyến nghị)
+- Model size: ~2-4GB
+
+## 🚀 Cài đặt Local
 
 ### 1. Clone repository
 ```bash
 git clone <your-repository-url>
-cd inference_simpleQA_dsp391m
+cd "web chatbot"
 ```
 
-### 2. Cài đặt dependencies
+### 2. Cài đặt Backend dependencies
 ```bash
+cd backend
 pip install -r requirements.txt
 ```
 
-### 3. Cài đặt PyTorch với CUDA support
+### 3. Cấu hình Model (Hugging Face Hub)
+
+Model đã được upload tại: **https://huggingface.co/sigmaloop/qwen3-0.6B-instruct-trafficlaws**
+
+Set environment variables:
 ```bash
+# Windows PowerShell:
+$env:MODEL_HF_REPO="sigmaloop/qwen3-0.6B-instruct-trafficlaws"
+$env:MODEL_HF_SUBFOLDER="model"
+
+# Linux/Mac:
+export MODEL_HF_REPO=sigmaloop/qwen3-0.6B-instruct-trafficlaws
+export MODEL_HF_SUBFOLDER=model
+```
+
+Model sẽ tự động download từ Hugging Face Hub khi chạy lần đầu.
+
+### 3. Cài đặt PyTorch (nếu cần GPU)
+```bash
+# CPU only
+pip install torch torchvision torchaudio
+
+# GPU (CUDA 12.1)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-### 4. Cài đặt thư viện Qwen
+### 4. Chạy Backend
 ```bash
-pip install qwen
-```
-
-## 🎯 Sử dụng
-
-### Khởi động ứng dụng
-```bash
+cd backend
 python app.py
 ```
 
-### Truy cập ứng dụng
-Mở trình duyệt và truy cập: `http://127.0.0.1:8000`
+Backend sẽ chạy tại: `http://localhost:8000`
 
-## 📁 Cấu trúc dự án
+### 5. Chạy Frontend
 
-```
-inference_simpleQA_dsp391m/
-├── app.py                 # FastAPI application
-├── inference.py           # AI model inference logic
-├── checkpoint/            # Trained Qwen2 model checkpoint
-│   ├── config.json
-│   ├── model.safetensors
-│   ├── tokenizer.json
-│   └── ...
-├── static/               # Frontend files
-│   ├── index.html
-│   ├── style.css
-│   ├── chat.js
-│   └── ...
-├── img/                  # Images and icons
-├── requirements.txt      # Python dependencies
-├── Dockerfile           # Docker configuration
-├── docker-compose.yml   # Docker Compose
-└── README.md           # This file
-```
+Có 2 cách:
 
-## 🔧 Cấu hình
-
-### Model Configuration
-- **Model Type**: Qwen2
-- **Architecture**: Qwen2ForCausalLM
-- **Hidden Size**: 896
-- **Layers**: 24
-- **Attention Heads**: 14
-- **Vocab Size**: 151,936
-- **Max Position**: 32,768
-
-### Generation Parameters
-- **Max New Tokens**: 512
-- **Temperature**: 0.7
-- **Top-p**: 0.9
-- **Repetition Penalty**: 1.1
-- **Beam Search**: 1
-
-## 🎨 Giao diện
-
-Ứng dụng có giao diện web hiện đại với:
-- Chat interface thân thiện
-- Streaming responses
-- Responsive design
-- Dark/Light theme
-- Custom background support
-
-## 📊 Hiệu suất
-
-- **CPU Mode**: ~12-15 giây/câu trả lời
-- **GPU Mode**: ~4-5 giây/câu trả lời (RTX 4080)
-- **Memory Usage**: ~8GB VRAM
-- **Model Size**: ~3GB (float16)
-
-## 🔍 Các chủ đề pháp luật được hỗ trợ
-
-- Quyền lao động
-- Hợp đồng
-- Đăng ký kinh doanh
-- Thuế
-- Sở hữu trí tuệ
-- Giao thông
-- Nghĩa vụ quân sự
-- Và nhiều chủ đề khác...
-
-## 🐳 Docker
-
-### Build và chạy với Docker
+**Cách 1: Dùng Python HTTP server**
 ```bash
-docker-compose up --build
+cd frontend
+python -m http.server 8080
 ```
 
-### Hoặc sử dụng Dockerfile
-```bash
-docker build -t ai-legal-assistant .
-docker run -p 8000:8000 ai-legal-assistant
+**Cách 2: Dùng Live Server (VS Code extension)**
+- Cài extension "Live Server"
+- Right-click `frontend/index.html` → "Open with Live Server"
+
+Frontend sẽ chạy tại: `http://localhost:8080`
+
+### 6. Cấu hình API URL
+
+Mở `frontend/index.html` và thêm trước thẻ `</head>`:
+```html
+<script>
+  window.API_BASE_URL = 'http://localhost:8000';
+</script>
 ```
 
-## 🔧 Troubleshooting
+## 📖 Sử dụng
 
-### Lỗi CUDA không khả dụng
-```bash
-# Kiểm tra CUDA
-python -c "import torch; print(torch.cuda.is_available())"
+1. Mở frontend trong browser
+2. Nhập câu hỏi về pháp luật giao thông
+3. Nhận câu trả lời từ AI
+4. Có thể gửi feedback nếu câu trả lời sai hoặc cần cải thiện
 
-# Cài đặt lại PyTorch với CUDA
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
+## 🗄️ Database
 
-### Lỗi model loading
-```bash
-# Kiểm tra checkpoint
-ls -la checkpoint/
+### Development (SQLite)
+Database tự động tạo file `backend/feedback.db` khi chạy app.
 
-# Test model loading
-python test_model.py
-```
+### Production (PostgreSQL)
+Xem hướng dẫn trong [DEPLOYMENT.md](./DEPLOYMENT.md)
 
-### Lỗi memory
-- Giảm `max_new_tokens` trong `inference.py`
-- Sử dụng `torch.float16` thay vì `torch.float32`
-- Tăng swap memory
+## 🚀 Deploy
+
+Xem hướng dẫn chi tiết trong [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### Quick Deploy trên Render:
+
+1. **Backend**: Tạo Web Service
+   - Build: `pip install -r backend/requirements.txt`
+   - Start: `cd backend && python app.py`
+
+2. **Frontend**: Tạo Static Site
+   - Publish Directory: `frontend`
 
 ## 📝 API Endpoints
 
-### POST /chat
-Gửi câu hỏi và nhận câu trả lời
+- `POST /chat` - Chat với AI
+- `POST /feedback` - Gửi feedback
+- `GET /feedback` - Xem feedback (admin)
+- `GET /health` - Health check
 
-**Request:**
-```json
-{
-  "question": "Câu hỏi pháp luật",
-  "chat_history": []
-}
-```
+Xem chi tiết trong [FEEDBACK_SYSTEM.md](./FEEDBACK_SYSTEM.md)
 
-**Response:**
-```
-Streaming text response
-```
+## 🔧 Tối Ưu Hóa
 
-### GET /
-Trang chủ của ứng dụng
+Xem hướng dẫn chi tiết trong [OPTIMIZATION_GUIDE.md](./OPTIMIZATION_GUIDE.md)
+
+### Các tối ưu đã áp dụng:
+- ✅ Quantization (8-bit) cho CPU
+- ✅ Model compilation (torch.compile)
+- ✅ Response caching
+- ✅ CPU threading optimization
+- ✅ Memory optimization
+
+## 🐛 Troubleshooting
+
+### Model không load được
+- Kiểm tra đường dẫn model trong `backend/inference.py`
+- Đảm bảo model files đã được download
+
+### Database errors
+- Kiểm tra `DATABASE_URL` environment variable
+- Đảm bảo có quyền write (SQLite) hoặc kết nối (PostgreSQL)
+
+### CORS errors
+- Kiểm tra `CORS_ORIGINS` trong backend
+- Đảm bảo frontend URL đúng
+
+## 📚 Documentation
+
+- [DEPLOYMENT.md](./DEPLOYMENT.md) - Hướng dẫn deploy
+- [FEEDBACK_SYSTEM.md](./FEEDBACK_SYSTEM.md) - Hệ thống feedback
+- [OPTIMIZATION_GUIDE.md](./OPTIMIZATION_GUIDE.md) - Tối ưu hóa
 
 ## 🤝 Đóng góp
 
@@ -202,7 +217,6 @@ Dự án này được phát hành dưới MIT License - xem file [LICENSE](LICE
 
 - **Tên**: [Your Name]
 - **Email**: [your.email@example.com]
-- **GitHub**: [@yourusername]
 
 ## 🙏 Cảm ơn
 
@@ -213,11 +227,11 @@ Dự án này được phát hành dưới MIT License - xem file [LICENSE](LICE
 
 ## 📞 Hỗ trợ
 
-Nếu gặp vấn đề, vui lòng:
+Nếu gặp vấn đề:
 1. Kiểm tra [Issues](../../issues)
 2. Tạo issue mới với mô tả chi tiết
-3. Liên hệ qua email: [your.email@example.com]
+3. Xem documentation trong các file .md
 
 ---
 
-⭐ Nếu dự án này hữu ích, hãy cho một star! 
+⭐ Nếu dự án này hữu ích, hãy cho một star!

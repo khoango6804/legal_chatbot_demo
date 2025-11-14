@@ -9,6 +9,14 @@ import time
 import hashlib
 from functools import lru_cache
 
+# Hugging Face token cho private repos
+try:
+    from huggingface_hub import login as hf_login
+    HF_HUB_AVAILABLE = True
+except ImportError:
+    HF_HUB_AVAILABLE = False
+    print("Warning: huggingface_hub not available. Install with: pip install huggingface-hub")
+
 # Kiểm tra quantization support
 try:
     from transformers import BitsAndBytesConfig
@@ -55,14 +63,60 @@ def load_model():
     if model_loaded:
         return True
     
-    model_path = "./qwen3-0.6B-instruct-trafficlaws/model"
+    # Đường dẫn model - ưu tiên Hugging Face Hub, sau đó mới dùng local path
+    # Có thể set qua environment variable:
+    # - MODEL_HF_REPO: Hugging Face repository (ví dụ: "username/qwen3-0.6B-trafficlaws")
+    #   Nếu model nằm trong subfolder, có thể dùng: "username/repo/model" hoặc set MODEL_HF_SUBFOLDER
+    # - MODEL_HF_SUBFOLDER: Subfolder trong repo (mặc định: None, sẽ tìm trong root)
+    # - MODEL_PATH: Local path (fallback)
+    model_hf_repo = os.getenv("MODEL_HF_REPO", None)
+    model_hf_subfolder = os.getenv("MODEL_HF_SUBFOLDER", None)
+    model_path = os.getenv("MODEL_PATH", "../qwen3-0.6B-instruct-trafficlaws/model")
+    
+    # Quyết định sử dụng Hugging Face Hub hay local path
+    use_hf_hub = model_hf_repo is not None and model_hf_repo.strip() != ""
+    
+    if use_hf_hub:
+        # Kiểm tra Hugging Face token cho private repos
+        hf_token = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_HUB_TOKEN")
+        
+        if hf_token and HF_HUB_AVAILABLE:
+            try:
+                # Login với token (nếu chưa login)
+                hf_login(token=hf_token, add_to_git_credential=False)
+                print("✅ Authenticated with Hugging Face Hub")
+            except Exception as e:
+                print(f"⚠️  Warning: Could not login to Hugging Face: {e}")
+                print("   Model download may fail if repo is private")
+        elif not hf_token:
+            print("ℹ️  No HF_TOKEN found - assuming public repo or already authenticated")
+        
+        # Nếu có subfolder, thêm vào repo path
+        if model_hf_subfolder:
+            actual_model_path = f"{model_hf_repo}/{model_hf_subfolder}"
+        else:
+            # Kiểm tra nếu repo path đã có subfolder
+            actual_model_path = model_hf_repo
+        print(f"Loading model from Hugging Face Hub: {actual_model_path}")
+    else:
+        print(f"Loading model from local path: {model_path}")
+        actual_model_path = model_path
     
     try:
         print("Loading model from checkpoint...")
         print(f"Device: {device}")
+        print(f"Model source: {'Hugging Face Hub' if use_hf_hub else 'Local path'}")
+        print(f"Model path/repo: {actual_model_path}")
         
         # First, try to load config to understand the model type
-        config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
+        # Nếu dùng Hugging Face Hub và có token, pass token vào
+        load_kwargs = {"trust_remote_code": True}
+        if use_hf_hub:
+            hf_token = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_HUB_TOKEN")
+            if hf_token:
+                load_kwargs["token"] = hf_token
+        
+        config = AutoConfig.from_pretrained(actual_model_path, **load_kwargs)
         print(f"Model type: {config.model_type}")
         print(f"Architectures: {config.architectures}")
         
@@ -89,13 +143,22 @@ def load_model():
         # Try different loading strategies
         loading_strategies = []
         
+        # Base kwargs cho tất cả loading strategies
+        base_kwargs = {
+            "trust_remote_code": True,
+            "ignore_mismatched_sizes": True
+        }
+        if use_hf_hub:
+            hf_token = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_HUB_TOKEN")
+            if hf_token:
+                base_kwargs["token"] = hf_token
+        
         # Strategy 1: Quantized (CPU only)
         if use_quantization:
             loading_strategies.append(
                 lambda: AutoModelForCausalLM.from_pretrained(
-                    model_path,
-                    trust_remote_code=True,
-                    ignore_mismatched_sizes=True,
+                    actual_model_path,
+                    **base_kwargs,
                     quantization_config=quantization_config,
                     device_map="auto",
                     low_cpu_mem_usage=True
@@ -106,9 +169,8 @@ def load_model():
         if device == "cuda":
             loading_strategies.append(
                 lambda: AutoModelForCausalLM.from_pretrained(
-                    model_path,
-                    trust_remote_code=True,
-                    ignore_mismatched_sizes=True,
+                    actual_model_path,
+                    **base_kwargs,
                     torch_dtype=model_dtype,
                     device_map="auto"
                 )
@@ -117,9 +179,8 @@ def load_model():
         # Strategy 3: CPU với float32 và low_cpu_mem_usage
         loading_strategies.append(
             lambda: AutoModelForCausalLM.from_pretrained(
-                model_path,
-                trust_remote_code=True,
-                ignore_mismatched_sizes=True,
+                actual_model_path,
+                **base_kwargs,
                 torch_dtype=model_dtype,
                 low_cpu_mem_usage=True
             )
@@ -128,10 +189,9 @@ def load_model():
         # Strategy 4: Load with config
         loading_strategies.append(
             lambda: AutoModelForCausalLM.from_pretrained(
-                model_path,
+                actual_model_path,
                 config=config,
-                trust_remote_code=True,
-                ignore_mismatched_sizes=True,
+                **base_kwargs,
                 torch_dtype=model_dtype,
                 low_cpu_mem_usage=True
             )
@@ -153,11 +213,19 @@ def load_model():
         else:
             raise Exception("All loading strategies failed")
         
-        # Load tokenizer
+        # Load tokenizer với token nếu cần
+        tokenizer_kwargs = {
+            "trust_remote_code": True,
+            "model_max_length": 2048
+        }
+        if use_hf_hub:
+            hf_token = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_HUB_TOKEN")
+            if hf_token:
+                tokenizer_kwargs["token"] = hf_token
+        
         tokenizer = AutoTokenizer.from_pretrained(
-            model_path, 
-            trust_remote_code=True,
-            model_max_length=2048
+            actual_model_path, 
+            **tokenizer_kwargs
         )
         
         # Set pad token if not present
@@ -189,7 +257,7 @@ def load_model():
         print("Falling back to mock responses...")
         return False
 
-prompt_template = """ Bạn là một trợ lí tư vấn các vấn đề liên quan đến pháp luật. Hãy trả lời như một luật sư chuyên nghiệp. 
+prompt_template = """ Bạn là một trợ lí tư vấn các vấn đề liên quan đến pháp luật về giao thông. Hãy trả lời như một luật sư chuyên nghiệp. 
 
 {chat_history}
 
@@ -204,12 +272,8 @@ def get_mock_response(question):
     mock_responses = {
         "quyền": "Theo Bộ luật Lao động Việt Nam, người lao động có các quyền cơ bản sau:\n\n1. Quyền được làm việc và lựa chọn việc làm\n2. Quyền được trả lương theo thỏa thuận\n3. Quyền được nghỉ ngơi, nghỉ phép\n4. Quyền được bảo hiểm xã hội\n5. Quyền được đào tạo, nâng cao trình độ\n6. Quyền được thành lập và tham gia công đoàn\n7. Quyền được bảo vệ sức khỏe, tính mạng\n8. Quyền được bảo vệ danh dự, nhân phẩm",
         "hợp đồng": "Để một hợp đồng được coi là hợp lệ, cần đáp ứng các điều kiện sau:\n\n1. Người tham gia có năng lực hành vi dân sự\n2. Mục đích và nội dung không vi phạm điều cấm của luật\n3. Người tham gia hoàn toàn tự nguyện\n4. Hình thức hợp đồng phù hợp với quy định của pháp luật\n\nHợp đồng phải có các nội dung cơ bản: đối tượng, số lượng, chất lượng, giá cả, thời hạn, địa điểm, phương thức thực hiện.",
-        "kinh doanh": "Thủ tục đăng ký kinh doanh tại Việt Nam bao gồm:\n\n1. Chuẩn bị hồ sơ đăng ký doanh nghiệp\n2. Nộp hồ sơ tại Phòng Đăng ký kinh doanh\n3. Nhận Giấy chứng nhận đăng ký doanh nghiệp\n4. Khắc dấu và công bố mẫu dấu\n5. Đăng ký thuế và mở tài khoản ngân hàng\n\nThời gian xử lý thường từ 3-5 ngày làm việc.",
-        "thuế": "Nghĩa vụ thuế cơ bản của doanh nghiệp:\n\n1. Thuế giá trị gia tăng (VAT)\n2. Thuế thu nhập doanh nghiệp\n3. Thuế thu nhập cá nhân (nếu có)\n4. Các loại thuế khác tùy theo ngành nghề\n\nDoanh nghiệp nhỏ có thể được hưởng các ưu đãi thuế theo quy định.",
-        "sở hữu trí tuệ": "Để bảo vệ quyền sở hữu trí tuệ:\n\n1. Đăng ký bảo hộ tại Cục Sở hữu trí tuệ\n2. Sử dụng dấu hiệu phân biệt\n3. Ký kết hợp đồng bảo mật\n4. Giám sát và phát hiện vi phạm\n5. Khởi kiện khi bị xâm phạm\n\nCác đối tượng được bảo hộ: nhãn hiệu, sáng chế, kiểu dáng công nghiệp, bản quyền tác giả.",
         "vượt đèn đỏ": "Theo Luật Giao thông đường bộ Việt Nam, vi phạm vượt đèn đỏ sẽ bị xử phạt:\n\n**Đối với xe máy:**\n- Phạt tiền: 600.000 - 1.000.000 đồng\n- Tước quyền sử dụng Giấy phép lái xe: 1-3 tháng\n- Điểm trừ: 5 điểm\n\n**Đối với ô tô:**\n- Phạt tiền: 1.200.000 - 2.000.000 đồng\n- Tước quyền sử dụng Giấy phép lái xe: 1-3 tháng\n- Điểm trừ: 5 điểm\n\n**Hậu quả khác:**\n- Có thể gây tai nạn giao thông nghiêm trọng\n- Ảnh hưởng đến an toàn của bản thân và người khác\n- Có thể bị tước bằng lái vĩnh viễn nếu gây tai nạn chết người",
-        "giao thông": "Các quy định giao thông cơ bản tại Việt Nam:\n\n**Tốc độ tối đa:**\n- Trong khu dân cư: 40-50 km/h\n- Ngoài khu dân cư: 60-80 km/h\n- Đường cao tốc: 80-120 km/h\n\n**Quy tắc ưu tiên:**\n- Xe ưu tiên (cứu thương, cảnh sát, cứu hỏa)\n- Xe đi trên đường ưu tiên\n- Xe đi bên phải\n\n**Vi phạm thường gặp:**\n- Vượt đèn đỏ\n- Đi ngược chiều\n- Không đội mũ bảo hiểm\n- Vượt quá tốc độ\n- Đỗ xe sai quy định",
-        "quan hệ tình dục": "Theo Bộ luật Hình sự Việt Nam, quan hệ tình dục với trẻ em dưới 18 tuổi là tội phạm nghiêm trọng:\n\n**Tội hiếp dâm người dưới 16 tuổi:**\n- Phạt tù từ 7 năm đến 15 năm\n- Nếu gây thương tích nặng: 12-20 năm\n- Nếu gây chết người: 20 năm, chung thân hoặc tử hình\n\n**Tội giao cấu với người từ đủ 13 tuổi đến dưới 16 tuổi:**\n- Phạt tù từ 1 năm đến 5 năm\n- Nếu có tổ chức: 3-10 năm\n\n**Tội dâm ô với người dưới 16 tuổi:**\n- Phạt tù từ 6 tháng đến 3 năm\n- Nếu có tổ chức: 2-7 năm\n\n**Lưu ý:**\n- Trẻ em dưới 18 tuổi được pháp luật bảo vệ đặc biệt\n- Mọi hành vi xâm hại tình dục đều bị xử lý nghiêm minh\n- Người phạm tội có thể bị cấm hành nghề, cấm cư trú"
+        "giao thông": "Các quy định giao thông cơ bản tại Việt Nam:\n\n**Tốc độ tối đa:**\n- Trong khu dân cư: 40-50 km/h\n- Ngoài khu dân cư: 60-80 km/h\n- Đường cao tốc: 80-120 km/h\n\n**Quy tắc ưu tiên:**\n- Xe ưu tiên (cứu thương, cảnh sát, cứu hỏa)\n- Xe đi trên đường ưu tiên\n- Xe đi bên phải\n\n**Vi phạm thường gặp:**\n- Vượt đèn đỏ\n- Đi ngược chiều\n- Không đội mũ bảo hiểm\n- Vượt quá tốc độ\n- Đỗ xe sai quy định"
     }
     
     question_lower = question.lower()
@@ -217,7 +281,7 @@ def get_mock_response(question):
         if key in question_lower:
             return response
     
-    return "Xin chào! Tôi là trợ lý AI tư vấn pháp luật. Hiện tại mô hình AI chưa được tải thành công, nhưng tôi có thể cung cấp thông tin cơ bản về:\n\n• Quyền lao động\n• Hợp đồng\n• Đăng ký kinh doanh\n• Thuế\n• Sở hữu trí tuệ\n• Giao thông (vượt đèn đỏ, tốc độ, vi phạm)\n• Quan hệ tình dục với trẻ em (hình phạt, tội phạm)\n\nVui lòng hỏi cụ thể về một trong các chủ đề trên."
+    return "Xin chào! Tôi là trợ lý AI tư vấn pháp luật về giao thông. Hiện tại mô hình AI chưa được tải thành công, nhưng tôi có thể cung cấp thông tin cơ bản về:\n\n• Quyền lao động\n• Hợp đồng\n• Giao thông (vượt đèn đỏ, tốc độ, vi phạm)\n\nVui lòng hỏi cụ thể về một trong các chủ đề trên."
 
 def get_answer(question):
     if not load_model():
@@ -230,14 +294,14 @@ def get_answer(question):
         with torch.no_grad():
             output = model.generate(
                 **inputs,
-                max_new_tokens=512,  # Giảm từ 1024 xuống 512
+                max_new_tokens=512,
                 eos_token_id=tokenizer.eos_token_id,
                 pad_token_id=tokenizer.eos_token_id,
                 do_sample=True,
-                temperature=0.1,  # Tăng từ 0.6 lên 0.7
+                temperature=0.1,
                 top_p=0.9,
-                repetition_penalty=1.1,  # Giảm từ 1.2 xuống 1.1
-                num_beams=1,  # Thêm beam search
+                repetition_penalty=1.1,
+                num_beams=1,
             )
         
         generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
@@ -377,3 +441,4 @@ def get_answer_stream(question, chat_history=None):
         mock_response = get_mock_response(question)
         for word in mock_response.split():
             yield word + " "
+
