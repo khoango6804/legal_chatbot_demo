@@ -24,7 +24,7 @@ def test_speed_display():
     
     # Kiểm tra xem có hiển thị tốc độ không
     if "[Tốc độ:" in response:
-        print("✅ Tốc độ token/s đã được hiển thị")
+        print("Tốc độ token/s đã được hiển thị")
         # Tìm và in ra thông tin tốc độ
         start_idx = response.find("[Tốc độ:")
         end_idx = response.find("token/s]")
@@ -32,7 +32,7 @@ def test_speed_display():
             speed_info = response[start_idx:end_idx + 8]
             print(f"Thông tin tốc độ: {speed_info}")
     else:
-        print("❌ Không tìm thấy thông tin tốc độ")
+        print("Không tìm thấy thông tin tốc độ")
 
 if __name__ == "__main__":
     test_speed_display()

@@ -520,13 +520,13 @@ function createWelcomeContainer() {
     if (!welcomeContainer.querySelector('.welcome-content')) {
         welcomeContainer.innerHTML = `
             <div class="welcome-content">
-                <div class="welcome-icon">⚖️</div>
+                <div class="welcome-icon"></div>
                 <h1>Legal AI Assistant</h1>
                 <p>Trợ lý pháp lý thông minh của bạn. Hỏi tôi bất cứ điều gì về luật pháp và quy định.</p>
                 
                 <div class="suggestions-grid">
                     <button class="suggestion-card" data-suggestion="Quyền lợi cơ bản của người lao động tại Việt Nam là gì?">
-                        <div class="suggestion-icon">👥</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Quyền Lao Động</h3>
                             <p>Tìm hiểu về quyền lợi cơ bản của người lao động</p>
@@ -534,7 +534,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Thủ tục đăng ký kinh doanh tại Việt Nam như thế nào?">
-                        <div class="suggestion-icon">🏢</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Đăng Ký Kinh Doanh</h3>
                             <p>Các bước đăng ký doanh nghiệp hợp pháp</p>
@@ -542,7 +542,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Những yêu cầu để có một hợp đồng hợp lệ là gì?">
-                        <div class="suggestion-icon">📄</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Yêu Cầu Hợp Đồng</h3>
                             <p>Các yếu tố cần thiết của hợp đồng hợp lệ</p>
@@ -550,7 +550,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Làm thế nào để bảo vệ quyền sở hữu trí tuệ?">
-                        <div class="suggestion-icon">🔒</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Bảo Vệ Sở Hữu Trí Tuệ</h3>
                             <p>Bảo vệ tài sản trí tuệ của bạn</p>
@@ -558,7 +558,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Nghĩa vụ thuế đối với doanh nghiệp nhỏ là gì?">
-                        <div class="suggestion-icon">💰</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Nghĩa Vụ Thuế</h3>
                             <p>Hiểu về yêu cầu thuế</p>
@@ -566,7 +566,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Cách xử lý tranh chấp lao động như thế nào?">
-                        <div class="suggestion-icon">⚖️</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Tranh Chấp Lao Động</h3>
                             <p>Giải quyết xung đột tại nơi làm việc</p>
@@ -574,7 +574,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Luật bảo vệ người tiêu dùng quy định như thế nào?">
-                        <div class="suggestion-icon">🛡️</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Quyền Người Tiêu Dùng</h3>
                             <p>Quyền lợi của bạn với tư cách người tiêu dùng</p>
@@ -582,7 +582,7 @@ function createWelcomeContainer() {
                     </button>
                     
                     <button class="suggestion-card" data-suggestion="Cách nộp đơn khiếu nại pháp lý như thế nào?">
-                        <div class="suggestion-icon">📋</div>
+                        <div class="suggestion-icon"></div>
                         <div class="suggestion-content">
                             <h3>Khiếu Nại Pháp Lý</h3>
                             <p>Nộp đơn khiếu nại chính thức</p>

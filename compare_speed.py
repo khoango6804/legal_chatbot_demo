@@ -77,17 +77,17 @@ def compare_speed():
         generation_time = end_time - first_token_time
         if generation_time > 0:
             actual_speed = token_count / generation_time
-            print(f"✅ Tốc độ thực tế: {actual_speed:.2f} token/s")
-            print(f"📊 Tốc độ báo cáo: {reported_speed:.2f} token/s")
+            print(f"Tốc độ thực tế: {actual_speed:.2f} token/s")
+            print(f"Tốc độ báo cáo: {reported_speed:.2f} token/s")
             
             if abs(actual_speed - reported_speed) < 2:
-                print("✅ Tốc độ báo cáo chính xác!")
+                print("Tốc độ báo cáo chính xác!")
             else:
-                print("⚠️  Có sự khác biệt giữa tốc độ thực tế và báo cáo")
+                print("Có sự khác biệt giữa tốc độ thực tế và báo cáo")
         else:
-            print("⚠️  Không thể tính toán tốc độ chính xác (thời gian quá ngắn)")
+            print("Không thể tính toán tốc độ chính xác (thời gian quá ngắn)")
     else:
-        print("⚠️  Không thể tính toán tốc độ thực tế")
+        print("Không thể tính toán tốc độ thực tế")
 
 if __name__ == "__main__":
     compare_speed()

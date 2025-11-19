@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Legal Assistant</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <!-- Favicon removed - can add later if needed -->
     <!-- API URL Configuration - Update this when deploying -->
     <script>
-        // Set API URL for production
+        // Set API URL for local development
         // For local: window.API_BASE_URL = 'http://localhost:8000';
         // For production: window.API_BASE_URL = 'https://your-backend.onrender.com';
         // Leave empty for same-origin (if frontend and backend on same domain)
-        window.API_BASE_URL = window.API_BASE_URL || '';
+        window.API_BASE_URL = window.API_BASE_URL || 'http://localhost:8000';
     </script>
 </head>
 <body>
@@ -20,7 +20,7 @@
     <aside class="sidebar">
         <div class="sidebar-header">
             <div class="logo">
-                <div class="logo-icon">⚖️</div>
+                <div class="logo-icon"></div>
                 <div class="logo-text">Legal AI</div>
             </div>
             <button class="new-chat-btn" id="new-chat-btn">
@@ -67,13 +67,13 @@
             <!-- Welcome Screen -->
             <div class="welcome-container" id="welcome-container">
                 <div class="welcome-content">
-                    <div class="welcome-icon">⚖️</div>
+                    <div class="welcome-icon"></div>
                     <h1>Legal AI Assistant</h1>
                     <p>Bố mày sẵn sàng rồi. Hỏi đi con chó.</p>
                     
                     <div class="suggestions-grid">
                         <button class="suggestion-card" data-suggestion="Quyền lợi cơ bản của người lao động tại Việt Nam là gì?">
-                            <div class="suggestion-icon">👥</div>
+                        <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Quyền Lao Động</h3>
                                 <p>Tìm hiểu về quyền lợi cơ bản của người lao động</p>
@@ -81,7 +81,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Thủ tục đăng ký kinh doanh tại Việt Nam như thế nào?">
-                            <div class="suggestion-icon">🏢</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Đăng Ký Kinh Doanh</h3>
                                 <p>Các bước đăng ký doanh nghiệp hợp pháp</p>
@@ -89,7 +89,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Những yêu cầu để có một hợp đồng hợp lệ là gì?">
-                            <div class="suggestion-icon">📄</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Yêu Cầu Hợp Đồng</h3>
                                 <p>Các yếu tố cần thiết của hợp đồng hợp lệ</p>
@@ -97,7 +97,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Làm thế nào để bảo vệ quyền sở hữu trí tuệ?">
-                            <div class="suggestion-icon">🔒</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Bảo Vệ Sở Hữu Trí Tuệ</h3>
                                 <p>Bảo vệ tài sản trí tuệ của bạn</p>
@@ -105,7 +105,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Nghĩa vụ thuế đối với doanh nghiệp nhỏ là gì?">
-                            <div class="suggestion-icon">💰</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Nghĩa Vụ Thuế</h3>
                                 <p>Hiểu về yêu cầu thuế</p>
@@ -113,7 +113,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Cách xử lý tranh chấp lao động như thế nào?">
-                            <div class="suggestion-icon">⚖️</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Tranh Chấp Lao Động</h3>
                                 <p>Giải quyết xung đột tại nơi làm việc</p>
@@ -121,7 +121,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Luật bảo vệ người tiêu dùng quy định như thế nào?">
-                            <div class="suggestion-icon">🛡️</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Quyền Người Tiêu Dùng</h3>
                                 <p>Quyền lợi của bạn với tư cách người tiêu dùng</p>
@@ -129,7 +129,7 @@
                         </button>
                         
                         <button class="suggestion-card" data-suggestion="Cách nộp đơn khiếu nại pháp lý như thế nào?">
-                            <div class="suggestion-icon">📋</div>
+                            <div class="suggestion-icon"></div>
                             <div class="suggestion-content">
                                 <h3>Khiếu Nại Pháp Lý</h3>
                                 <p>Nộp đơn khiếu nại chính thức</p>

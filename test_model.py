@@ -38,10 +38,10 @@ def test_load_model():
                 ignore_mismatched_sizes=True,
                 torch_dtype=torch.float32
             )
-            print("   ✅ Success with ignore_mismatched_sizes!")
+            print("   Success with ignore_mismatched_sizes!")
             return True
         except Exception as e:
-            print(f"   ❌ Failed: {e}")
+            print(f"   Failed: {e}")
         
         # Approach 2: Try with low_cpu_mem_usage
         try:
@@ -53,10 +53,10 @@ def test_load_model():
                 low_cpu_mem_usage=True,
                 torch_dtype=torch.float32
             )
-            print("   ✅ Success with low_cpu_mem_usage!")
+            print("   Success with low_cpu_mem_usage!")
             return True
         except Exception as e:
-            print(f"   ❌ Failed: {e}")
+            print(f"   Failed: {e}")
         
         # Approach 3: Try with config
         try:
@@ -68,10 +68,10 @@ def test_load_model():
                 trust_remote_code=True,
                 torch_dtype=torch.float32
             )
-            print("   ✅ Success with config!")
+            print("   Success with config!")
             return True
         except Exception as e:
-            print(f"   ❌ Failed: {e}")
+            print(f"   Failed: {e}")
         
         return False
         
@@ -82,6 +82,6 @@ def test_load_model():
 if __name__ == "__main__":
     success = test_load_model()
     if success:
-        print("\n✅ Model loaded successfully!")
+        print("\nModel loaded successfully!")
     else:
-        print("\n❌ Failed to load model") 
+        print("\nFailed to load model")

@@ -7,7 +7,7 @@ import uvicorn
 import os
 from datetime import datetime
 
-from inference import get_answer_stream
+from inference import get_answer_stream, normalize_input_text
 from database import init_db, get_db, Feedback
 
 app = FastAPI(title="Legal AI Assistant API", version="1.0.0")
@@ -16,6 +16,19 @@ app = FastAPI(title="Legal AI Assistant API", version="1.0.0")
 @app.on_event("startup")
 async def startup_event():
     init_db()
+    # Preload model khi start app
+    print("=" * 60)
+    print("Preloading AI model...")
+    print("=" * 60)
+    from inference import load_model
+    try:
+        if load_model():
+            print("[OK] Model loaded successfully on startup!")
+        else:
+            print("[WARNING] Model loading failed on startup, will use mock responses")
+    except Exception as e:
+        print(f"[WARNING] Error loading model on startup: {e}")
+        print("   Will try to load on first request")
 
 # CORS configuration - cho phép frontend gọi API
 # Trong production, nên set allow_origins cụ thể thay vì "*"
@@ -41,8 +54,19 @@ class FeedbackRequest(BaseModel):
 @app.post("/chat")
 async def chat_endpoint(req: ChatRequest):
     """Endpoint để chat với AI model"""
+    # Log and normalize question encoding before processing
+    try:
+        raw_question = req.question
+        normalized_question = normalize_input_text(raw_question)
+        print(f"[API] Question raw repr: {repr(raw_question)}")
+        if normalized_question != raw_question:
+            print(f"[API] Question normalized repr: {repr(normalized_question)}")
+    except Exception as e:
+        print(f"[API] Error normalizing question: {e}")
+        normalized_question = req.question
+
     def answer_stream():
-        for chunk in get_answer_stream(req.question, req.chat_history):
+        for chunk in get_answer_stream(normalized_question, req.chat_history):
             yield chunk
     return StreamingResponse(answer_stream(), media_type="text/plain")
 
@@ -57,7 +81,16 @@ async def get_speed_info():
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
-    return JSONResponse({"status": "healthy", "service": "Legal AI Assistant API"})
+    # Import fresh để lấy giá trị mới nhất
+    import inference
+    # Reload module để đảm bảo có giá trị mới nhất
+    import importlib
+    importlib.reload(inference)
+    return JSONResponse({
+        "status": "healthy", 
+        "service": "Legal AI Assistant API",
+        "model_loaded": inference.model_loaded
+    })
 
 @app.post("/feedback")
 async def submit_feedback(

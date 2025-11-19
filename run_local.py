@@ -15,30 +15,30 @@ def run_backend():
     backend_dir = Path(__file__).parent / "backend"
     os.chdir(backend_dir)
     
-    print("🚀 Starting Backend Server...")
-    print("📍 Backend will run at: http://localhost:8000")
-    print("📖 API docs at: http://localhost:8000/docs")
+    print("Starting Backend Server...")
+    print("Backend will run at: http://localhost:8000")
+    print("API docs at: http://localhost:8000/docs")
     print("-" * 50)
     
     try:
         subprocess.run([sys.executable, "app.py"], check=True)
     except KeyboardInterrupt:
-        print("\n✅ Backend server stopped")
+        print("\nBackend server stopped")
 
 def run_frontend():
     """Chạy frontend server"""
     frontend_dir = Path(__file__).parent / "frontend"
     os.chdir(frontend_dir)
     
-    print("🌐 Starting Frontend Server...")
-    print("📍 Frontend will run at: http://localhost:8080")
+    print("Starting Frontend Server...")
+    print("Frontend will run at: http://localhost:8080")
     print("-" * 50)
     
     try:
         # Try Python 3
         subprocess.run([sys.executable, "-m", "http.server", "8080"], check=True)
     except KeyboardInterrupt:
-        print("\n✅ Frontend server stopped")
+        print("\nFrontend server stopped")
 
 if __name__ == "__main__":
     import argparse
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         run_frontend()
     else:
         print("=" * 50)
-        print("🤖 AI Legal Assistant - Local Development")
+        print("AI Legal Assistant - Local Development")
         print("=" * 50)
         print("\nChọn option:")
         print("1. Chạy Backend (http://localhost:8000)")
@@ -65,5 +65,5 @@ if __name__ == "__main__":
         print("\nHoặc dùng:")
         print("  python run_local.py --backend   # Chỉ backend")
         print("  python run_local.py --frontend  # Chỉ frontend")
-        print("\n💡 Tip: Chạy backend và frontend ở 2 terminal riêng!")
+        print("\nTip: Chạy backend và frontend ở 2 terminal riêng!")
 
