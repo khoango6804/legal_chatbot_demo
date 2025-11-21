@@ -350,6 +350,49 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             return "", answer.strip()
         return cleaned, answer.strip()
 
+    def generate_from_prompt(
+        self, prompt: str, max_new_tokens: int = 120
+    ) -> tuple[str, str]:
+        """Expose raw prompt generation for remote generator microservice."""
+        if not self.use_generation:
+            return "", ""
+        if not self.model or not self.tokenizer:
+            raise RuntimeError("Model is not loaded")
+        if not prompt:
+            return "", ""
+
+        inputs = self.tokenizer(
+            prompt, return_tensors="pt", truncation=True, max_length=2048
+        )
+        device = next(self.model.parameters()).device
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+
+        tokens = max(1, int(max_new_tokens or 1))
+        with torch.no_grad():
+            outputs = self.model.generate(
+                **inputs,
+                max_new_tokens=tokens,
+                temperature=0.05,
+                top_p=0.3,
+                do_sample=True,
+                repetition_penalty=1.2,
+                pad_token_id=self.tokenizer.eos_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+            )
+
+        raw_text = self.tokenizer.decode(outputs[0], skip_special_tokens=False)
+        if "<|im_start|>assistant" in raw_text:
+            answer = raw_text.split("<|im_start|>assistant")[-1]
+            if "<|im_end|>" in answer:
+                answer = answer.split("<|im_end|>")[0]
+        else:
+            answer = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+        cleaned = self._clean_answer(answer)
+        if len(cleaned) < 20 or needs_vietnamese_fallback(cleaned):
+            return "", answer.strip()
+        return cleaned, answer.strip()
+
     # -------------------------------------------------------------- Public API
     def answer(self, question: str) -> Dict:
         normalized_question = normalize_input_text(question)
