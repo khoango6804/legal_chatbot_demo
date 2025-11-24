@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Legal Assistant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <!-- Favicon removed - can add later if needed -->
     <!-- API URL Configuration - Update this when deploying -->
     <script>
-        // Set API URL for local development
-        // For local: window.API_BASE_URL = 'http://localhost:8000';
-        // For production: window.API_BASE_URL = 'https://your-backend.onrender.com';
-        // Leave empty for same-origin (if frontend and backend on same domain)
-        window.API_BASE_URL = window.API_BASE_URL || 'http://localhost:8000';
+        // Set API URL.
+        // Local development có thể override bằng: window.API_BASE_URL = 'http://localhost:8000';
+        // Production: đặt biến môi trường hoặc inject trước khi build.
+        // Mặc định: dùng cùng origin (rỗng).
+        window.API_BASE_URL = '';
     </script>
 </head>
 <body>
@@ -242,8 +242,8 @@
         </div>
     </div>
 
-    <script src="config.js"></script>
-    <script src="chat.js"></script>
-    <script src="sidebar-toggle.js"></script>
+    <script src="/static/config.js"></script>
+    <script src="/static/chat.js"></script>
+    <script src="/static/sidebar-toggle.js"></script>
 </body>
 </html> 

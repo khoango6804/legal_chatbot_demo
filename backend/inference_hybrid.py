@@ -14,6 +14,7 @@ from __future__ import annotations
 import os
 import json
 import unicodedata
+from pathlib import Path
 from typing import Dict, List, Optional
 
 import torch
@@ -90,8 +91,18 @@ class HybridTrafficLawAssistant:
         self.model_repo = os.getenv("MODEL_HF_REPO", DEFAULT_HF_REPO)
         self.model_subfolder = os.getenv("MODEL_HF_SUBFOLDER", DEFAULT_HF_SUBFOLDER)
 
+        local_model_default = (
+            Path(__file__).resolve().parent.parent
+            / "models"
+            / "qwen3-0.6B-instruct-trafficlaws"
+            / "model"
+        )
+
         if raw_model_path:
             self.model_name = raw_model_path
+            self.model_from_hub = False
+        elif local_model_default.exists():
+            self.model_name = str(local_model_default)
             self.model_from_hub = False
         else:
             self.model_name = self.model_repo

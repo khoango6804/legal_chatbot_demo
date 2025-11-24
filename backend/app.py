@@ -1,34 +1,57 @@
 from fastapi import FastAPI, Request, Depends, HTTPException
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 import uvicorn
 import os
 from datetime import datetime
+from pathlib import Path
+from typing import Optional
 
-from inference import get_answer_stream, normalize_input_text
-from database import init_db, get_db, Feedback
+from backend.inference import normalize_input_text
+from backend.database import init_db, get_db, Feedback
+from fastapi.staticfiles import StaticFiles
+from backend.inference_hybrid import HybridTrafficLawAssistant
 
 app = FastAPI(title="Legal AI Assistant API", version="1.0.0")
+
+FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
+app.mount("/static", StaticFiles(directory=FRONTEND_DIR, html=False), name="static")
+IMAGES_DIR = FRONTEND_DIR / "img"
+if IMAGES_DIR.exists():
+    app.mount("/img", StaticFiles(directory=IMAGES_DIR, html=False), name="images")
+
+# Hybrid assistant globals
+assistant: Optional[HybridTrafficLawAssistant] = None
+USE_GENERATIVE_MODEL = os.getenv("USE_GENERATIVE_MODEL", "true").lower() == "true"
+
+
+def get_hybrid_assistant() -> HybridTrafficLawAssistant:
+    """Lazy-initialize the HybridTrafficLawAssistant once per process."""
+    global assistant
+    if assistant is None:
+        assistant = HybridTrafficLawAssistant(use_generation=USE_GENERATIVE_MODEL)
+    return assistant
 
 # Khởi tạo database khi start app
 @app.on_event("startup")
 async def startup_event():
     init_db()
-    # Preload model khi start app
+
     print("=" * 60)
-    print("Preloading AI model...")
+    print("Preloading HybridTrafficLawAssistant...")
     print("=" * 60)
-    from inference import load_model
     try:
-        if load_model():
-            print("[OK] Model loaded successfully on startup!")
+        helper = get_hybrid_assistant()
+        loaded = (not helper.use_generation) or (helper.model is not None)
+        if loaded:
+            print("[OK] Hybrid assistant ready!")
         else:
-            print("[WARNING] Model loading failed on startup, will use mock responses")
+            print("[WARNING] Hybrid assistant initialized without generative model; deterministic answers only.")
     except Exception as e:
-        print(f"[WARNING] Error loading model on startup: {e}")
-        print("   Will try to load on first request")
+        print(f"[WARNING] Error initializing hybrid assistant: {e}")
+        print("   Will retry on first user request.")
 
 # CORS configuration - cho phép frontend gọi API
 # Trong production, nên set allow_origins cụ thể thay vì "*"
@@ -66,8 +89,27 @@ async def chat_endpoint(req: ChatRequest):
         normalized_question = req.question
 
     def answer_stream():
-        for chunk in get_answer_stream(normalized_question, req.chat_history):
-            yield chunk
+        helper = get_hybrid_assistant()
+        try:
+            result = helper.answer(normalized_question)
+        except Exception as exc:
+            print(f"[API] Hybrid assistant error: {exc}")
+            yield "Xin lỗi, hệ thống đang gặp sự cố khi tạo câu trả lời. "
+            return
+
+        if result.get("status") != "success":
+            fallback_message = result.get("message") or "Xin lỗi, hiện chưa có thông tin phù hợp trong cơ sở dữ liệu."
+            for word in fallback_message.split():
+                yield word + " "
+            return
+
+        answer_text = result.get("answer") or ""
+        if not answer_text.strip():
+            answer_text = "Xin lỗi, hiện chưa có thông tin rõ ràng cho tình huống này."
+
+        for word in answer_text.split():
+            yield word + " "
+
     return StreamingResponse(answer_stream(), media_type="text/plain")
 
 @app.get("/speed")
@@ -81,15 +123,24 @@ async def get_speed_info():
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
-    # Import fresh để lấy giá trị mới nhất
-    import inference
-    # Reload module để đảm bảo có giá trị mới nhất
-    import importlib
-    importlib.reload(inference)
+    helper = assistant
+    model_loaded = False
+    if helper is not None:
+        model_loaded = (not helper.use_generation) or (helper.model is not None)
+    else:
+        # Try lazy-init without forcing heavy load on health hits
+        try:
+            helper = get_hybrid_assistant()
+            model_loaded = (not helper.use_generation) or (helper.model is not None)
+        except Exception as exc:
+            print(f"[API] Health check unable to init hybrid assistant: {exc}")
+            model_loaded = False
+
     return JSONResponse({
         "status": "healthy", 
         "service": "Legal AI Assistant API",
-        "model_loaded": inference.model_loaded
+        "model_loaded": model_loaded,
+        "use_generation": helper.use_generation if helper else USE_GENERATIVE_MODEL
     })
 
 @app.post("/feedback")
@@ -195,6 +246,11 @@ async def resolve_feedback(
         db.rollback()
         print(f"Error resolving feedback: {e}")
         raise HTTPException(status_code=500, detail="Lỗi khi cập nhật feedback")
+
+
+@app.get("/", include_in_schema=False)
+async def serve_frontend():
+    return FileResponse(FRONTEND_DIR / "index.html")
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))

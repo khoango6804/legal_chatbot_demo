@@ -139,6 +139,7 @@ function sendMessage() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': '1',
         },
         body: JSON.stringify({
             question: message,
@@ -660,6 +661,7 @@ function submitFeedbackForm() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': '1',
         },
         body: JSON.stringify({
             question: lastQuestion,

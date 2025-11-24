@@ -1,5 +1,0 @@
-﻿{
-    "prompt":  "\u003c|im_start|\u003esystem\nBạn là trợ lý pháp luật...\n\u003c|im_end|\u003e\n\u003c|im_start|\u003euser\nCâu hỏi: Thử nghiệm\n\u003c|im_end|\u003e\n\u003c|im_start|\u003eassistant\nTheo quy định:",
-    "question":  "thử nghiệm",
-    "max_new_tokens":  50
-}
