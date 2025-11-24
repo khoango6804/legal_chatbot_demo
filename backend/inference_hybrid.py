@@ -19,7 +19,7 @@ from typing import Dict, List, Optional
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-from inference import (
+from backend.inference import (
     normalize_input_text,
     needs_vietnamese_fallback,
 )
