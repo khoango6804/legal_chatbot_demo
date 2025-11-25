@@ -114,11 +114,29 @@ class HybridTrafficLawAssistant:
         )
         self.hf_token = os.getenv("HF_TOKEN", DEFAULT_HF_TOKEN)
 
+        self.default_max_new_tokens = int(os.getenv("MAX_NEW_TOKENS", "120"))
+        self.max_new_tokens_limit = int(os.getenv("MAX_NEW_TOKENS_LIMIT", "512"))
+        if self.max_new_tokens_limit < 1:
+            self.max_new_tokens_limit = 512
+        if self.default_max_new_tokens < 1:
+            self.default_max_new_tokens = 120
+
         self.rag = TrafficLawRAGWithPoints(self.data_path)
         self.tokenizer = None
         self.model = None
         if use_generation:
             self._load_model()
+
+    def _normalize_max_tokens(self, requested: Optional[int]) -> int:
+        """Clamp requested max tokens into safe range."""
+        if requested is None:
+            return self.default_max_new_tokens
+        try:
+            value = int(requested)
+        except (TypeError, ValueError):
+            return self.default_max_new_tokens
+        value = max(1, value)
+        return min(value, self.max_new_tokens_limit)
 
     def _load_model(self):
         """Load tokenizer/model with fallback."""
@@ -309,18 +327,50 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             answer = re.sub(pattern, '', answer)
 
         english_words = [
-            'speed', 'red', 'color code', 'color', 'code', 'if there', 'if you',
-            'please', 'thank you', 'months', 'month', 'if', 'there', 'you', 'can',
-            'will', 'should', 'and', 'or', 'the', 'a', 'an', 'is', 'are', 'was',
-            'were', 'be', 'been', 'being'
+            'information', 'details', 'in the meantime', 'more information',
+            'more details', 'please', 'thank you', 'should', 'however',
+            'in summary', 'conclusion', 'detail', 'available', 'data',
+            'reference', 'note', 'comment', 'english', 'months', 'month',
+            'speed', 'color', 'code', 'if there', 'if you', 'in addition',
+            'however', 'should', 'could', 'would', 'therefore'
         ]
         for word in english_words:
-            answer = re.sub(r'\b' + word + r'\b', '', answer, flags=re.IGNORECASE)
+            answer = re.sub(r'\b' + re.escape(word) + r'\b', '', answer, flags=re.IGNORECASE)
 
+        # Remove sentences that still look foreign
+        sentences = re.split(r'(?<=[.!?])\s+', answer)
+        filtered: list[str] = []
+        for sentence in sentences:
+            sentence = sentence.strip()
+            if not sentence:
+                continue
+            # Skip if contains non-Latin symbols (e.g. Chinese)
+            if re.search(r'[\u4E00-\u9FFF]', sentence):
+                continue
+            # If sentence has tokens with Latin characters but no Vietnamese accents,
+            # treat as foreign (allow short tokens like "AI")
+            tokens = sentence.split()
+            foreign_tokens = [
+                tok for tok in tokens
+                if re.search(r'[A-Za-z]', tok)
+                and not re.search(r'[\u00C0-\u1EF9]', tok)
+                and len(tok) > 2
+            ]
+            if foreign_tokens:
+                continue
+            filtered.append(sentence)
+
+        answer = " ".join(filtered)
         answer = re.sub(r'\s+', ' ', answer).strip()
         return answer
 
-    def _generate_with_model(self, question: str, retrieval_result: Dict, context: str):
+    def _generate_with_model(
+        self,
+        question: str,
+        retrieval_result: Dict,
+        context: str,
+        max_new_tokens: Optional[int] = None,
+    ):
         """Return (clean_answer, raw_answer) from the generative model."""
         if not self.model or not self.tokenizer:
             return "", ""
@@ -333,10 +383,11 @@ Theo {primary_reference or 'quy định liên quan'}:"""
         device = next(self.model.parameters()).device
         inputs = {k: v.to(device) for k, v in inputs.items()}
 
+        tokens = self._normalize_max_tokens(max_new_tokens)
         with torch.no_grad():
             outputs = self.model.generate(
                 **inputs,
-                max_new_tokens=120,
+                max_new_tokens=tokens,
                 temperature=0.05,
                 top_p=0.3,
                 do_sample=True,
@@ -362,7 +413,7 @@ Theo {primary_reference or 'quy định liên quan'}:"""
         return cleaned, answer.strip()
 
     def generate_from_prompt(
-        self, prompt: str, max_new_tokens: int = 120
+        self, prompt: str, max_new_tokens: Optional[int] = None
     ) -> tuple[str, str]:
         """Expose raw prompt generation for remote generator microservice."""
         if not self.use_generation:
@@ -378,13 +429,14 @@ Theo {primary_reference or 'quy định liên quan'}:"""
         device = next(self.model.parameters()).device
         inputs = {k: v.to(device) for k, v in inputs.items()}
 
-        tokens = max(1, int(max_new_tokens or 1))
+        tokens = self._normalize_max_tokens(max_new_tokens)
         with torch.no_grad():
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=tokens,
-                temperature=0.05,
-                top_p=0.3,
+                temperature=0.7,
+                top_p=0.8,
+                top_k=20,
                 do_sample=True,
                 repetition_penalty=1.2,
                 pad_token_id=self.tokenizer.eos_token_id,
@@ -405,24 +457,25 @@ Theo {primary_reference or 'quy định liên quan'}:"""
         return cleaned, answer.strip()
 
     # -------------------------------------------------------------- Public API
-    def answer(self, question: str) -> Dict:
+    def answer(self, question: str, max_new_tokens: Optional[int] = None) -> Dict:
         normalized_question = normalize_input_text(question)
         retrieval_result = self._retrieve_with_variations(normalized_question)
 
-        if retrieval_result.get("status") != "success":
-            return {
-                "status": "failed",
-                "message": retrieval_result.get("message", "Không tìm thấy thông tin"),
-            }
-
-        context = self._format_context(retrieval_result)
+        retrieval_success = retrieval_result.get("status") == "success"
+        context = self._format_context(retrieval_result) if retrieval_success else ""
 
         final_answer = ""
         raw_model_answer = ""
         used_generation = False
         if self.use_generation:
+            generation_payload = (
+                retrieval_result if retrieval_success else {"primary_chunk": {}}
+            )
             final_answer, raw_model_answer = self._generate_with_model(
-                normalized_question, retrieval_result, context
+                normalized_question,
+                generation_payload,
+                context,
+                max_new_tokens=max_new_tokens,
             )
             used_generation = bool(final_answer)
 
@@ -431,12 +484,28 @@ Theo {primary_reference or 'quy định liên quan'}:"""
                 final_answer = raw_model_answer or self._build_fallback_answer(
                     retrieval_result
                 )
-                source = "model_forced" if raw_model_answer else "fallback"
+                if raw_model_answer:
+                    source = "model_forced"
+                elif retrieval_success:
+                    source = "fallback"
+                else:
+                    source = "model_forced_no_rag"
+            elif raw_model_answer and not retrieval_success:
+                final_answer = raw_model_answer.strip()
+                source = "model_no_rag"
             else:
-                final_answer = self._build_fallback_answer(retrieval_result)
-                source = "fallback"
+                if retrieval_success:
+                    final_answer = self._build_fallback_answer(retrieval_result)
+                    source = "fallback"
+                else:
+                    return {
+                        "status": "failed",
+                        "message": retrieval_result.get(
+                            "message", "Không tìm thấy thông tin"
+                        ),
+                    }
         else:
-            source = "model"
+            source = "model" if retrieval_success else "model_no_rag"
 
         return {
             "status": "success",

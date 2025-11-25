@@ -23,15 +23,20 @@ Write-Host "Starting backend..." -ForegroundColor Cyan
 Write-Host ""
 
 $backendPath = Join-Path $PSScriptRoot "backend"
-Set-Location $backendPath
+Set-Location $PSScriptRoot
 
 # Set environment variables
-$env:MODEL_PATH = Join-Path $PSScriptRoot "models\qwen3-0.6B-instruct-trafficlaws\model"
-if (-not (Test-Path $env:MODEL_PATH)) {
-    Write-Host "WARNING: Local model path $env:MODEL_PATH not found. Falling back to Hugging Face settings if provided." -ForegroundColor Yellow
-} else {
+$usingExistingModelPath = $env:MODEL_PATH -and ($env:MODEL_PATH.Trim().Length -gt 0)
+
+if (-not $usingExistingModelPath) {
+    $env:MODEL_PATH = Join-Path $PSScriptRoot "models\qwen3-0.6B-instruct-trafficlaws\model"
+}ục 
+if ($env:MODEL_PATH -and (Test-Path $env:MODEL_PATH)) {
     Write-Host "Using local model path: $env:MODEL_PATH" -ForegroundColor Green
+} else {
+    Write-Host "WARNING: Local model path $($env:MODEL_PATH) not found. Falling back to Hugging Face settings if provided." -ForegroundColor Yellow
 }
+
 Remove-Item Env:MODEL_HF_REPO -ErrorAction SilentlyContinue
 Remove-Item Env:MODEL_HF_SUBFOLDER -ErrorAction SilentlyContinue
 $env:PORT = "8100"
@@ -50,5 +55,5 @@ Write-Host "Starting Python backend..." -ForegroundColor Cyan
 Write-Host "Press Ctrl+C to stop" -ForegroundColor Yellow
 Write-Host ""
 
-python app.py
+uvicorn backend.app:app --host $env:HOST --port $env:PORT
 

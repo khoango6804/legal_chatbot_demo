@@ -67,6 +67,7 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     question: str
     chat_history: list = []  # List of [user_message, ai_response] pairs
+    max_tokens: Optional[int] = None
 
 class FeedbackRequest(BaseModel):
     question: str
@@ -88,10 +89,14 @@ async def chat_endpoint(req: ChatRequest):
         print(f"[API] Error normalizing question: {e}")
         normalized_question = req.question
 
+    requested_max_tokens = req.max_tokens
+
     def answer_stream():
         helper = get_hybrid_assistant()
         try:
-            result = helper.answer(normalized_question)
+            result = helper.answer(
+                normalized_question, max_new_tokens=requested_max_tokens
+            )
         except Exception as exc:
             print(f"[API] Hybrid assistant error: {exc}")
             yield "Xin lỗi, hệ thống đang gặp sự cố khi tạo câu trả lời. "

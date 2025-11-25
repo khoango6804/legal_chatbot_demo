@@ -55,6 +55,10 @@ uvicorn backend.app:app --host 0.0.0.0 --port 8100
 
 The API will be available at `http://localhost:8100/chat` and the frontend at `http://localhost:8100/`.
 
+### Adjusting generation length
+- Người dùng có thể cấu hình `Max tokens` ngay trong giao diện web (ô nhập phía dưới khung chat). Giá trị được lưu vào trình duyệt và gửi kèm mỗi request.
+- Mặc định backend dùng 120 tokens; có thể thay đổi giới hạn bằng biến môi trường `MAX_NEW_TOKENS` (mặc định 120) và `MAX_NEW_TOKENS_LIMIT` (mặc định 512).
+
 ## 4. Optional: expose publicly with ngrok
 ```powershell
 ngrok http 8100

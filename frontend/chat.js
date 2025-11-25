@@ -3,20 +3,19 @@ let chatHistory = [];
 let savedChats = [];
 let currentChatId = null;
 let isDarkMode = false;
-let lastQuestion = '';  // Lưu câu hỏi gần nhất để feedback
-let lastAnswer = '';    // Lưu câu trả lời gần nhất để feedback
+let lastQuestion = '';
+let lastAnswer = '';
 
 // DOM elements
 const chatMessages = document.getElementById('chat-messages');
 const chatInput = document.getElementById('chat-input');
 const sendButton = document.getElementById('send-button');
+const maxTokensInput = document.getElementById('max-tokens');
 const newChatBtn = document.getElementById('new-chat-btn');
 const clearHistoryBtn = document.getElementById('clear-history-btn');
 const exportChatBtn = document.getElementById('export-chat-btn');
-const darkModeToggle = document.getElementById('dark-mode-toggle');
 const chatList = document.getElementById('chat-list');
 const welcomeContainer = document.getElementById('welcome-container');
-const ratingPanel = document.getElementById('rating-panel');
 const sidebarToggle = document.getElementById('sidebar-toggle');
 const sidebar = document.querySelector('.sidebar');
 
@@ -27,21 +26,19 @@ const cancelRename = document.getElementById('cancel-rename');
 const saveRename = document.getElementById('save-rename');
 
 // Feedback elements
-const feedbackModal = document.getElementById('feedback-modal');
-const feedbackBtn = document.getElementById('feedback-btn');
-const cancelFeedback = document.getElementById('cancel-feedback');
-const submitFeedback = document.getElementById('submit-feedback');
-const feedbackType = document.getElementById('feedback-type');
-const feedbackMessage = document.getElementById('feedback-message');
-const feedbackQuestionPreview = document.getElementById('feedback-question-preview');
-const feedbackAnswerPreview = document.getElementById('feedback-answer-preview');
 
 // Initialize
+const MAX_TOKENS_STORAGE_KEY = 'legal-ai-max-tokens';
+const MAX_TOKEN_OPTIONS = [64, 128, 256, 512, 1024, 2048];
+const DEFAULT_MAX_TOKENS = 256;
+
 document.addEventListener('DOMContentLoaded', function() {
     loadSavedChats();
-    loadDarkModePreference();
+    loadMaxTokensPreference();
+    handleResponsiveSidebar();
     setupEventListeners();
     createWelcomeContainer();
+    window.addEventListener('resize', handleResponsiveSidebar);
 });
 
 function setupEventListeners() {
@@ -54,10 +51,13 @@ function setupEventListeners() {
     newChatBtn.addEventListener('click', startNewChat);
     clearHistoryBtn.addEventListener('click', clearChatHistory);
     exportChatBtn.addEventListener('click', exportChat);
-    darkModeToggle.addEventListener('click', toggleDarkMode);
 
     // Sidebar toggle
     sidebarToggle.addEventListener('click', toggleSidebar);
+
+    if (maxTokensInput) {
+        maxTokensInput.addEventListener('change', handleMaxTokensChange);
+    }
 
     // Suggestion buttons
     document.addEventListener('click', function(e) {
@@ -88,15 +88,7 @@ function setupEventListeners() {
     });
 
     // Feedback button
-    if (feedbackBtn) {
-        feedbackBtn.addEventListener('click', showFeedbackModal);
-    }
-    if (cancelFeedback) {
-        cancelFeedback.addEventListener('click', closeFeedbackModal);
-    }
-    if (submitFeedback) {
-        submitFeedback.addEventListener('click', submitFeedbackForm);
-    }
+
 }
 
 function handleKeyDown(e) {
@@ -135,16 +127,21 @@ function sendMessage() {
 
     // Send to backend - use API URL from config
     const apiUrl = typeof getAPIUrl !== 'undefined' ? getAPIUrl('/chat') : '/chat';
+    const payload = {
+        question: message,
+        chat_history: chatHistory
+    };
+    const maxTokens = getMaxTokens();
+    if (maxTokens !== null) {
+        payload.max_tokens = maxTokens;
+    }
     fetch(apiUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'ngrok-skip-browser-warning': '1',
         },
-        body: JSON.stringify({
-            question: message,
-            chat_history: chatHistory
-        })
+        body: JSON.stringify(payload)
     })
     .then(response => {
         if (!response.ok) {
@@ -269,7 +266,10 @@ function startNewChat() {
     currentChatId = null;
     chatMessages.innerHTML = '';
     welcomeContainer.style.display = 'block';
-    ratingPanel.style.display = 'none';
+    const ratingPanel = document.getElementById('rating-panel');
+    if (ratingPanel) {
+        ratingPanel.style.display = 'none';
+    }
     
     // Update active state
     document.querySelectorAll('.chat-item').forEach(item => {
@@ -334,6 +334,15 @@ function toggleSidebar() {
     sidebar.classList.toggle('closed');
 }
 
+function handleResponsiveSidebar() {
+    if (!sidebar) return;
+    if (window.innerWidth <= 768) {
+        sidebar.classList.add('closed');
+    } else {
+        sidebar.classList.remove('closed');
+    }
+}
+
 function loadSavedChats() {
     const saved = localStorage.getItem('savedChats');
     if (saved) {
@@ -342,25 +351,38 @@ function loadSavedChats() {
     }
 }
 
-function loadDarkModePreference() {
-    const saved = localStorage.getItem('darkMode');
-    if (saved !== null) {
-        isDarkMode = saved === 'true';
-        document.body.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-        
-        // Update button text
-        const buttonText = darkModeToggle.querySelector('span') || document.createElement('span');
-        buttonText.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
-        if (!darkModeToggle.querySelector('span')) {
-            darkModeToggle.appendChild(buttonText);
-        }
-        
-        // Update icon
-        const icon = darkModeToggle.querySelector('svg');
-        if (isDarkMode) {
-            icon.innerHTML = '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+function loadMaxTokensPreference() {
+    if (!maxTokensInput) return;
+    const saved = localStorage.getItem(MAX_TOKENS_STORAGE_KEY);
+    let value = DEFAULT_MAX_TOKENS;
+    if (saved) {
+        const numeric = parseInt(saved, 10);
+        if (!Number.isNaN(numeric) && MAX_TOKEN_OPTIONS.includes(numeric)) {
+            value = numeric;
         }
     }
+    maxTokensInput.value = value;
+    localStorage.setItem(MAX_TOKENS_STORAGE_KEY, value);
+}
+
+function handleMaxTokensChange() {
+    if (!maxTokensInput) return;
+    const value = parseInt(maxTokensInput.value, 10);
+    if (Number.isNaN(value) || !MAX_TOKEN_OPTIONS.includes(value)) {
+        maxTokensInput.value = DEFAULT_MAX_TOKENS;
+        localStorage.setItem(MAX_TOKENS_STORAGE_KEY, DEFAULT_MAX_TOKENS);
+        return;
+    }
+    localStorage.setItem(MAX_TOKENS_STORAGE_KEY, value);
+}
+
+function getMaxTokens() {
+    if (!maxTokensInput) return null;
+    const value = parseInt(maxTokensInput.value, 10);
+    if (Number.isNaN(value) || !MAX_TOKEN_OPTIONS.includes(value)) {
+        return null;
+    }
+    return value;
 }
 
 function saveCurrentChat() {
@@ -452,7 +474,10 @@ function loadChat(chatId) {
     // Clear current display
     chatMessages.innerHTML = '';
     welcomeContainer.style.display = 'none';
-    ratingPanel.style.display = 'none';
+    const ratingPanel = document.getElementById('rating-panel');
+    if (ratingPanel) {
+        ratingPanel.style.display = 'none';
+    }
     
     // Display chat history
     chatHistory.forEach(([userMsg, aiMsg]) => {
@@ -521,72 +546,61 @@ function createWelcomeContainer() {
     if (!welcomeContainer.querySelector('.welcome-content')) {
         welcomeContainer.innerHTML = `
             <div class="welcome-content">
-                <div class="welcome-icon"></div>
-                <h1>Legal AI Assistant</h1>
-                <p>Trợ lý pháp lý thông minh của bạn. Hỏi tôi bất cứ điều gì về luật pháp và quy định.</p>
-                
-                <div class="suggestions-grid">
-                    <button class="suggestion-card" data-suggestion="Quyền lợi cơ bản của người lao động tại Việt Nam là gì?">
-                        <div class="suggestion-icon"></div>
+                <div class="welcome-hero">
+                    <div class="welcome-pill">Trợ lý pháp luật giao thông</div>
+                    <h1>Chào mừng bạn đến với Legal AI</h1>
+                    <p class="welcome-subtitle">
+                        Đặt câu hỏi về luật giao thông đường bộ – tôi sẽ tra cứu điều khoản, mức phạt, điểm trừ và đưa ra câu trả lời đầy đủ.
+                        Chọn một tình huống phổ biến dưới đây hoặc nhập câu hỏi cụ thể của bạn.
+                    </p>
+                </div>
+
+                <div class="suggestions-grid traffic">
+                    <button class="suggestion-card" data-suggestion="An toàn giao thông được hiểu như thế nào theo Luật?">
+                        <div class="suggestion-icon">🚦</div>
                         <div class="suggestion-content">
-                            <h3>Quyền Lao Động</h3>
-                            <p>Tìm hiểu về quyền lợi cơ bản của người lao động</p>
+                            <h3>Khái niệm ATGT</h3>
+                            <p>Hiểu an toàn giao thông theo luật hiện hành</p>
                         </div>
                     </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Thủ tục đăng ký kinh doanh tại Việt Nam như thế nào?">
-                        <div class="suggestion-icon"></div>
+
+                    <button class="suggestion-card" data-suggestion="Không thắt dây an toàn khi ngồi ô tô bị phạt bao nhiêu?">
+                        <div class="suggestion-icon">🪢</div>
                         <div class="suggestion-content">
-                            <h3>Đăng Ký Kinh Doanh</h3>
-                            <p>Các bước đăng ký doanh nghiệp hợp pháp</p>
+                            <h3>Dây an toàn ô tô</h3>
+                            <p>Mức phạt khi không cài dây đúng quy định</p>
                         </div>
                     </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Những yêu cầu để có một hợp đồng hợp lệ là gì?">
-                        <div class="suggestion-icon"></div>
+
+                    <button class="suggestion-card" data-suggestion="Đi xe máy không đội mũ bảo hiểm thì bị xử phạt ra sao?">
+                        <div class="suggestion-icon">🪖</div>
                         <div class="suggestion-content">
-                            <h3>Yêu Cầu Hợp Đồng</h3>
-                            <p>Các yếu tố cần thiết của hợp đồng hợp lệ</p>
+                            <h3>Mũ bảo hiểm</h3>
+                            <p>Trách nhiệm của người điều khiển và người ngồi sau</p>
                         </div>
                     </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Làm thế nào để bảo vệ quyền sở hữu trí tuệ?">
-                        <div class="suggestion-icon"></div>
+
+                    <button class="suggestion-card" data-suggestion="Vượt đèn đỏ bằng xe máy sẽ bị phạt thế nào?">
+                        <div class="suggestion-icon">🚨</div>
                         <div class="suggestion-content">
-                            <h3>Bảo Vệ Sở Hữu Trí Tuệ</h3>
-                            <p>Bảo vệ tài sản trí tuệ của bạn</p>
+                            <h3>Vượt đèn đỏ</h3>
+                            <p>Mức phạt và tước GPLX khi vượt tín hiệu</p>
                         </div>
                     </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Nghĩa vụ thuế đối với doanh nghiệp nhỏ là gì?">
-                        <div class="suggestion-icon"></div>
+
+                    <button class="suggestion-card" data-suggestion="Xe ô tô chạy quá tốc độ 20km/h bị phạt bao nhiêu?">
+                        <div class="suggestion-icon">⚡</div>
                         <div class="suggestion-content">
-                            <h3>Nghĩa Vụ Thuế</h3>
-                            <p>Hiểu về yêu cầu thuế</p>
+                            <h3>Quá tốc độ</h3>
+                            <p>Khung xử phạt cho ô tô khi vượt tốc độ</p>
                         </div>
                     </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Cách xử lý tranh chấp lao động như thế nào?">
-                        <div class="suggestion-icon"></div>
+
+                    <button class="suggestion-card" data-suggestion="Xe máy chở ba người có bị xử phạt không?">
+                        <div class="suggestion-icon">🛵</div>
                         <div class="suggestion-content">
-                            <h3>Tranh Chấp Lao Động</h3>
-                            <p>Giải quyết xung đột tại nơi làm việc</p>
-                        </div>
-                    </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Luật bảo vệ người tiêu dùng quy định như thế nào?">
-                        <div class="suggestion-icon"></div>
-                        <div class="suggestion-content">
-                            <h3>Quyền Người Tiêu Dùng</h3>
-                            <p>Quyền lợi của bạn với tư cách người tiêu dùng</p>
-                        </div>
-                    </button>
-                    
-                    <button class="suggestion-card" data-suggestion="Cách nộp đơn khiếu nại pháp lý như thế nào?">
-                        <div class="suggestion-icon"></div>
-                        <div class="suggestion-content">
-                            <h3>Khiếu Nại Pháp Lý</h3>
-                            <p>Nộp đơn khiếu nại chính thức</p>
+                            <h3>Chở quá người</h3>
+                            <p>Giới hạn số người và các trường hợp ngoại lệ</p>
                         </div>
                     </button>
                 </div>
@@ -595,107 +609,4 @@ function createWelcomeContainer() {
     }
 }
 
-function showRatingPanel() {
-    ratingPanel.style.display = 'block';
-    
-    // Reset stars
-    document.querySelectorAll('.star').forEach(star => {
-        star.classList.remove('active');
-    });
-}
-
-function rateResponse(rating) {
-    // Highlight stars up to the selected rating
-    document.querySelectorAll('.star').forEach((star, index) => {
-        if (index < rating) {
-            star.classList.add('active');
-        } else {
-            star.classList.remove('active');
-        }
-    });
-    
-    // Hide rating panel after 2 seconds
-    setTimeout(() => {
-        ratingPanel.style.display = 'none';
-    }, 2000);
-}
-
-function showFeedbackModal() {
-    if (!lastQuestion || !lastAnswer) {
-        alert('Không có câu hỏi hoặc câu trả lời để gửi phản hồi.');
-        return;
-    }
-
-    // Hiển thị preview
-    feedbackQuestionPreview.textContent = lastQuestion;
-    feedbackAnswerPreview.textContent = lastAnswer;
-
-    // Reset form
-    feedbackType.value = 'wrong';
-    feedbackMessage.value = '';
-
-    // Hiển thị modal
-    feedbackModal.style.display = 'flex';
-}
-
-function closeFeedbackModal() {
-    feedbackModal.style.display = 'none';
-}
-
-function submitFeedbackForm() {
-    const type = feedbackType.value;
-    const message = feedbackMessage.value.trim();
-
-    if (!lastQuestion || !lastAnswer) {
-        alert('Lỗi: Không tìm thấy câu hỏi hoặc câu trả lời.');
-        return;
-    }
-
-    // Disable button while submitting
-    submitFeedback.disabled = true;
-    submitFeedback.textContent = 'Đang gửi...';
-
-    // Gửi feedback đến backend
-    const apiUrl = typeof getAPIUrl !== 'undefined' ? getAPIUrl('/feedback') : '/feedback';
-    fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'ngrok-skip-browser-warning': '1',
-        },
-        body: JSON.stringify({
-            question: lastQuestion,
-            answer: lastAnswer,
-            feedback_type: type,
-            message: message
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert(data.message || 'Cảm ơn bạn đã gửi phản hồi!');
-            closeFeedbackModal();
-            // Ẩn rating panel sau khi gửi feedback
-            ratingPanel.style.display = 'none';
-        } else {
-            alert('Lỗi khi gửi phản hồi. Vui lòng thử lại.');
-        }
-    })
-    .catch(error => {
-        console.error('Error submitting feedback:', error);
-        alert('Lỗi khi gửi phản hồi. Vui lòng thử lại.');
-    })
-    .finally(() => {
-        submitFeedback.disabled = false;
-        submitFeedback.textContent = 'Gửi Phản Hồi';
-    });
-}
-
-// Close modal when clicking outside
-if (feedbackModal) {
-    feedbackModal.addEventListener('click', function(e) {
-        if (e.target === feedbackModal) {
-            closeFeedbackModal();
-        }
-    });
-} 
+function showRatingPanel() {}
