@@ -16,7 +16,9 @@ import json
 import unicodedata
 from pathlib import Path
 from typing import Dict, List, Optional
+from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
+import requests
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
@@ -120,6 +122,37 @@ class HybridTrafficLawAssistant:
             self.max_new_tokens_limit = 512
         if self.default_max_new_tokens < 1:
             self.default_max_new_tokens = 120
+
+        # Optional external question rewriter
+        raw_rewriter_url = os.getenv("QUESTION_REWRITER_URL", "").strip()
+        self.question_rewriter_url = raw_rewriter_url
+        self.question_rewriter_token = os.getenv("QUESTION_REWRITER_TOKEN", "").strip()
+        self.question_rewriter_model = os.getenv("QUESTION_REWRITER_MODEL", "").strip()
+        try:
+            self.question_rewriter_timeout = float(
+                os.getenv("QUESTION_REWRITER_TIMEOUT", "6")
+            )
+        except ValueError:
+            self.question_rewriter_timeout = 6.0
+
+        self._question_rewriter_api_key = ""
+        self.question_rewriter_enabled = bool(self.question_rewriter_url)
+        if self.question_rewriter_enabled:
+            parsed = urlparse(self.question_rewriter_url)
+            query = parse_qs(parsed.query)
+            api_key_from_url = ""
+            if "key" in query and query["key"]:
+                api_key_from_url = query["key"][0]
+                query.pop("key", None)
+                parsed = parsed._replace(query=urlencode(query, doseq=True))
+                self.question_rewriter_url = urlunparse(parsed)
+            self._question_rewriter_api_key = (
+                self.question_rewriter_token or api_key_from_url
+            )
+            print(
+                "[Hybrid] Question rewriter enabled -> "
+                f"{self.question_rewriter_url}"
+            )
 
         self.rag = TrafficLawRAGWithPoints(self.data_path)
         self.tokenizer = None
@@ -290,6 +323,133 @@ class HybridTrafficLawAssistant:
         answer = " ".join(answer.split())
         return answer
 
+    # -------------------------------------------------------- Question rewrite
+    def _rewrite_question(self, question: str) -> Optional[str]:
+        """Optionally call external API to reformulate the question."""
+        if not self.question_rewriter_enabled or not question.strip():
+            return None
+
+        is_gemini = "generativelanguage.googleapis.com" in (
+            self.question_rewriter_url or ""
+        ).lower()
+
+        if is_gemini:
+            rewrite_prompt = (
+                "Hãy viết lại câu hỏi giao thông sau cho đầy đủ, rõ ràng, có đủ chủ thể "
+                "và tình huống để tra cứu luật. Đảm bảo vẫn là tiếng Việt, không thêm dữ liệu bịa đặt.\n\n"
+                f"Câu hỏi gốc: {question}\n"
+                "Câu hỏi đã viết lại:"
+            )
+            payload = {
+                "contents": [
+                    {
+                        "role": "user",
+                        "parts": [
+                            {"text": rewrite_prompt}
+                        ],
+                    }
+                ],
+                "generationConfig": {
+                    "temperature": 0.4,
+                    "topP": 0.8,
+                    "maxOutputTokens": 128,
+                },
+            }
+        else:
+            payload = {"input": question}
+            if self.question_rewriter_model:
+                payload["model"] = self.question_rewriter_model
+
+        headers = {"Content-Type": "application/json"}
+        if is_gemini:
+            api_key = self._question_rewriter_api_key
+            if not api_key:
+                parsed = urlparse(self.question_rewriter_url)
+                query = parse_qs(parsed.query)
+                if "key" in query and query["key"]:
+                    api_key = query["key"][0]
+            if not api_key:
+                print(
+                    "[Hybrid] Question rewrite skipped: missing API key for Gemini endpoint."
+                )
+                return None
+            if api_key:
+                headers["x-goog-api-key"] = api_key
+        elif self.question_rewriter_token:
+            headers["Authorization"] = f"Bearer {self.question_rewriter_token}"
+
+        try:
+            resp = requests.post(
+                self.question_rewriter_url,
+                json=payload,
+                headers=headers,
+                timeout=self.question_rewriter_timeout,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+
+            rewritten = None
+            if isinstance(data, dict):
+                rewritten = (
+                    data.get("rewritten")
+                    or data.get("output")
+                    or data.get("generated_text")
+                )
+                if not rewritten and "choices" in data:
+                    choices = data.get("choices") or []
+                    if choices:
+                        first_choice = choices[0]
+                        if isinstance(first_choice, dict):
+                            rewritten = (
+                                first_choice.get("text")
+                                or first_choice.get("message", {}).get("content")
+                            )
+                if not rewritten and "candidates" in data:
+                    candidates = data.get("candidates") or []
+                    if candidates:
+                        first_candidate = candidates[0]
+                        if isinstance(first_candidate, dict):
+                            content = first_candidate.get("content") or {}
+                            if isinstance(content, dict):
+                                parts = content.get("parts") or []
+                                texts: List[str] = []
+                                for part in parts:
+                                    if isinstance(part, dict) and part.get("text"):
+                                        texts.append(part["text"])
+                                if texts:
+                                    rewritten = " ".join(texts).strip()
+                            # Some Gemini responses nest text directly under candidate
+                            if not rewritten and first_candidate.get("output"):
+                                rewritten = first_candidate["output"]
+            elif isinstance(data, list) and data:
+                first = data[0]
+                if isinstance(first, dict):
+                    rewritten = (
+                        first.get("generated_text")
+                        or first.get("text")
+                    )
+
+            if rewritten:
+                normalized = normalize_input_text(rewritten)
+                if normalized and normalized != question:
+                    print("[Hybrid] Question rewritten for clarity.")
+                    return normalized
+        except requests.HTTPError as http_err:
+            detail = ""
+            if http_err.response is not None:
+                try:
+                    detail = http_err.response.text
+                except Exception:
+                    detail = ""
+            status = getattr(http_err.response, "status_code", "unknown")
+            print(
+                f"[Hybrid] Question rewrite failed (status {status}): "
+                f"{detail or http_err}"
+            )
+        except Exception as exc:
+            print(f"[Hybrid] Question rewrite failed: {exc}")
+        return None
+
     # -------------------------------------------------------------- Generation
     def _build_prompt(self, question: str, context: str, primary_reference: str) -> str:
         system_message = """Bạn là trợ lý pháp luật giao thông Việt Nam. Trả lời CHÍNH XÁC theo dữ liệu cung cấp.
@@ -459,6 +619,10 @@ Theo {primary_reference or 'quy định liên quan'}:"""
     # -------------------------------------------------------------- Public API
     def answer(self, question: str, max_new_tokens: Optional[int] = None) -> Dict:
         normalized_question = normalize_input_text(question)
+        rewritten = self._rewrite_question(normalized_question)
+        if rewritten:
+            normalized_question = rewritten
+
         retrieval_result = self._retrieve_with_variations(normalized_question)
 
         retrieval_success = retrieval_result.get("status") == "success"

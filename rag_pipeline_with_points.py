@@ -131,6 +131,19 @@ class TrafficLawRAGWithPoints:
         if any(keyword in query_lower for keyword in moto_keywords):
             return 7  # Điều 7 for motorcycles
         
+        # Helmet-related violations almost always apply to mô tô
+        helmet_keywords = ['mũ bảo hiểm', 'không đội mũ', 'không đội nón', 'không đội mũ bảo hiểm']
+        if any(keyword in query_lower for keyword in helmet_keywords):
+            return 7
+        
+        # Seatbelt-specific phrases imply ô tô
+        seatbelt_keywords = [
+            'dây an toàn', 'dây đai an toàn', 'cài dây an toàn',
+            'không thắt dây an toàn', 'không cài dây an toàn'
+        ]
+        if any(keyword in query_lower for keyword in seatbelt_keywords):
+            return 6
+        
         # Check for xe ô tô keywords
         car_keywords = ['xe ô tô', 'ô tô', 'xe hơi']
         if any(keyword in query_lower for keyword in car_keywords):
@@ -862,6 +875,12 @@ class TrafficLawRAGWithPoints:
                 "text": f"Tước GPLX từ {min_months} đến {max_months} tháng"
             }
         
+        related_candidates: List[ChunkMetadata] = []
+        if matched_chunks:
+            related_candidates = [c for c in matched_chunks if c != primary_chunk]
+            # Prioritize chunks with penalty information
+            related_candidates.sort(key=lambda c: (c.penalty_max or 0), reverse=True)
+        
         return {
             "status": "success",
             "primary_chunk": {
@@ -879,11 +898,21 @@ class TrafficLawRAGWithPoints:
                 {
                     "reference": f"Điều {chunk.article} khoản {chunk.khoan}" + 
                                 (f" điểm {chunk.diem}" if chunk.diem else ""),
-                    "content": chunk.content[:200] + "...",
+                    "content": (chunk.content[:200] + "...") if len(chunk.content) > 200 else chunk.content,
                     "tags": list(chunk.tags),
-                    "point_deduction": chunk.point_deduction
+                    "penalty": {
+                        "min": chunk.penalty_min,
+                        "max": chunk.penalty_max,
+                        "text": self._format_penalty(chunk.penalty_min, chunk.penalty_max)
+                    } if (chunk.penalty_min or chunk.penalty_max) else None,
+                    "point_deduction": chunk.point_deduction,
+                    "license_suspension": {
+                        "min_months": chunk.license_suspension_months[0],
+                        "max_months": chunk.license_suspension_months[1],
+                        "text": f"Tước GPLX từ {chunk.license_suspension_months[0]} đến {chunk.license_suspension_months[1]} tháng"
+                    } if chunk.license_suspension_months else None
                 }
-                for chunk in behavior_chunks[:3] if chunk != primary_chunk
+                for chunk in related_candidates[:3]
             ],
             "escalations_applied": len([c for c in matched_chunks if c.is_escalation])
         }

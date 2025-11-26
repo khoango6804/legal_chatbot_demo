@@ -26,11 +26,19 @@ $backendPath = Join-Path $PSScriptRoot "backend"
 Set-Location $PSScriptRoot
 
 # Set environment variables
-$usingExistingModelPath = $env:MODEL_PATH -and ($env:MODEL_PATH.Trim().Length -gt 0)
+$usingExistingModelPath = $false
+if ($env:MODEL_PATH -and ($env:MODEL_PATH.Trim().Length -gt 0)) {
+    if (Test-Path $env:MODEL_PATH) {
+        $usingExistingModelPath = $true
+    } else {
+        Write-Host "Configured MODEL_PATH $($env:MODEL_PATH) not found. Switching to default checkpoint..." -ForegroundColor Yellow
+    }
+}
 
 if (-not $usingExistingModelPath) {
-    $env:MODEL_PATH = Join-Path $PSScriptRoot "models\qwen3-0.6B-instruct-trafficlaws\model"
-}ục 
+    $env:MODEL_PATH = "K:\wwebdemodoan\legal_chatbot_demo\models\qwen3-0.6B-instruct-trafficlaws\checkpoint-13173"
+}
+
 if ($env:MODEL_PATH -and (Test-Path $env:MODEL_PATH)) {
     Write-Host "Using local model path: $env:MODEL_PATH" -ForegroundColor Green
 } else {

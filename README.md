@@ -59,6 +59,28 @@ The API will be available at `http://localhost:8100/chat` and the frontend at `h
 - Người dùng có thể cấu hình `Max tokens` ngay trong giao diện web (ô nhập phía dưới khung chat). Giá trị được lưu vào trình duyệt và gửi kèm mỗi request.
 - Mặc định backend dùng 120 tokens; có thể thay đổi giới hạn bằng biến môi trường `MAX_NEW_TOKENS` (mặc định 120) và `MAX_NEW_TOKENS_LIMIT` (mặc định 512).
 
+### Optional question rewriter
+Một số người dùng đặt câu hỏi quá ngắn (ví dụ “đi ô tô đâm trúng ông già”) khiến RAG khó hiểu bối cảnh. Bạn có thể bật chế độ “question rewriter” để gọi thêm một model nhỏ chuyên diễn đạt lại câu hỏi rõ ràng trước khi gửi sang RAG/LLM:
+
+| Biến môi trường | Ý nghĩa |
+| --- | --- |
+| `QUESTION_REWRITER_URL` | Endpoint của model paraphrase (ví dụ Hugging Face Inference, VLLM, TGI, OpenAI style JSON). |
+| `QUESTION_REWRITER_TOKEN` | (Tuỳ chọn) Bearer token để gọi API. |
+| `QUESTION_REWRITER_MODEL` | (Tuỳ chọn) Tên model nếu endpoint yêu cầu. |
+| `QUESTION_REWRITER_TIMEOUT` | Timeout (giây), mặc định 6s. |
+
+Payload mặc định gửi lên dạng `{"input": "câu hỏi"}`; hệ thống tự động đọc các trường phổ biến như `rewritten`, `output`, `generated_text` hoặc `choices[0].text`. Nếu API thất bại hoặc trả về trống, backend sẽ dùng lại câu hỏi gốc.
+
+Ví dụ dùng Google Gemini (Generative Language API):
+```powershell
+# Giữ API key trong biến môi trường riêng, không commit vào repo
+$env:GOOGLE_API_KEY = "your-google-api-key"
+$env:QUESTION_REWRITER_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+$env:QUESTION_REWRITER_TOKEN = $env:GOOGLE_API_KEY   # sẽ tự chuyển thành header x-goog-api-key
+$env:QUESTION_REWRITER_TIMEOUT = "6"
+.\restart_backend.ps1
+```
+
 ## 4. Optional: expose publicly with ngrok
 ```powershell
 ngrok http 8100
