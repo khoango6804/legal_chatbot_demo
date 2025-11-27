@@ -172,7 +172,8 @@ def main():
         # "Người tham gia giao thông là gì?",
         # "Xe máy chạy quá tốc độ 20km/h bị phạt sao?",
         # "Người ngồi ghế sau có phải thắt dây an toàn không?",
-        "Xe ô tô đua xe bị phạt bao nhiêu?"
+        "dừng xe là gì?",
+        # "Đường ưu tiên là gì?"
     ]
     
     print("\n" + "="*80)

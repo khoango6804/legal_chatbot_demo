@@ -50,32 +50,6 @@ SYNONYM_MAP = {
 }
 
 
-def expand_queries(question: str) -> List[str]:
-    """Generate variations of the question to improve RAG recall."""
-    base = normalize_input_text(question)
-    variations = [base]
-
-    stripped = strip_diacritics(base)
-    if stripped.lower() != base.lower():
-        variations.append(stripped)
-
-    for key, synonyms in SYNONYM_MAP.items():
-        if key in base.lower():
-            variations.extend(synonyms)
-
-    # Remove duplicates while keeping order
-    seen = set()
-    result = []
-    for item in variations:
-        if not item:
-            continue
-        key = item.lower()
-        if key not in seen:
-            seen.add(key)
-            result.append(item)
-    return result
-
-
 class HybridTrafficLawAssistant:
     """High-reliability assistant that chains RAG + Qwen with safeguards."""
 
@@ -217,16 +191,10 @@ class HybridTrafficLawAssistant:
     # --------------------------------------------------------------------- RAG
     def _retrieve_with_variations(self, question: str) -> Dict:
         """Try multiple query variations until RAG succeeds."""
-        variations = expand_queries(question)
-        last_result = None
-        for variant in variations:
-            result = self.rag.retrieve(variant)
-            if result.get("status") == "success":
-                if variant != question:
-                    print(f"[Hybrid] RAG succeeded with variation: {variant}")
-                return result
-            last_result = result
-        return last_result or {"status": "failed", "message": "Không tìm thấy thông tin"}
+        result = self.rag.retrieve(question)
+        if result.get("status") == "success":
+            return result
+        return result or {"status": "failed", "message": "Không tìm thấy thông tin"}
 
     def _validate_chunk(self, chunk: Dict) -> Dict:
         """Ensure chunk has required keys and trimmed content."""

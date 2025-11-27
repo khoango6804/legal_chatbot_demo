@@ -13,35 +13,19 @@ from collections import defaultdict
 
 # Behavior keyword mapping
 BEHAVIOR_KEYWORDS = {
-    "den_tin_hieu": [
-        "vượt đèn",
-        "vượt đèn đỏ",
-        "không chấp hành hiệu lệnh của đèn",
-        "không chấp hành tín hiệu đèn",
-        "không dừng đèn đỏ",
-        "đèn tín hiệu",
-    ],
+    "vuot_den": ["vượt đèn", "vượt đèn đỏ", "không chấp hành hiệu lệnh của đèn", "vượt đèn tín hiệu"],
     "re_phai": ["rẽ phải", "rẽ trái", "quay đầu xe", "chuyển hướng"],
     "can_vach": ["cán vạch", "vạch phân làn", "vạch kẻ đường", "cán lên vạch"],
     "chuyen_lan": ["chuyển làn", "đổi làn", "sang làn"],
     "luot_trai_pha_cam": ["lấn làn", "đi ngược chiều", "vượt ẩu", "đi không đúng làn"],
-    "qua_toc_do": ["quá tốc độ", "vượt tốc độ", "chạy quá tốc độ"],
+    "qua_toc_do": ["quá tốc độ", "vượt tốc độ", "chạy quá tốc độ", "tốc độ"],
+    "toc_do": ["quá tốc độ", "vượt tốc độ", "chạy quá tốc độ", "tốc độ"],  # Alias for ND168 compatibility
     "khong_doi_mu": ["không đội mũ", "mũ bảo hiểm", "không đội nón"],
     "dung_do_sai": ["dừng xe", "đỗ xe", "đậu xe sai quy định"],
     "chay_khu_cam": ["khu vực cấm", "nơi cấm dừng", "nơi cấm đỗ"],
     "dien_thoai": ["điện thoại", "nghe điện thoại", "dùng điện thoại", "sử dụng điện thoại", "thiết bị điện tử"],
     "khong_bat_den": ["không bật đèn", "không bật xi-nhan", "không có đèn", "không sử dụng đèn"],
-    "cho_qua_nguoi": [
-        "chở quá người",
-        "quá số người",
-        "vượt quá số lượng",
-        "tống 3",
-        "tống ba",
-        "chở 3",
-        "chở ba người",
-        "đi 3 người",
-        "đi ba người"
-    ],
+    "cho_qua_nguoi": ["chở quá người", "quá số người", "vượt quá số lượng"],
     "khong_bang_lai": ["không có bằng lái", "không giấy phép", "chưa có bằng"],
     "gay_tai_nan": ["gây tai nạn", "tai nạn giao thông", "va chạm gây thương tích"],
     "uong_ruou_bia": ["nồng độ cồn", "uống rượu", "uống bia", "say rượu", "có cồn"],
@@ -56,15 +40,6 @@ BEHAVIOR_KEYWORDS = {
                              "buông tay", "không cầm tay lái", "điều khiển bằng chân"],
     "khong_bien_so": ["không gắn biển số", "biển số xe", "biển kiểm soát", "không có biển số", "gắn biển số không đúng"],
     "khong_giay_to": ["không mang giấy", "giấy chứng nhận", "chứng nhận đăng ký", "không có giấy tờ"],
-    "khong_day_an_toan": [
-        "không thắt dây an toàn",
-        "không thắt dây đai",
-        "không cài dây an toàn",
-        "không cài dây đai",
-        "không đeo dây an toàn",
-        "không sử dụng dây an toàn",
-        "không mang dây an toàn"
-    ],
     "khong_mang_bang_lai": ["không mang theo giấy phép lái xe", "không mang theo bằng lái", "không mang giấy phép", "không mang bằng lái"],
     "khong_bang_lai": ["không có giấy phép lái xe", "không có bằng lái"],
     "keo_xe": ["kéo xe", "kéo rơ moóc", "kéo theo xe khác"],
@@ -90,7 +65,7 @@ ESCALATION_INDICATORS = {
 class ChunkMetadata:
     """Metadata for each chunk with point deduction"""
     article: int
-    khoan: int
+    khoan: Optional[int]  # Changed to Optional for law chunks
     diem: Optional[str]
     tags: Set[str]
     is_escalation: bool
@@ -102,6 +77,8 @@ class ChunkMetadata:
     point_deduction: Optional[int] = None
     license_suspension_months: Optional[Tuple[int, int]] = None  # (min, max) months
     references: Optional[List[dict]] = None  # Raw references from JSON
+    source: Optional[str] = None  # "nd168", "luat_duong_bo", or "luat_ttatgtdb"
+    record_type: Optional[str] = None  # "penalty", "concept", or "rule"
 
 
 class TrafficLawRAGWithPoints:
@@ -137,19 +114,6 @@ class TrafficLawRAGWithPoints:
         moto_keywords = ['xe mô tô', 'xe máy', 'mô tô', 'xe gắn máy']
         if any(keyword in query_lower for keyword in moto_keywords):
             return 7  # Điều 7 for motorcycles
-        
-        # Helmet-related violations almost always apply to mô tô
-        helmet_keywords = ['mũ bảo hiểm', 'không đội mũ', 'không đội nón', 'không đội mũ bảo hiểm']
-        if any(keyword in query_lower for keyword in helmet_keywords):
-            return 7
-        
-        # Seatbelt-specific phrases imply ô tô
-        seatbelt_keywords = [
-            'dây an toàn', 'dây đai an toàn', 'cài dây an toàn',
-            'không thắt dây an toàn', 'không cài dây an toàn'
-        ]
-        if any(keyword in query_lower for keyword in seatbelt_keywords):
-            return 6
         
         # Check for xe ô tô keywords
         car_keywords = ['xe ô tô', 'ô tô', 'xe hơi']
@@ -392,10 +356,11 @@ class TrafficLawRAGWithPoints:
         for idx, record in enumerate(data):
             content = record.get('content') or record.get('text') or record.get('diem_text', '')
             article = record.get('article_num') or record.get('article')
-            khoan = record.get('khoan_num') or record.get('khoan')
-            diem = record.get('diem_letter') or record.get('diem')
+            khoan = record.get('khoan_num') or record.get('khoan') or record.get('clause')
+            diem = record.get('diem_letter') or record.get('diem') or record.get('point')
             
-            if not content or not article or not khoan:
+            # For law records (not penalties), khoan can be None
+            if not content or not article:
                 continue
             
             # USE tags from JSON if available (more accurate), otherwise extract from content
@@ -440,6 +405,10 @@ class TrafficLawRAGWithPoints:
                 else:
                     priority = 80
             
+            # Get source and record_type from record if available
+            source = record.get('source', 'nd168')  # Default to nd168
+            record_type = record.get('record_type', 'penalty')  # Default to penalty
+            
             chunk = ChunkMetadata(
                 article=article,
                 khoan=khoan,
@@ -453,7 +422,9 @@ class TrafficLawRAGWithPoints:
                 penalty_max=penalty_max,
                 point_deduction=point_deduction,
                 license_suspension_months=license_suspension,
-                references=references
+                references=references,
+                source=source,
+                record_type=record_type
             )
             
             chunk_idx = len(self.chunks)
@@ -540,7 +511,9 @@ class TrafficLawRAGWithPoints:
                 "message": "Không tìm thấy điều luật liên quan"
             }
         
-        behavior_chunks = [self.chunks[idx] for idx in behavior_chunk_indices]
+        # Filter for ND168 chunks only (exclude law chunks)
+        behavior_chunks = [self.chunks[idx] for idx in behavior_chunk_indices 
+                          if not hasattr(self.chunks[idx], 'source') or self.chunks[idx].source == 'nd168']
         print(f"   Found {len(behavior_chunks)} behavior chunks")
         
         # DEBUG: Check if ND168_art18_k2_d is in behavior_chunks
@@ -882,12 +855,6 @@ class TrafficLawRAGWithPoints:
                 "text": f"Tước GPLX từ {min_months} đến {max_months} tháng"
             }
         
-        related_candidates: List[ChunkMetadata] = []
-        if matched_chunks:
-            related_candidates = [c for c in matched_chunks if c != primary_chunk]
-            # Prioritize chunks with penalty information
-            related_candidates.sort(key=lambda c: (c.penalty_max or 0), reverse=True)
-        
         return {
             "status": "success",
             "primary_chunk": {
@@ -905,21 +872,11 @@ class TrafficLawRAGWithPoints:
                 {
                     "reference": f"Điều {chunk.article} khoản {chunk.khoan}" + 
                                 (f" điểm {chunk.diem}" if chunk.diem else ""),
-                    "content": (chunk.content[:200] + "...") if len(chunk.content) > 200 else chunk.content,
+                    "content": chunk.content[:200] + "...",
                     "tags": list(chunk.tags),
-                    "penalty": {
-                        "min": chunk.penalty_min,
-                        "max": chunk.penalty_max,
-                        "text": self._format_penalty(chunk.penalty_min, chunk.penalty_max)
-                    } if (chunk.penalty_min or chunk.penalty_max) else None,
-                    "point_deduction": chunk.point_deduction,
-                    "license_suspension": {
-                        "min_months": chunk.license_suspension_months[0],
-                        "max_months": chunk.license_suspension_months[1],
-                        "text": f"Tước GPLX từ {chunk.license_suspension_months[0]} đến {chunk.license_suspension_months[1]} tháng"
-                    } if chunk.license_suspension_months else None
+                    "point_deduction": chunk.point_deduction
                 }
-                for chunk in related_candidates[:3]
+                for chunk in behavior_chunks[:3] if chunk != primary_chunk
             ],
             "escalations_applied": len([c for c in matched_chunks if c.is_escalation])
         }
@@ -965,18 +922,10 @@ def test_with_points():
         if result["status"] == "success":
             primary = result["primary_chunk"]
             print(f"\n📜 Reference: {primary['reference']}")
-            print(f"Penalty: {primary['penalty']['text'] if primary['penalty'] else 'N/A'}")
-            print(
-                f"Point Deduction: {primary['point_deduction']} điểm"
-                if primary['point_deduction']
-                else "Point Deduction: None"
-            )
-            print(
-                f"License Suspension: {primary['license_suspension']['text']}"
-                if primary['license_suspension']
-                else "License Suspension: None"
-            )
-            print(f"Priority: {primary['priority']}")
+            print(f"💰 Penalty: {primary['penalty']['text'] if primary['penalty'] else 'N/A'}")
+            print(f"📉 Point Deduction: {primary['point_deduction']} điểm" if primary['point_deduction'] else "📉 Point Deduction: None")
+            print(f"🚫 License Suspension: {primary['license_suspension']['text']}" if primary['license_suspension'] else "🚫 License Suspension: None")
+            print(f"⚠️ Priority: {primary['priority']}")
             print(f"\n📝 Content: {primary['content'][:200]}...")
         else:
             print(f"❌ {result['message']}")

@@ -19,7 +19,7 @@ class TrafficLawRAG2Laws(TrafficLawRAGWithPoints):
         if merged_data_path is None:
             import os
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            merged_data_path = os.path.join(current_dir, 'nd168_ttatgtdb_merged.json')
+            merged_data_path = os.path.join(current_dir, 'nd168_ttatgtdb_merged_khoan.json')
         
         print(f"Loading merged data from: {merged_data_path}")
         
@@ -55,11 +55,19 @@ class TrafficLawRAG2Laws(TrafficLawRAGWithPoints):
         rule_indicators = [
             'có phải', 'phải không', 'có cần', 'cần không', 'có được', 
             'được không', 'có bắt buộc', 'bắt buộc không', 'quy định',
-            'có quy định', 'luật có', 'pháp luật có'
+            'có quy định', 'luật có', 'pháp luật có', 'phải đi', 'phải chạy',
+            'phải tuân thủ', 'phải chấp hành', 'được phép', 'không được phép',
+            'phải làm', 'cần làm', 'bên nào', 'làn nào', 'như thế nào',
+            'có mấy', 'mấy màu', 'có bao nhiêu',
+            'trường hợp nào', 'những trường hợp', 'trong trường hợp nào',
+            'khi nào phải', 'khi nào cần', 'tình huống nào'
         ]
         
         is_concept_query = any(indicator in query_lower for indicator in concept_indicators)
-        is_rule_query = any(indicator in query_lower for indicator in rule_indicators) and 'bị phạt' not in query_lower
+        # Exclude penalty keywords from rule queries, and exclude case-listing queries
+        penalty_keywords = ['bị phạt', 'phạt bao nhiêu', 'mức phạt', 'tiền phạt']
+        is_rule_query = (any(indicator in query_lower for indicator in rule_indicators) 
+                        and not any(kw in query_lower for kw in penalty_keywords))
         
         if verbose:
             if is_concept_query:
@@ -120,13 +128,56 @@ class TrafficLawRAG2Laws(TrafficLawRAGWithPoints):
             if concept_query in chunk_text:
                 score += 100
             
-            # Special boost for seatbelt rules (if query mentions it)
+            # Strong boost for definition pattern "X là" in queries
+            # Check if this chunk defines the exact term being asked about
+            # e.g., "Dừng xe là trạng thái..." for query "dừng xe là gì?"
+            definition_pattern = f"{concept_query} là"
+            if definition_pattern in chunk_text:
+                score += 500
+                # Extra boost if it's a concept record type (not rule query)
+                if hasattr(chunk, 'record_type') and chunk.record_type == 'concept' and not is_rule_query:
+                    score += 200
+            
+            # Special boost for specific rules
             if 'thắt dây' in chunk_text or 'dây đai an toàn' in chunk_text:
                 if hasattr(chunk, 'record_type') and chunk.record_type == 'rule':
                     score += 200
-                    # Extra boost for Điều 10 (main traffic rules)
                     if hasattr(chunk, 'article') and chunk.article == 10:
                         score += 100
+            
+            # Boost for traffic direction rules (bên phải, làn đường)
+            if ('bên phải' in query_lower or 'bên nào' in query_lower or 'làn đường' in query_lower):
+                if 'bên phải' in chunk_text or 'chiều đi' in chunk_text or 'làn đường' in chunk_text:
+                    score += 200
+                    # Extra boost for Điều 10 khoản 1 (general traffic rules)
+                    if hasattr(chunk, 'article') and chunk.article == 10:
+                        score += 150
+            
+            # Boost for traffic light questions (đèn giao thông, tín hiệu đèn)
+            if ('đèn giao thông' in query_lower or 'đèn tín hiệu' in query_lower or 
+                'mấy màu' in query_lower or 'màu sắc' in query_lower):
+                # Strong match for content with color names
+                if 'tín hiệu đèn' in chunk_text and ('màu xanh' in chunk_text or 'màu vàng' in chunk_text or 'màu đỏ' in chunk_text):
+                    score += 400
+                    # Extra boost for Điều 11 khoản 4 (traffic light regulations)
+                    if hasattr(chunk, 'article') and chunk.article == 11 and hasattr(chunk, 'clause') and chunk.clause == 4:
+                        score += 300
+                # Weaker match for just mentioning traffic lights
+                elif 'đèn giao thông' in chunk_text or 'tín hiệu đèn' in chunk_text:
+                    score += 100
+            
+            # Boost for case/situation queries (trường hợp nào, tình huống nào)
+            if ('trường hợp nào' in query_lower or 'những trường hợp' in query_lower or 
+                'trong trường hợp nào' in query_lower or 'tình huống nào' in query_lower):
+                # Strong boost if this is from law source (not penalty decree)
+                if hasattr(chunk, 'source') and chunk.source == 'luat_ttatgtdb':
+                    score += 200
+                    # Extra boost for Điều 12 khoản 3 (safety observation requirements)
+                    if hasattr(chunk, 'article') and chunk.article == 12 and hasattr(chunk, 'clause') and chunk.clause == 3:
+                        score += 500
+                        # Even more if query mentions "quan sát" or "giảm tốc độ"
+                        if 'quan sát' in query_lower or 'giảm tốc độ' in query_lower:
+                            score += 300
             
             # Scoring strategy based on query type
             if is_rule_query:
