@@ -1,956 +1,902 @@
 [
   {
-    "question": "xe máy vượt đèn đỏ thì sao",
+    "question": "Xe máy vượt đèn đỏ bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.012759208679199219,
-    "tokens": 127,
+    "answer": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. ",
+    "source": "",
+    "time": 0.02327871322631836,
+    "tokens": 0,
     "full_response": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu"
   },
   {
-    "question": "xe máy vượt đèn đỏ bị phạt bao nhiêu",
+    "question": "Ô tô vượt đèn đỏ thì bị xử phạt thế nào?",
     "status": "success",
-    "answer": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.18281030654907227,
-    "tokens": 127,
-    "full_response": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu"
-  },
-  {
-    "question": "ô tô vượt đèn đỏ phạt như thế nào",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng.",
-    "source": "fallback",
-    "time": 0.006035566329956055,
-    "tokens": 131,
+    "answer": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. ",
+    "source": "",
+    "time": 0.029372453689575195,
+    "tokens": 0,
     "full_response": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hi"
   },
   {
-    "question": "vượt đèn đỏ bằng xe máy sẽ bị phạt thế nào",
+    "question": "Không chấp hành tín hiệu đèn giao thông thì bị phạt ra sao?",
     "status": "success",
-    "answer": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.07848143577575684,
-    "tokens": 127,
-    "full_response": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu"
-  },
-  {
-    "question": "không chấp hành tín hiệu đèn giao thông",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng.",
-    "source": "fallback",
-    "time": 0.009566068649291992,
-    "tokens": 131,
+    "answer": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. ",
+    "source": "",
+    "time": 0.0075397491455078125,
+    "tokens": 0,
     "full_response": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hi"
   },
   {
-    "question": "xe máy đua xe bị phạt gì",
+    "question": "Xe máy chạy quá tốc độ 10km/h bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường giao thông;",
-    "source": "fallback",
-    "time": 0.006624460220336914,
-    "tokens": 63,
-    "full_response": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường gi"
+    "answer": "Theo Điều 7 khoản 4 điểm a, 4. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h; Mức phạt: 800,000đ - 1,000,000đ. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. ",
+    "source": "",
+    "time": 0.009581804275512695,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 4 điểm a, 4. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định từ 10"
   },
   {
-    "question": "đua xe máy phạt bao nhiêu",
+    "question": "Xe máy chạy quá tốc độ 20km/h bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường giao thông;",
-    "source": "fallback",
-    "time": 0.12752366065979004,
-    "tokens": 63,
-    "full_response": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường gi"
+    "answer": "Theo Điều 7 khoản 4 điểm a, 4. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h; Mức phạt: 800,000đ - 1,000,000đ. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. ",
+    "source": "",
+    "time": 0.004233598709106445,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 4 điểm a, 4. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định từ 10"
   },
   {
-    "question": "ô tô đua xe bị phạt như thế nào",
+    "question": "Xe máy chạy quá tốc độ 30km/h bị phạt thế nào?",
     "status": "success",
-    "answer": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông.",
-    "source": "fallback",
-    "time": 0.19276809692382812,
-    "tokens": 57,
-    "full_response": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông. \n[Tổng"
-  },
-  {
-    "question": "tổ chức đua xe trái phép",
-    "status": "success",
-    "answer": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông.",
-    "source": "fallback",
-    "time": 0.12723398208618164,
-    "tokens": 57,
-    "full_response": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông. \n[Tổng"
-  },
-  {
-    "question": "cổ vũ đua xe trái phép",
-    "status": "success",
-    "answer": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông.",
-    "source": "fallback",
-    "time": 0.016891002655029297,
-    "tokens": 57,
-    "full_response": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông. \n[Tổng"
-  },
-  {
-    "question": "xe máy chạy quá tốc độ 60km/h",
-    "status": "success",
-    "answer": "Theo Điều 7 khoản 8 điểm a, 8. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trên 20 km/h; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 3 đến 5 tháng.",
-    "source": "fallback",
-    "time": 0.0934906005859375,
-    "tokens": 130,
+    "answer": "Theo Điều 7 khoản 8 điểm a, 8. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trên 20 km/h; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 3 đến 5 tháng. ",
+    "source": "",
+    "time": 0.023604154586791992,
+    "tokens": 0,
     "full_response": "Theo Điều 7 khoản 8 điểm a, 8. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trê"
   },
   {
-    "question": "ô tô vượt tốc độ 80km/h",
+    "question": "Ô tô chạy quá tốc độ 10km/h bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 6 khoản 7 điểm a, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trên 35 km/h; Mức phạt: 12,000,000đ - 14,000,000đ. Trừ điểm: 6 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.12152361869812012,
-    "tokens": 134,
-    "full_response": "Theo Điều 6 khoản 7 điểm a, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định t"
-  },
-  {
-    "question": "chạy quá tốc độ 100km/h",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 7 điểm a, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trên 35 km/h; Mức phạt: 12,000,000đ - 14,000,000đ. Trừ điểm: 6 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.028484582901000977,
-    "tokens": 134,
-    "full_response": "Theo Điều 6 khoản 7 điểm a, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định t"
-  },
-  {
-    "question": "xe máy chạy quá tốc độ gây tai nạn",
-    "status": "success",
-    "answer": "Theo Điều 7 khoản 10 điểm b, 10. Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Vi phạm quy định tại một trong các điểm, khoản sau của Điều này mà gây tai nạn giao thông: điểm a, điểm d, điểm đ, điểm g, điểm h, điểm i, điểm k khoản 1; điểm c, điểm đ, điểm g khoản 2; điểm b, điểm e, điểm g, điểm h, điểm k khoản 3; điểm đ khoản 4; điểm c, điểm d khoản 6; điểm c, điểm d, điểm đ khoản 7; điểm a, điểm b, điểm h, điểm k ",
-    "source": "fallback",
-    "time": 0.005316972732543945,
-    "tokens": 280,
-    "full_response": "Theo Điều 7 khoản 10 điểm b, 10. Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Vi phạm quy định tại một trong các điể"
-  },
-  {
-    "question": "vượt tốc độ trong khu vực đông dân cư",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 12, 12. Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với người điều khiển xe thực hiện hành vi điều khiển xe lạng lách, đánh võng trên đường bộ; chạy quá tốc độ đuổi nhau trên đường bộ; dùng chân điều khiển vô lăng xe khi xe đang chạy trên đường bộ. Mức phạt: 40,000,000đ - 50,000,000đ. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Điều 6 khoản 10 điểm b: 20,000,000đ - 22,000,000đ.",
-    "source": "fallback",
-    "time": 0.004721164703369141,
-    "tokens": 202,
+    "answer": "Theo Điều 6 khoản 12, 12. Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với người điều khiển xe thực hiện hành vi điều khiển xe lạng lách, đánh võng trên đường bộ; chạy quá tốc độ đuổi nhau trên đường bộ; dùng chân điều khiển vô lăng xe khi xe đang chạy trên đường bộ. Mức phạt: 40,000,000đ - 50,000,000đ. Thông tin bổ sung: Điều 6 khoản 7 điểm a: 12,000,000đ - 14,000,000đ; Điều 6 khoản 6 điểm a: 6,000,000đ - 8,000,000đ. ",
+    "source": "",
+    "time": 0.01955437660217285,
+    "tokens": 0,
     "full_response": "Theo Điều 6 khoản 12, 12. Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với người điều khiển xe thực hiện hành vi điều khiển xe lạng lách, đánh võng trên đường bộ; chạy quá tốc độ đuổi nhau trê"
   },
   {
-    "question": "không đội mũ bảo hiểm",
+    "question": "Ô tô chạy quá tốc độ 20km/h bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ.",
-    "source": "fallback",
-    "time": 0.23506402969360352,
-    "tokens": 169,
-    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+    "answer": "Theo Điều 6 khoản 5 điểm đ, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 2 điểm. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm i: 4,000,000đ - 6,000,000đ. ",
+    "source": "",
+    "time": 0.007596731185913086,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 5 điểm đ, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe chạy quá tốc độ quy định từ "
   },
   {
-    "question": "xe máy không đội mũ bảo hiểm phạt bao nhiêu",
+    "question": "Ô tô chạy quá tốc độ 35km/h thì bị xử phạt ra sao?",
     "status": "success",
-    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ.",
-    "source": "fallback",
-    "time": 0.19732666015625,
-    "tokens": 169,
-    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+    "answer": "Theo Điều 6 khoản 6 điểm a, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trên 20 km/h đến 35 km/h; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. ",
+    "source": "",
+    "time": 0.019434452056884766,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 6 điểm a, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trê"
   },
   {
-    "question": "chỉ có một mũ bảo hiểm",
-    "status": "success",
-    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ.",
-    "source": "fallback",
-    "time": 0.005322456359863281,
-    "tokens": 169,
-    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
-  },
-  {
-    "question": "người ngồi sau không đội mũ",
-    "status": "success",
-    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ.",
-    "source": "fallback",
-    "time": 0.006194353103637695,
-    "tokens": 169,
-    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
-  },
-  {
-    "question": "sử dụng điện thoại khi lái xe",
-    "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.024272680282592773,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "nghe điện thoại khi đang điều khiển xe máy",
-    "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.062185049057006836,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "dùng điện thoại khi lái ô tô",
-    "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.006650447845458984,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "rẽ phải không đúng quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
-    "source": "fallback",
-    "time": 0.2295236587524414,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
-  },
-  {
-    "question": "rẽ trái không đúng nơi quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
-    "source": "fallback",
-    "time": 0.005292415618896484,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
-  },
-  {
-    "question": "quay đầu xe sai quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
-    "source": "fallback",
-    "time": 0.039869070053100586,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
-  },
-  {
-    "question": "quay đầu xe ở nơi cấm",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
-    "source": "fallback",
-    "time": 0.022240161895751953,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
-  },
-  {
-    "question": "chuyển làn không đúng quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.02248549461364746,
-    "tokens": 360,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "chuyển làn không bật xi-nhan",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.0025932788848876953,
-    "tokens": 360,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "đổi làn gây nguy hiểm",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.1337602138519287,
-    "tokens": 360,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "cán vạch phân làn",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.09155559539794922,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "cán vạch kẻ đường",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.01572132110595703,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "đi cán lên vạch",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.048578739166259766,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "dừng xe sai quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.007431745529174805,
-    "tokens": 355,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "đỗ xe ở làn khẩn cấp",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.24026155471801758,
-    "tokens": 355,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "đậu xe chắn cửa nhà",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.0051953792572021484,
-    "tokens": 355,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "dừng xe ở nơi cấm",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.020485877990722656,
-    "tokens": 355,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "đi vào đường cấm",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.007822751998901367,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "xe máy đi vào khu vực cấm",
+    "question": "Đi vào đường cấm bằng xe máy bị phạt bao nhiêu?",
     "status": "success",
     "answer": "Theo Điều 7 khoản 6 điểm b, 6. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm a, điểm b khoản 7 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; Mức phạt: 2,000,000đ - 3,000,000đ. Trừ điểm: 2 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.10125422477722168,
-    "tokens": 181,
+    "source": "",
+    "time": 0.01569533348083496,
+    "tokens": 0,
     "full_response": "Theo Điều 7 khoản 6 điểm b, 6. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Đi vào khu vực cấm, đường có biển báo hiệu"
   },
   {
-    "question": "ô tô đi vào làn buýt",
+    "question": "Ô tô đi vào đường cấm thì phạt thế nào?",
     "status": "success",
     "answer": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ ",
-    "source": "fallback",
-    "time": 0.002898693084716797,
-    "tokens": 235,
+    "source": "",
+    "time": 0.010164499282836914,
+    "tokens": 0,
     "full_response": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu"
   },
   {
-    "question": "không có bằng lái xe",
-    "status": "success",
-    "answer": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ vi phạm một trong các hành vi sau đây: b) Không có giấy phép lái xe hoặc sử dụng giấy phép lái xe đã bị trừ hết điểm hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe bị tẩy xóa, giấy phép lái xe không còn hiệu lực. Mức phạt: 18,000,000đ - 20,000",
-    "source": "fallback",
-    "time": 0.19948577880859375,
-    "tokens": 260,
-    "full_response": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn"
-  },
-  {
-    "question": "không mang bằng lái xe",
-    "status": "success",
-    "answer": "Theo Điều 18 khoản 5 điểm b, 5. Phạt tiền từ 2.000.000 đồng đến 4.000.000 đồng đối với người điều khiển xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW và các loại xe tương tự xe mô tô thực hiện một trong các hành vi vi phạm sau đây: b) Có giấy phép lái xe quốc tế do các nước tham gia Công ước của Liên hợp quốc về Giao thông đường bộ năm 1968 cấp (trừ giấy phép lái xe quốc tế do Việt Nam cấp) nhưng không mang theo giấy phép lái xe quốc gia phù hợp với ",
-    "source": "fallback",
-    "time": 0.14125442504882812,
-    "tokens": 275,
-    "full_response": "Theo Điều 18 khoản 5 điểm b, 5. Phạt tiền từ 2.000.000 đồng đến 4.000.000 đồng đối với người điều khiển xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW và c"
-  },
-  {
-    "question": "bằng lái xe hết hạn",
-    "status": "success",
-    "answer": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ vi phạm một trong các hành vi sau đây: b) Không có giấy phép lái xe hoặc sử dụng giấy phép lái xe đã bị trừ hết điểm hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe bị tẩy xóa, giấy phép lái xe không còn hiệu lực. Mức phạt: 18,000,000đ - 20,000",
-    "source": "fallback",
-    "time": 0.0074846744537353516,
-    "tokens": 187,
-    "full_response": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn"
-  },
-  {
-    "question": "không có giấy đăng ký xe",
-    "status": "success",
-    "answer": "Theo Điều 13 khoản 4 điểm b, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với một trong các hành vi vi phạm sau đây: b) Điều khiển xe ô tô tải (kể cả rơ moóc và sơ mi rơ moóc) có kích thước thùng xe không đúng với thông số kỹ thuật được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe; Mức phạt: 2,000,000đ - 3,000,000đ. Thông tin bổ sung: Điều 13 khoản 3 điểm d: 1,000,000đ - 2,000,000đ; Điều 18 khoản 3 điểm b: 300,000đ - 400,000đ.",
-    "source": "fallback",
-    "time": 0.004518270492553711,
-    "tokens": 209,
-    "full_response": "Theo Điều 13 khoản 4 điểm b, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với một trong các hành vi vi phạm sau đây: b) Điều khiển xe ô tô tải (kể cả rơ moóc và sơ mi rơ moóc) có kích thước t"
-  },
-  {
-    "question": "không có bảo hiểm xe",
-    "status": "success",
-    "answer": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ vi phạm một trong các hành vi sau đây: b) Không có giấy phép lái xe hoặc sử dụng giấy phép lái xe đã bị trừ hết điểm hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe bị tẩy xóa, giấy phép lái xe không còn hiệu lực. Mức phạt: 18,000,000đ - 20,000",
-    "source": "fallback",
-    "time": 0.015604257583618164,
-    "tokens": 187,
-    "full_response": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn"
-  },
-  {
-    "question": "không bật đèn khi đi ban đêm",
-    "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.0050127506256103516,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "không bật xi-nhan khi rẽ",
-    "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.1860504150390625,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "sử dụng đèn pha trong thành phố",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy định (trừ hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định tại điểm b khoản 3 Điều này); không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 2 điểm. Tước GPLX: Tước GPLX từ 1 đ",
-    "source": "fallback",
-    "time": 0.005627632141113281,
-    "tokens": 219,
-    "full_response": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy địn"
-  },
-  {
-    "question": "đèn chiếu xa gây chói mắt",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy định (trừ hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định tại điểm b khoản 3 Điều này); không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 2 điểm. Tước GPLX: Tước GPLX từ 1 đ",
-    "source": "fallback",
-    "time": 0.006621837615966797,
-    "tokens": 219,
-    "full_response": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy địn"
-  },
-  {
-    "question": "không thắt dây an toàn",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an toàn (tại vị trí có trang bị dây đai an toàn) khi xe đang chạy; Mức phạt: 800,000đ - 1,000,000đ.",
-    "source": "fallback",
-    "time": 0.021032094955444336,
-    "tokens": 120,
-    "full_response": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an"
-  },
-  {
-    "question": "người ngồi sau không thắt dây an toàn",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an toàn (tại vị trí có trang bị dây đai an toàn) khi xe đang chạy; Mức phạt: 800,000đ - 1,000,000đ.",
-    "source": "fallback",
-    "time": 0.2089083194732666,
-    "tokens": 120,
-    "full_response": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an"
-  },
-  {
-    "question": "vượt ẩu gây nguy hiểm",
+    "question": "Đi ngược chiều trên đường một chiều bị xử phạt ra sao?",
     "status": "success",
     "answer": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều”, trừ các hành vi vi phạm quy định tại điểm đ khoản 11 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. Thông tin bổ sung:",
-    "source": "fallback",
-    "time": 0.12680292129516602,
-    "tokens": 246,
+    "source": "",
+    "time": 0.005171298980712891,
+    "tokens": 0,
     "full_response": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi n"
   },
   {
-    "question": "lấn làn khi vượt",
+    "question": "Xe máy đi ngược chiều trên đường có biển cấm đi ngược chiều thì bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.007420778274536133,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "vượt không đúng quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.04796862602233887,
-    "tokens": 360,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "đi ngược chiều",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.025560617446899414,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "đi vào đường ngược chiều",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều”, trừ các hành vi vi phạm quy định tại điểm đ khoản 11 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. Thông tin bổ sung:",
-    "source": "fallback",
-    "time": 0.03949379920959473,
-    "tokens": 246,
-    "full_response": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi n"
-  },
-  {
-    "question": "lấn sang làn ngược chiều",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.1505591869354248,
-    "tokens": 359,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "chở quá tải",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.02340078353881836,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "chở quá số người quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 14, 14. Tịch thu phương tiện đối với người điều khiển xe tái phạm hành vi điều khiển xe lạng lách, đánh võng quy định tại khoản 12 Điều này.",
-    "source": "fallback",
-    "time": 0.11266016960144043,
-    "tokens": 50,
-    "full_response": "Theo Điều 6 khoản 14, 14. Tịch thu phương tiện đối với người điều khiển xe tái phạm hành vi điều khiển xe lạng lách, đánh võng quy định tại khoản 12 Điều này. \n[Tổng thời gian: 15.18s | Output tokens:"
-  },
-  {
-    "question": "xe máy chở 3 người",
-    "status": "success",
-    "answer": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm b, điểm d, điểm e khoản 2; điểm a, điểm c, điểm d, điểm h khoản 3; điểm a, điểm b, điểm c, điểm d khoản 4; điểm b, điểm d khoản 6; điểm a, điểm b, điểm c khoản 7; điểm a khoản 8; điểm b khoản 9; điểm a khoản 10 Điều này; Mức phạt: 200,",
-    "source": "fallback",
-    "time": 0.07850837707519531,
-    "tokens": 226,
-    "full_response": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển bá"
-  },
-  {
-    "question": "ô tô chở quá số người",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ ",
-    "source": "fallback",
-    "time": 0.16773033142089844,
-    "tokens": 197,
-    "full_response": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu"
-  },
-  {
-    "question": "chở hàng quá khổ",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.19124174118041992,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "chở hàng không đúng quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ đi vào đường cao tốc; Mức phạt: 12,000,000đ - 14,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng.",
-    "source": "fallback",
-    "time": 0.017548084259033203,
-    "tokens": 150,
-    "full_response": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn "
-  },
-  {
-    "question": "chở hàng nguy hiểm",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.14060187339782715,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "uống rượu bia lái xe",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở; Mức phạt: 30,000,000đ - 40,000,000đ. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 11 điểm b: 30,000,000đ - 40,000,000đ; Điều 6 khoản 9 điểm a: 18,000,000đ - 20,000,000đ.",
-    "source": "fallback",
-    "time": 0.006677150726318359,
-    "tokens": 238,
-    "full_response": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu "
-  },
-  {
-    "question": "nồng độ cồn vượt quá",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở; Mức phạt: 30,000,000đ - 40,000,000đ. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 11 điểm b: 30,000,000đ - 40,000,000đ; Điều 6 khoản 9 điểm a: 18,000,000đ - 20,000,000đ.",
-    "source": "fallback",
-    "time": 0.04030561447143555,
-    "tokens": 238,
-    "full_response": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu "
-  },
-  {
-    "question": "say rượu lái xe",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở; Mức phạt: 30,000,000đ - 40,000,000đ. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 11 điểm b: 30,000,000đ - 40,000,000đ; Điều 6 khoản 9 điểm a: 18,000,000đ - 20,000,000đ.",
-    "source": "fallback",
-    "time": 0.010360002517700195,
-    "tokens": 238,
-    "full_response": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu "
-  },
-  {
-    "question": "gây tai nạn giao thông",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.2019960880279541,
-    "tokens": 361,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "bỏ chạy sau khi gây tai nạn",
-    "status": "success",
-    "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
-    "source": "guardrail_small_talk",
-    "time": 0.005005836486816406,
-    "tokens": 49,
-    "full_response": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé! \n[Tổng thời gian: 0.00s | Outpu"
-  },
-  {
-    "question": "không cứu giúp người bị nạn",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 8, 8. Phạt tiền từ 16.000.000 đồng đến 18.000.000 đồng đối với người điều khiển xe thực hiện hành vi vi phạm gây tai nạn giao thông không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, không ở lại hiện trường hoặc không đến trình báo ngay với cơ quan công an, Ủy ban nhân dân nơi gần nhất. Mức phạt: 16,000,000đ - 18,000,000đ. Trừ điểm: 6 điểm. Tước GPLX: Tước GPLX từ 3 đến 5 tháng.",
-    "source": "fallback",
-    "time": 0.16197538375854492,
-    "tokens": 161,
-    "full_response": "Theo Điều 6 khoản 8, 8. Phạt tiền từ 16.000.000 đồng đến 18.000.000 đồng đối với người điều khiển xe thực hiện hành vi vi phạm gây tai nạn giao thông không dừng ngay phương tiện, không giữ nguyên hiện"
-  },
-  {
-    "question": "chở trẻ em không đúng quy định",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 3 điểm m, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: m) Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe (trừ loại xe ô tô chỉ có một hàng ghế) hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định; Mức phạt: 800,000đ - 1,000,000đ.",
-    "source": "fallback",
-    "time": 0.015794038772583008,
-    "tokens": 149,
-    "full_response": "Theo Điều 6 khoản 3 điểm m, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: m) Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,"
-  },
-  {
-    "question": "trẻ em ngồi ghế trước",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 3 điểm m, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: m) Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe (trừ loại xe ô tô chỉ có một hàng ghế) hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định; Mức phạt: 800,000đ - 1,000,000đ.",
-    "source": "fallback",
-    "time": 0.024185895919799805,
-    "tokens": 149,
-    "full_response": "Theo Điều 6 khoản 3 điểm m, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: m) Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,"
-  },
-  {
-    "question": "xe đạp đi sai làn",
-    "status": "success",
-    "answer": "Theo Điều 9 khoản 4 điểm d, 4. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Người điều khiển xe đạp máy không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ.",
-    "source": "fallback",
-    "time": 0.19585585594177246,
-    "tokens": 139,
-    "full_response": "Theo Điều 9 khoản 4 điểm d, 4. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Người điều khiển xe đạp máy không đội “mũ bảo "
-  },
-  {
-    "question": "xe đạp không chấp hành đèn tín hiệu",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng.",
-    "source": "fallback",
-    "time": 0.027333974838256836,
-    "tokens": 131,
-    "full_response": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hi"
-  },
-  {
-    "question": "xe tải đi vào đường cấm",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ ",
-    "source": "fallback",
-    "time": 0.015040874481201172,
-    "tokens": 235,
-    "full_response": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu"
-  },
-  {
-    "question": "xe tải chở quá tải",
-    "status": "success",
-    "answer": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 150%; Mức phạt: 8,000,000đ - 12,000,000đ. Thông tin bổ sung: Điều 21 khoản 7 điểm a: 7,000,000đ - 8,000,000đ; Điều 21 khoản 6 điểm a: 5,000,000đ - 7,000,000đ.",
-    "source": "fallback",
-    "time": 0.07812905311584473,
-    "tokens": 225,
-    "full_response": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối l"
-  },
-  {
-    "question": "xe buýt dừng sai quy định",
-    "status": "success",
-    "answer": "Theo Điều 18 khoản 4, Người điều khiển phương tiện tham gia giao thông đường bộ không được dừng xe, đỗ xe tại các vị trí sau đây: a) Bên trái đường một chiều; b) Trên đoạn đường cong hoặc gần đầu dốc mà tầm nhìn bị che khuất; c) Trên cầu, trừ những trường hợp tổ chức giao thông cho phép; d) Gầm cầu vượt, trừ những nơi cho phép dừng xe, đỗ xe; đ) Song song cùng chiều với một xe khác đang dừng, đỗ trên đường; e) Cách xe ô tô đang đỗ ngược chiều dưới 20 mét trên đường phố hẹp, dưới 40 mét trên đườn",
-    "source": "fallback",
-    "time": 0.025289058685302734,
-    "tokens": 349,
-    "full_response": "Theo Điều 18 khoản 4, Người điều khiển phương tiện tham gia giao thông đường bộ không được dừng xe, đỗ xe tại các vị trí sau đây: a) Bên trái đường một chiều; b) Trên đoạn đường cong hoặc gần đầu dốc "
-  },
-  {
-    "question": "xe buýt không nhường đường",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm c: 4,000,000đ - 6,000,000đ; Điều 6 khoản 5 điểm m: 4,000,000đ - 6,000,000đ.",
-    "source": "fallback",
-    "time": 0.005522489547729492,
-    "tokens": 210,
-    "full_response": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe đượ"
-  },
-  {
-    "question": "chạy quá tốc độ trong khu vực đông dân cư",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 12, 12. Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với người điều khiển xe thực hiện hành vi điều khiển xe lạng lách, đánh võng trên đường bộ; chạy quá tốc độ đuổi nhau trên đường bộ; dùng chân điều khiển vô lăng xe khi xe đang chạy trên đường bộ. Mức phạt: 40,000,000đ - 50,000,000đ. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Điều 6 khoản 10 điểm b: 20,000,000đ - 22,000,000đ.",
-    "source": "fallback",
-    "time": 0.005316972732543945,
-    "tokens": 202,
-    "full_response": "Theo Điều 6 khoản 12, 12. Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với người điều khiển xe thực hiện hành vi điều khiển xe lạng lách, đánh võng trên đường bộ; chạy quá tốc độ đuổi nhau trê"
-  },
-  {
-    "question": "bấm còi trong khu vực đông dân cư",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 3 điểm b, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau, trừ các xe ưu tiên đang đi làm ",
-    "source": "fallback",
-    "time": 0.19896793365478516,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 3 điểm b, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Sử dụng còi, rú ga liên tục; sử dụng còi hơi"
-  },
-  {
-    "question": "dừng xe trên đường cao tốc",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.006154298782348633,
-    "tokens": 355,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "quay đầu trên đường cao tốc",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
-    "source": "fallback",
-    "time": 0.03377270698547363,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
-  },
-  {
-    "question": "không nhường đường trên đường hẹp",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm c: 4,000,000đ - 6,000,000đ; Điều 6 khoản 5 điểm m: 4,000,000đ - 6,000,000đ.",
-    "source": "fallback",
-    "time": 0.18312430381774902,
-    "tokens": 210,
-    "full_response": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe đượ"
-  },
-  {
-    "question": "đi sai làn trên đường hẹp",
-    "status": "success",
-    "answer": "Theo Điều 14 khoản 1, Vượt xe là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước. Trên đường có từ hai làn đường dành cho xe cơ giới cùng chiều trở lên được phân biệt bằng vạch kẻ đường, xe đi phía sau di chuyển lên trước xe phía trước thì áp dụng quy tắc sử dụng làn đường quy định tại Điều 13 của Luật này.",
-    "source": "fallback",
-    "time": 0.09621834754943848,
-    "tokens": 116,
-    "full_response": "Theo Điều 14 khoản 1, Vượt xe là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe "
-  },
-  {
-    "question": "không nhường đường tại giao lộ",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm c: 4,000,000đ - 6,000,000đ; Điều 6 khoản 5 điểm m: 4,000,000đ - 6,000,000đ.",
-    "source": "fallback",
-    "time": 0.2165989875793457,
-    "tokens": 210,
-    "full_response": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe đượ"
-  },
-  {
-    "question": "vượt tại giao lộ",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.0050144195556640625,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "dừng xe trên cầu",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
-    "source": "fallback",
-    "time": 0.03011798858642578,
-    "tokens": 355,
-    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
-  },
-  {
-    "question": "quay đầu trong hầm",
-    "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.00681614875793457,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
-  },
-  {
-    "question": "đi ngược chiều đường một chiều",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều”, trừ các hành vi vi phạm quy định tại điểm đ khoản 11 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. Thông tin bổ sung:",
-    "source": "fallback",
-    "time": 0.07793807983398438,
-    "tokens": 246,
-    "full_response": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi n"
-  },
-  {
-    "question": "quay đầu trên đường một chiều",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
-    "source": "fallback",
-    "time": 0.1653447151184082,
-    "tokens": 248,
-    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
-  },
-  {
-    "question": "đi vào làn ưu tiên",
-    "status": "success",
-    "answer": "Theo Điều 10 khoản 1, Người tham gia giao thông đường bộ phải đi bên phải theo chiều đi của mình, đi đúng làn đường, phần đường quy định, chấp hành báo hiệu đường bộ và các quy tắc giao thông đường bộ khác.",
-    "source": "fallback",
-    "time": 0.19790887832641602,
-    "tokens": 58,
-    "full_response": "Theo Điều 10 khoản 1, Người tham gia giao thông đường bộ phải đi bên phải theo chiều đi của mình, đi đúng làn đường, phần đường quy định, chấp hành báo hiệu đường bộ và các quy tắc giao thông đường bộ"
-  },
-  {
-    "question": "không nhường làn ưu tiên",
-    "status": "success",
-    "answer": "Theo Điều 9 khoản 24, Sử dụng quyền của xe ưu tiên khi không thực hiện nhiệm vụ theo quy định của pháp luật; lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định của pháp luật.",
-    "source": "fallback",
-    "time": 0.0055582523345947266,
-    "tokens": 51,
-    "full_response": "Theo Điều 9 khoản 24, Sử dụng quyền của xe ưu tiên khi không thực hiện nhiệm vụ theo quy định của pháp luật; lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định của pháp luật. \n[Tổng t"
-  },
-  {
-    "question": "không nhường đường xe cứu thương",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm c: 4,000,000đ - 6,000,000đ; Điều 6 khoản 5 điểm m: 4,000,000đ - 6,000,000đ.",
-    "source": "fallback",
-    "time": 0.005025148391723633,
-    "tokens": 210,
-    "full_response": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe đượ"
-  },
-  {
-    "question": "chặn đường xe cứu thương",
-    "status": "success",
-    "answer": "Theo Điều 54 khoản 1, Xe cứu hộ giao thông đường bộ là xe ô tô chuyên dùng có trang bị dụng cụ, thiết bị dùng để cứu hộ, hỗ trợ di chuyển hoặc chuyên chở các phương tiện giao thông đường bộ bị hư hỏng, bị sự cố.",
-    "source": "fallback",
-    "time": 0.006263256072998047,
-    "tokens": 63,
-    "full_response": "Theo Điều 54 khoản 1, Xe cứu hộ giao thông đường bộ là xe ô tô chuyên dùng có trang bị dụng cụ, thiết bị dùng để cứu hộ, hỗ trợ di chuyển hoặc chuyên chở các phương tiện giao thông đường bộ bị hư hỏng"
-  },
-  {
-    "question": "không nhường đường xe công vụ",
-    "status": "success",
-    "answer": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm c: 4,000,000đ - 6,000,000đ; Điều 6 khoản 5 điểm m: 4,000,000đ - 6,000,000đ.",
-    "source": "fallback",
-    "time": 0.162550687789917,
-    "tokens": 210,
-    "full_response": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe đượ"
-  },
-  {
-    "question": "xe đạp điện đi sai làn",
-    "status": "success",
-    "answer": "Theo Điều 20 khoản 3, Người lái xe, người điều khiển xe máy chuyên dùng khi thực hiện công việc trên đường bộ phải bật sáng đèn cảnh báo màu vàng.",
-    "source": "fallback",
-    "time": 0.005521059036254883,
-    "tokens": 39,
-    "full_response": "Theo Điều 20 khoản 3, Người lái xe, người điều khiển xe máy chuyên dùng khi thực hiện công việc trên đường bộ phải bật sáng đèn cảnh báo màu vàng. \n[Tổng thời gian: 20.86s | Output tokens: 39 | Tốc độ"
-  },
-  {
-    "question": "xe đạp điện không đội mũ",
-    "status": "success",
-    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ.",
-    "source": "fallback",
-    "time": 0.1023397445678711,
-    "tokens": 169,
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.027443885803222656,
+    "tokens": 0,
     "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
   },
   {
-    "question": "xe máy điện chạy quá tốc độ",
+    "question": "Lấn làn khi vượt xe bị xử phạt thế nào?",
     "status": "success",
-    "answer": "Theo Điều 7 khoản 10 điểm a, 10. Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; đi vào đường cao tốc, dừng xe, đỗ xe, quay đầu xe, lùi xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng ph",
-    "source": "fallback",
-    "time": 0.23979735374450684,
-    "tokens": 370,
-    "full_response": "Theo Điều 7 khoản 10 điểm a, 10. Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.0041179656982421875,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
   },
   {
-    "question": "xe máy điện không có giấy tờ",
+    "question": "Đi sai làn đường quy định đối với xe máy thì phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 18 khoản 2 điểm c, 2. Phạt tiền từ 200.000 đồng đến 300.000 đồng đối với một trong các hành vi vi phạm sau đây: c) Người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy kinh doanh vận tải không mang theo chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc c",
-    "source": "fallback",
-    "time": 0.09281659126281738,
-    "tokens": 178,
-    "full_response": "Theo Điều 18 khoản 2 điểm c, 2. Phạt tiền từ 200.000 đồng đến 300.000 đồng đối với một trong các hành vi vi phạm sau đây: c) Người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các"
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.03806948661804199,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
   },
   {
-    "question": "tổ chức vi phạm giao thông",
+    "question": "Ô tô đi sai làn đường bị phạt thế nào?",
     "status": "success",
-    "answer": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông.",
-    "source": "fallback",
-    "time": 0.15282416343688965,
-    "tokens": 57,
-    "full_response": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông. \n[Tổng"
+    "answer": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; dừng xe trên đường dành riêng cho xe buýt; dừng xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; rời vị trí lái, tắt máy khi dừng xe (trừ trường hợp r",
+    "source": "",
+    "time": 0.01805567741394043,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía b"
   },
   {
-    "question": "doanh nghiệp vi phạm vận tải",
+    "question": "Cán vạch kẻ đường liên tục khi điều khiển xe máy bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 38 khoản 1 điểm a, 1. Phạt tiền từ 500.000 đồng đến 1.000.000 đồng đối với người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy thực hiện một trong các hành vi vi phạm sau đây: a) Không có tờ khai phương tiện vận tải đường bộ tạm nhập, tái xuất theo quy định; Mức phạt: 500,000đ - 1,000,000đ. Thông tin bổ sung: Điều 32 khoản 11 điểm d: 10,000,000đ - 12,000,000đ; Điều 32 khoản 7 điểm m: 4,000,000đ - 6,000,000đ.",
-    "source": "fallback",
-    "time": 0.013038873672485352,
-    "tokens": 207,
-    "full_response": "Theo Điều 38 khoản 1 điểm a, 1. Phạt tiền từ 500.000 đồng đến 1.000.000 đồng đối với người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy thực hiện m"
+    "answer": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm b, điểm d, điểm e khoản 2; điểm a, điểm c, điểm d, điểm h khoản 3; điểm a, điểm b, điểm c, điểm d khoản 4; điểm b, điểm d khoản 6; điểm a, điểm b, điểm c khoản 7; điểm a khoản 8; điểm b khoản 9; điểm a khoản 10 Điều này; Mức phạt: 200,",
+    "source": "",
+    "time": 0.029523611068725586,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển bá"
   },
   {
-    "question": "xe vận tải chở quá tải",
+    "question": "Vượt xe trên đoạn đường có vạch liền có bị phạt không?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.021211624145507812,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Không đội mũ bảo hiểm khi đi xe máy bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.007567644119262695,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Đội mũ bảo hiểm nhưng không cài quai có bị phạt không, phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.01926732063293457,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Chở 3 người trên xe máy thì bị xử phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm b, điểm d, điểm e khoản 2; điểm a, điểm c, điểm d, điểm h khoản 3; điểm a, điểm b, điểm c, điểm d khoản 4; điểm b, điểm d khoản 6; điểm a, điểm b, điểm c khoản 7; điểm a khoản 8; điểm b khoản 9; điểm a khoản 10 Điều này; Mức phạt: 200,",
+    "source": "",
+    "time": 0.02665996551513672,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển bá"
+  },
+  {
+    "question": "Chở 4 người trên xe máy bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.03796076774597168,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm "
+  },
+  {
+    "question": "Chở người không đội mũ bảo hiểm khi đi xe máy bị phạt như thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.04407310485839844,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Xe máy chở hàng cồng kềnh bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 18 khoản 1, 1. Phạt cảnh cáo người từ đủ 14 tuổi đến dưới 16 tuổi điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy hoặc điều khiển xe ô tô, điều khiển xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ và các loại xe tương tự xe ô tô. ",
+    "source": "",
+    "time": 0.007050514221191406,
+    "tokens": 0,
+    "full_response": "Theo Điều 18 khoản 1, 1. Phạt cảnh cáo người từ đủ 14 tuổi đến dưới 16 tuổi điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy hoặc điều khiển xe ô tô, đ"
+  },
+  {
+    "question": "Xe máy chở hàng vượt quá chiều rộng quy định thì bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 9 điểm i, 9. Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Điều khiển xe thành đoàn gây cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép; Mức phạt: 8,000,000đ - 10,000,000đ. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. ",
+    "source": "",
+    "time": 0.02804875373840332,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 9 điểm i, 9. Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Điều khiển xe thành đoàn gây cản trở giao"
+  },
+  {
+    "question": "Ô tô chở quá tải trọng 20% bị phạt bao nhiêu?",
     "status": "success",
     "answer": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 150%; Mức phạt: 8,000,000đ - 12,000,000đ. Thông tin bổ sung: Điều 21 khoản 7 điểm a: 7,000,000đ - 8,000,000đ; Điều 21 khoản 6 điểm a: 5,000,000đ - 7,000,000đ.",
-    "source": "fallback",
-    "time": 0.1532762050628662,
-    "tokens": 225,
+    "source": "",
+    "time": 0.011850357055664062,
+    "tokens": 0,
     "full_response": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối l"
   },
   {
-    "question": "xe vận tải không có giấy phép",
+    "question": "Ô tô chở quá tải trên 50% thì bị xử phạt ra sao?",
     "status": "success",
-    "answer": "Theo Điều 18 khoản 2 điểm a, 2. Phạt tiền từ 200.000 đồng đến 300.000 đồng đối với một trong các hành vi vi phạm sau đây: a) Người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy kinh doanh vận tải không mang theo chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới còn hiệu lực; Mức phạt: 200,000đ - 300,000đ. Thông tin bổ sung: Điều 20 khoản 6 điểm d: 3,000,000đ - 5,000,000đ; Điều 20 khoản 6 điểm đ: 3,000,000đ - 5,000,000đ.",
-    "source": "fallback",
-    "time": 0.0803837776184082,
-    "tokens": 206,
-    "full_response": "Theo Điều 18 khoản 2 điểm a, 2. Phạt tiền từ 200.000 đồng đến 300.000 đồng đối với một trong các hành vi vi phạm sau đây: a) Người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các"
+    "answer": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 150%; Mức phạt: 8,000,000đ - 12,000,000đ. Thông tin bổ sung: Điều 21 khoản 7 điểm a: 7,000,000đ - 8,000,000đ; Điều 21 khoản 6 điểm a: 5,000,000đ - 7,000,000đ.",
+    "source": "",
+    "time": 0.02527594566345215,
+    "tokens": 0,
+    "full_response": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối l"
   },
   {
-    "question": "mở cửa xe không đúng quy định",
+    "question": "Xe tải chở hàng quá khổ giới hạn cầu đường thì bị phạt thế nào?",
     "status": "success",
-    "answer": "Theo Điều 6 khoản 5 điểm q, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: q) Mở cửa xe, để cửa xe mở không bảo đảm an toàn. Mức phạt: 4,000,000đ - 6,000,000đ. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. Thông tin bổ sung: Điều 6 khoản 2 điểm c: 600,000đ - 800,000đ; Điều 6 khoản 2 điểm đ: 600,000đ - 800,000đ.",
-    "source": "fallback",
-    "time": 0.15621113777160645,
-    "tokens": 184,
-    "full_response": "Theo Điều 6 khoản 5 điểm q, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: q) Mở cửa xe, để cửa xe mở không bảo đảm an t"
+    "answer": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ đi vào đường cao tốc; Mức phạt: 12,000,000đ - 14,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. ",
+    "source": "",
+    "time": 0.03970003128051758,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn "
   },
   {
-    "question": "bấm còi liên tục",
+    "question": "Chở hàng nguy hiểm mà không có giấy phép bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp.",
-    "source": "guardrail_out_of_scope",
-    "time": 0.07161569595336914,
-    "tokens": 44,
-    "full_response": "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp. \n[Tổng thời gian: 0.00s | Output tokens: 44 |"
+    "answer": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ đi vào đường cao tốc; Mức phạt: 12,000,000đ - 14,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. ",
+    "source": "",
+    "time": 0.01129460334777832,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn "
   },
   {
-    "question": "xả rác từ xe",
+    "question": "Sử dụng điện thoại khi đang lái xe ô tô bị phạt thế nào?",
     "status": "success",
-    "answer": "Theo Điều 6 khoản 2 điểm c, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không tuân thủ các quy định về nhường đường tại nơi đường bộ giao nhau, trừ các hành vi vi phạm quy định tại điểm n, điểm o khoản 5 Điều này; Mức phạt: 600,000đ - 800,000đ. Thông tin bổ sung: Điều 6 khoản 2 điểm đ: 600,000đ - 800,000đ.",
-    "source": "fallback",
-    "time": 0.021754980087280273,
-    "tokens": 155,
-    "full_response": "Theo Điều 6 khoản 2 điểm c, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không tuân thủ các quy định về nhường đường tạ"
+    "answer": "Theo Điều 6 khoản 5 điểm h, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. Thông tin bổ sung: Điều 6 khoản 3 điểm e: 800,000đ - 1,000,000đ; Điều 6 khoản 2 điểm đ: 600,000đ - 800,000đ",
+    "source": "",
+    "time": 0.0233151912689209,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 5 điểm h, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Dùng tay cầm và sử dụng điện thoại hoặc cá"
   },
   {
-    "question": "không chấp hành hiệu lệnh cảnh sát",
+    "question": "Nghe điện thoại khi điều khiển xe máy bị phạt bao nhiêu?",
     "status": "success",
-    "answer": "Theo Điều 9 khoản 25, Không khai báo, khai báo gian dối hoặc cung cấp thông tin, tài liệu không đúng sự thật để trốn tránh trách nhiệm khi bị phát hiện vi phạm pháp luật về trật tự, an toàn giao thông đường bộ.",
-    "source": "fallback",
-    "time": 0.005547761917114258,
-    "tokens": 62,
-    "full_response": "Theo Điều 9 khoản 25, Không khai báo, khai báo gian dối hoặc cung cấp thông tin, tài liệu không đúng sự thật để trốn tránh trách nhiệm khi bị phát hiện vi phạm pháp luật về trật tự, an toàn giao thông"
+    "answer": "Theo Điều 7 khoản 4 điểm đ, 4. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác. Mức phạt: 800,000đ - 1,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. Thông tin bổ sung: Điều 7 khoản 4 điểm c: 800,000đ - 1,000,000đ. ",
+    "source": "",
+    "time": 0.024016618728637695,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 4 điểm đ, 4. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Người đang điều khiển xe sử dụng ô (dù), thi"
+  },
+  {
+    "question": "Dùng điện thoại nhắn tin khi lái ô tô bị phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 5 điểm h, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. Thông tin bổ sung: Điều 6 khoản 3 điểm e: 800,000đ - 1,000,000đ; Điều 6 khoản 2 điểm đ: 600,000đ - 800,000đ",
+    "source": "",
+    "time": 0.014730453491210938,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 5 điểm h, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Dùng tay cầm và sử dụng điện thoại hoặc cá"
+  },
+  {
+    "question": "Không bật đèn chiếu sáng khi đi ban đêm bằng ô tô bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm n, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: n) Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần; Mức phạt: 800,000đ - 1,000,000đ. ",
+    "source": "",
+    "time": 0.005375862121582031,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm n, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: n) Chạy trong hầm đường bộ không sử dụng đèn ch"
+  },
+  {
+    "question": "Xe máy không bật đèn khi đi ban đêm thì phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 1 điểm g, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: g) Không sử dụng đèn chiếu sáng trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn; Mức phạt: 200,000đ - 400,000đ. Thông tin bổ sung: Điều 7 khoản 3 điểm h: 600,000đ - 800,000đ. ",
+    "source": "",
+    "time": 0.021611690521240234,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 1 điểm g, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: g) Không sử dụng đèn chiếu sáng trong thời gian t"
+  },
+  {
+    "question": "Bật đèn pha trong khu đô thị, khu đông dân cư có bị phạt không?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy định (trừ hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định tại điểm b khoản 3 Điều này); không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật; Mức phạt: 4,000,000đ - 6,000,000đ. Trừ điểm: 2 điểm. Tước GPLX: Tước GPLX từ 1 đ",
+    "source": "",
+    "time": 0.027335405349731445,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy địn"
+  },
+  {
+    "question": "Không bật xi nhan khi rẽ phải bằng xe máy bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm k, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: k) Quay đầu xe tại nơi không được quay đầu xe, trừ hành vi vi phạm quy định tại điểm d khoản 4 Điều này. Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 1 điểm a: 200,000đ - 400,000đ; Điều 7 khoản 1 điểm đ: 200,000đ - 400,000đ. ",
+    "source": "",
+    "time": 0.02903294563293457,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm k, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: k) Quay đầu xe tại nơi không được quay đầu xe, tr"
+  },
+  {
+    "question": "Không bật đèn báo rẽ khi chuyển làn bằng ô tô bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.015266656875610352,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Chuyển làn không đúng nơi cho phép bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.022350311279296875,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Quay đầu xe ở nơi có biển cấm quay đầu thì phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
+    "source": "",
+    "time": 0.028352975845336914,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
+  },
+  {
+    "question": "Quay đầu xe trong hầm đường bộ bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm e, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Đỗ xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; đỗ xe trên đường dành riêng cho xe buýt; đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; đỗ, để xe ở vỉa hè trái quy định của pháp luật; đỗ xe nơi",
+    "source": "",
+    "time": 0.019322633743286133,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm e, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Đỗ xe không sát theo lề đường, vỉa hè phía b"
+  },
+  {
+    "question": "Dừng xe ô tô trên phần đường dành cho người đi bộ bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.021213293075561523,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Đỗ xe nơi có biển “Cấm dừng, cấm đỗ” bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.01933455467224121,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Dừng xe trên cầu gây cản trở giao thông bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.017368793487548828,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Đỗ xe chiếm một phần đường xe chạy gây ùn tắc thì phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.014380693435668945,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Không tuân thủ vạch dừng khi có đèn đỏ bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hiệu giao thông; Mức phạt: 18,000,000đ - 20,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. ",
+    "source": "",
+    "time": 0.02538442611694336,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không chấp hành hiệu lệnh của đèn tín hi"
+  },
+  {
+    "question": "Vượt xe tại nơi đường giao nhau bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.02794957160949707,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Vượt xe trong hầm đường bộ bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 4 điểm đ, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Lùi xe, quay đầu xe trong hầm đường bộ; dừng xe, đỗ xe trong hầm đường bộ không đúng nơi quy định; không có báo hiệu bằng đèn khẩn cấp, không đặt biển cảnh báo \"Chú ý xe đỗ\" (hoặc đèn cảnh báo) về phía sau xe khoảng cách đảm bảo an toàn khi dừng xe, đỗ xe trong hầm đường bộ trong trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc ph",
+    "source": "",
+    "time": 0.00400853157043457,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 4 điểm đ, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Lùi xe, quay đầu xe trong hầm đường bộ; dừ"
+  },
+  {
+    "question": "Không nhường đường cho xe ưu tiên đang phát tín hiệu bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm e, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Đỗ xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; đỗ xe trên đường dành riêng cho xe buýt; đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; đỗ, để xe ở vỉa hè trái quy định của pháp luật; đỗ xe nơi",
+    "source": "",
+    "time": 0.010654687881469727,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm e, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Đỗ xe không sát theo lề đường, vỉa hè phía b"
+  },
+  {
+    "question": "Bấm còi, rú ga liên tục trong khu dân cư bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 4 điểm e, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Lùi xe ở đường một chiều, đường có biển “Cấm đi ngược chiều”, khu vực cấm dừng, trên phần đường dành cho người đi bộ qua đường, nơi đường bộ giao nhau, nơi đường bộ giao nhau cùng mức với đường sắt, nơi tầm nhìn bị che khuất; lùi xe không quan sát hai bên, phía sau xe hoặc không có tín hiệu lùi xe, trừ hành vi vi phạm quy định tại điểm đ kh",
+    "source": "",
+    "time": 0.02486109733581543,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 4 điểm e, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Lùi xe ở đường một chiều, đường có biển “C"
+  },
+  {
+    "question": "Bấm còi trong khoảng thời gian bị cấm có bị phạt không, phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm b, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau, trừ các xe ưu tiên đang đi làm ",
+    "source": "",
+    "time": 0.010012149810791016,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm b, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Sử dụng còi, rú ga liên tục; sử dụng còi hơi"
+  },
+  {
+    "question": "Không mang theo giấy phép lái xe khi điều khiển xe máy bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.019871234893798828,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Không có giấy phép lái xe nhưng vẫn lái xe máy thì bị xử phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.015162229537963867,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Không có bằng lái ô tô nhưng vẫn điều khiển xe ô tô bị phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm h, điểm i khoản 3; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm g khoản 4; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g, điểm i, điểm k, điểm n, điểm o khoản 5 Điều này bị trừ điểm giấy phép lái xe 02 điểm; ",
+    "source": "",
+    "time": 0.004517555236816406,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm"
+  },
+  {
+    "question": "Không mang đăng ký xe khi lưu thông bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 5 điểm a, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Vượt xe trong những trường hợp không được vượt, vượt xe tại đoạn đường có biển báo hiệu có nội dung cấm vượt (đối với loại phương tiện đang điều khiển); không có tín hiệu trước khi vượt hoặc có tín hiệu vượt xe nhưng không sử dụng trong suốt quá trình vượt xe; vượt bên phải xe khác trong trường hợp không được phép; Mức phạt: 4,000,000đ - 6,",
+    "source": "",
+    "time": 0.0045239925384521484,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 5 điểm a, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Vượt xe trong những trường hợp không được "
+  },
+  {
+    "question": "Không có bảo hiểm trách nhiệm dân sự bắt buộc bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 21 khoản 6 điểm đ, 6. Phạt tiền từ 5.000.000 đồng đến 7.000.000 đồng đối với một trong các hành vi vi phạm sau đây: đ) Vận chuyển hàng hóa, cung ứng dịch vụ không có giấy phép (đối với trường hợp phải có giấy phép) hoặc có nhưng không thực hiện đúng quy định ghi trong giấy phép, trừ các hành vi vi phạm quy định tại điểm b khoản 1, điểm a, điểm c, điểm d khoản 3 Điều 22; khoản 5 Điều 23; khoản 1, điểm b khoản 3 Điều 34 của Nghị định này. Mức phạt: 5,000,000đ - 7,000,000đ. ",
+    "source": "",
+    "time": 0.004010200500488281,
+    "tokens": 0,
+    "full_response": "Theo Điều 21 khoản 6 điểm đ, 6. Phạt tiền từ 5.000.000 đồng đến 7.000.000 đồng đối với một trong các hành vi vi phạm sau đây: đ) Vận chuyển hàng hóa, cung ứng dịch vụ không có giấy phép (đối với trườn"
+  },
+  {
+    "question": "Giấy đăng kiểm ô tô hết hạn mà vẫn tham gia giao thông thì bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 15 điểm c, 15. Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây: c) Thực hiện hành vi quy định tại điểm a, điểm b, điểm c, điểm d khoản 11; khoản 13; khoản 14 Điều này bị tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng. ",
+    "source": "",
+    "time": 0.00412440299987793,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 15 điểm c, 15. Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây: c) Thực hiện hành vi quy định tại điểm a, "
+  },
+  {
+    "question": "Không thắt dây an toàn khi ngồi ghế trước trên ô tô bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an toàn (tại vị trí có trang bị dây đai an toàn) khi xe đang chạy; Mức phạt: 800,000đ - 1,000,000đ. ",
+    "source": "",
+    "time": 0.024746417999267578,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an"
+  },
+  {
+    "question": "Hành khách ngồi ghế sau không thắt dây an toàn có bị phạt không?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an toàn (tại vị trí có trang bị dây đai an toàn) khi xe đang chạy; Mức phạt: 800,000đ - 1,000,000đ. ",
+    "source": "",
+    "time": 0.01546931266784668,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an"
+  },
+  {
+    "question": "Cho người không đủ điều kiện điều khiển xe tham gia giao thông bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm h, điểm i khoản 3; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm g khoản 4; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g, điểm i, điểm k, điểm n, điểm o khoản 5 Điều này bị trừ điểm giấy phép lái xe 02 điểm; ",
+    "source": "",
+    "time": 0.003359556198120117,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm"
+  },
+  {
+    "question": "Giao xe cho người chưa đủ tuổi lái xe máy thì bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.004517078399658203,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm "
+  },
+  {
+    "question": "Uống rượu bia rồi lái xe máy bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.02053689956665039,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm "
+  },
+  {
+    "question": "Nồng độ cồn vượt quá 50mg/100ml máu khi lái xe máy bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 9 điểm d, 9. Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở; Mức phạt: 8,000,000đ - 10,000,000đ. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. Thông tin bổ sung: Điều 7 khoản 9 điểm đ: 8,000,000đ - 10,000,000đ; Điều 7 khoản 8 điểm b: 6,000,000đ - 8,000,000đ. ",
+    "source": "",
+    "time": 0.02660846710205078,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 9 điểm d, 9. Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Điều khiển xe trên đường mà trong máu hoặ"
+  },
+  {
+    "question": "Lái ô tô có nồng độ cồn vượt quá mức cao nhất thì bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở; Mức phạt: 30,000,000đ - 40,000,000đ. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 11 điểm b: 30,000,000đ - 40,000,000đ; Điều 6 khoản 9 điểm a: 18,000,000đ - 20,000,000đ.",
+    "source": "",
+    "time": 0.027077913284301758,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu "
+  },
+  {
+    "question": "Vừa uống bia vừa lái ô tô trên đường cao tốc bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở; Mức phạt: 30,000,000đ - 40,000,000đ. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 11 điểm b: 30,000,000đ - 40,000,000đ; Điều 6 khoản 11 điểm đ: 30,000,000đ - 40,000,000đ",
+    "source": "",
+    "time": 0.02170562744140625,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu "
+  },
+  {
+    "question": "Sử dụng ma túy khi điều khiển xe bị phạt như thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 15 điểm c, 15. Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây: c) Thực hiện hành vi quy định tại điểm a, điểm b, điểm c, điểm d khoản 11; khoản 13; khoản 14 Điều này bị tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng. ",
+    "source": "",
+    "time": 0.019107818603515625,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 15 điểm c, 15. Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây: c) Thực hiện hành vi quy định tại điểm a, "
+  },
+  {
+    "question": "Từ chối kiểm tra nồng độ cồn khi bị CSGT dừng xe thì bị phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.025070905685424805,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Gây tai nạn giao thông nhưng không dừng lại, không giữ nguyên hiện trường bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.013825178146362305,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Bỏ chạy sau khi gây tai nạn giao thông bị xử phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.004008769989013672,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Không cứu giúp người bị nạn khi có khả năng mà vẫn bỏ đi bị phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 12 khoản 11 điểm b, 11. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với cá nhân thực hiện một trong các hành vi vi phạm sau đây: b) Xâm phạm tính mạng, sức khỏe, tài sản của người bị nạn, người gây tai nạn giao thông đường bộ hoặc người giúp đỡ, cứu chữa, đưa người bị nạn đi cấp cứu; Mức phạt: 6,000,000đ - 8,000,000đ. ",
+    "source": "",
+    "time": 0.024254798889160156,
+    "tokens": 0,
+    "full_response": "Theo Điều 12 khoản 11 điểm b, 11. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với cá nhân thực hiện một trong các hành vi vi phạm sau đây: b) Xâm phạm tính mạng, sức khỏe, tài sản của người bị "
+  },
+  {
+    "question": "Gây tai nạn rồi không cung cấp thông tin, không hợp tác với cơ quan chức năng thì bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.027110576629638672,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Đi xe máy vào đường cao tốc bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.01823139190673828,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Đi bộ trên đường cao tốc có bị phạt không, phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 7 điểm b: 12,000,000đ - 14,000,000đ; Đi",
+    "source": "",
+    "time": 0.0036079883575439453,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
+  },
+  {
+    "question": "Lùi xe trên đường cao tốc bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 7 điểm b: 12,000,000đ - 14,000,000đ; Đi",
+    "source": "",
+    "time": 0.004007577896118164,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
+  },
+  {
+    "question": "Quay đầu xe trên đường cao tốc bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 10 điểm a: 20,000,000đ - 22,000,000đ; Đ",
+    "source": "",
+    "time": 0.0040340423583984375,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
+  },
+  {
+    "question": "Dừng xe, đỗ xe trên làn dừng khẩn cấp khi không có sự cố bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.015944480895996094,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Không giữ khoảng cách an toàn trên đường cao tốc bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 7 điểm b: 12,000,000đ - 14,000,000đ; Đi",
+    "source": "",
+    "time": 0.0040094852447509766,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
+  },
+  {
+    "question": "Không tuân thủ tốc độ tối thiểu trên đường cao tốc thì bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định. Mức phạt: 30,000,000đ - 40,000,000đ. Trừ điểm: 10 điểm. Tước GPLX: Tước GPLX từ 6 đến 8 tháng. Thông tin bổ sung: Điều 6 khoản 7 điểm b: 12,000,000đ - 14,000,000đ; Đi",
+    "source": "",
+    "time": 0.038304805755615234,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn"
+  },
+  {
+    "question": "Đi xe máy vào hầm vượt sông dành riêng cho ô tô bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.019112348556518555,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Không nhường đường cho người đi bộ trên phần đường dành riêng thì phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ; Mức phạt: 6,000,000đ - 8,000,000đ. Trừ điểm: 4 điểm. Tước GPLX: Tước GPLX từ 2 đến 4 tháng. Thông tin bổ sung: Điều 6 khoản 5 điểm c: 4,000,000đ - 6,000,000đ; Điều 6 khoản 5 điểm m: 4,000,000đ - 6,000,000đ. ",
+    "source": "",
+    "time": 0.025333166122436523,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 6 điểm b, 6. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Không nhường đường hoặc gây cản trở xe đượ"
+  },
+  {
+    "question": "Chạy xe trên vỉa hè dành cho người đi bộ bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 5 điểm l, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chuyển hướng không nhường quyền đi trước cho: người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xe thô sơ đang đi trên phần đường dành cho xe thô sơ; Mức phạt: 4,000,000đ - 6,000,000đ. Tước GPLX: Tước GPLX từ 1 đến 3 tháng. ",
+    "source": "",
+    "time": 0.004004716873168945,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 5 điểm l, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chuyển hướng không nhường quyền đi trước c"
+  },
+  {
+    "question": "Xe máy bật còi inh ỏi gần bệnh viện, trường học bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 9 điểm k, 9. Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: k) Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định. Mức phạt: 8,000,000đ - 10,000,000đ. Tước GPLX: Tước GPLX từ 4 đến 6 tháng. Thông tin bổ sung: Điều 7 khoản 1 điểm i: 200,000đ - 400,000đ. ",
+    "source": "",
+    "time": 0.004302263259887695,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 9 điểm k, 9. Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: k) Sử dụng còi, rú ga (nẹt pô) liên tục tron"
+  },
+  {
+    "question": "Ô tô chở quá số người quy định thì bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 15 điểm c, 15. Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây: c) Thực hiện hành vi quy định tại điểm a, điểm b, điểm c, điểm d khoản 11; khoản 13; khoản 14 Điều này bị tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng. ",
+    "source": "",
+    "time": 0.026065587997436523,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 15 điểm c, 15. Ngoài việc bị phạt tiền, người điều khiển xe thực hiện hành vi vi phạm còn bị áp dụng các hình thức xử phạt bổ sung sau đây: c) Thực hiện hành vi quy định tại điểm a, "
+  },
+  {
+    "question": "Xe khách đón trả khách không đúng nơi quy định bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 20 khoản 5 điểm e, 5. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với một trong các hành vi vi phạm sau đây: e) Vận chuyển hành khách theo tuyến cố định không có hoặc không mang theo lệnh vận chuyển hoặc có mang theo lệnh vận chuyển nhưng không ghi đầy đủ thông tin, không có xác nhận của bến xe khách nơi đi, bến xe khách nơi đến theo quy định; Mức phạt: 1,000,000đ - 2,000,000đ. ",
+    "source": "",
+    "time": 0.004159688949584961,
+    "tokens": 0,
+    "full_response": "Theo Điều 20 khoản 5 điểm e, 5. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với một trong các hành vi vi phạm sau đây: e) Vận chuyển hành khách theo tuyến cố định không có hoặc không mang theo "
+  },
+  {
+    "question": "Xe taxi dừng đỗ đón khách dưới lòng đường gây cản trở giao thông bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 3 điểm e, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Đỗ xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; đỗ xe trên đường dành riêng cho xe buýt; đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; đỗ, để xe ở vỉa hè trái quy định của pháp luật; đỗ xe nơi",
+    "source": "",
+    "time": 0.017386674880981445,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 3 điểm e, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Đỗ xe không sát theo lề đường, vỉa hè phía b"
+  },
+  {
+    "question": "Không chấp hành hiệu lệnh dừng xe của CSGT bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.01645350456237793,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Tự ý tháo dỡ, làm sai lệch biển báo giao thông bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; dừng xe trên đường dành riêng cho xe buýt; dừng xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; rời vị trí lái, tắt máy khi dừng xe (trừ trường hợp r",
+    "source": "",
+    "time": 0.009771585464477539,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía b"
+  },
+  {
+    "question": "Đua xe trái phép bằng xe máy trên đường bộ bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường giao thông; ",
+    "source": "",
+    "time": 0.004140138626098633,
+    "tokens": 0,
+    "full_response": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường gi"
+  },
+  {
+    "question": "Tổ chức đua xe trái phép thì bị xử phạt như thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông. ",
+    "source": "",
+    "time": 0.013763904571533203,
+    "tokens": 0,
+    "full_response": "Theo Điều 35 khoản 3 điểm b, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: b) Đua xe ô tô, mô tô trái phép trên đường giao thông. "
+  },
+  {
+    "question": "Bốc đầu xe máy, chạy lạng lách đánh võng trên đường bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 11 điểm b, 11. Tịch thu phương tiện đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh; Tước GPLX: Tước GPLX từ 22 đến 24 tháng. ",
+    "source": "",
+    "time": 0.0361020565032959,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 11 điểm b, 11. Tịch thu phương tiện đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng ha"
+  },
+  {
+    "question": "Nẹt pô, gây tiếng ồn lớn khi điều khiển xe máy bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm b, điểm d, điểm e khoản 2; điểm a, điểm c, điểm d, điểm h khoản 3; điểm a, điểm b, điểm c, điểm d khoản 4; điểm b, điểm d khoản 6; điểm a, điểm b, điểm c khoản 7; điểm a khoản 8; điểm b khoản 9; điểm a khoản 10 Điều này; Mức phạt: 200,",
+    "source": "",
+    "time": 0.013571977615356445,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển bá"
+  },
+  {
+    "question": "Đi xe đạp điện nhưng không đội mũ bảo hiểm có bị phạt không, phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.025040626525878906,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Người dưới 16 tuổi điều khiển xe máy dưới 50cc bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật; Mức phạt: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.029358625411987305,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm i, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Chở người ngồi trên xe không đội “mũ bảo hiểm "
+  },
+  {
+    "question": "Chở trẻ em dưới 7 tuổi phía sau xe máy mà không đội mũ bảo hiểm thì bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ; Mức phạt: 400,000đ - 600,000đ. Thông tin bổ sung: Điều 7 khoản 2 điểm i: 400,000đ - 600,000đ. ",
+    "source": "",
+    "time": 0.020679473876953125,
+    "tokens": 0,
+    "full_response": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe "
+  },
+  {
+    "question": "Điều khiển xe khi giấy phép lái xe đã bị tước quyền sử dụng có bị phạt không, phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm h, điểm i khoản 3; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm g khoản 4; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g, điểm i, điểm k, điểm n, điểm o khoản 5 Điều này bị trừ điểm giấy phép lái xe 02 điểm; ",
+    "source": "",
+    "time": 0.026961803436279297,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm"
+  },
+  {
+    "question": "Không chấp hành quy định phân luồng giao thông của người điều khiển giao thông thì bị phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm h, điểm i khoản 3; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm g khoản 4; điểm a, điểm b, điểm c, điểm d, điểm đ, điểm e, điểm g, điểm i, điểm k, điểm n, điểm o khoản 5 Điều này bị trừ điểm giấy phép lái xe 02 điểm; ",
+    "source": "",
+    "time": 0.020991802215576172,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 16 điểm a, 16. Ngoài việc bị áp dụng hình thức xử phạt, người điều khiển xe thực hiện hành vi vi phạm còn bị trừ điểm giấy phép lái xe như sau: a) Thực hiện hành vi quy định tại điểm"
+  },
+  {
+    "question": "Vượt xe bên phải trên đường không được phép vượt bị xử phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.004189014434814453,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Dừng xe giữa ngã tư khi có tín hiệu đèn xanh nhấp nháy bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, là",
+    "source": "",
+    "time": 0.003319263458251953,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc"
+  },
+  {
+    "question": "Không bật đèn cảnh báo khi xe bị hỏng nằm trên đường bị phạt thế nào?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 4 điểm e, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Lùi xe ở đường một chiều, đường có biển “Cấm đi ngược chiều”, khu vực cấm dừng, trên phần đường dành cho người đi bộ qua đường, nơi đường bộ giao nhau, nơi đường bộ giao nhau cùng mức với đường sắt, nơi tầm nhìn bị che khuất; lùi xe không quan sát hai bên, phía sau xe hoặc không có tín hiệu lùi xe, trừ hành vi vi phạm quy định tại điểm đ kh",
+    "source": "",
+    "time": 0.013151884078979492,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 4 điểm e, 4. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: e) Lùi xe ở đường một chiều, đường có biển “C"
+  },
+  {
+    "question": "Không gắn biển số xe mà vẫn tham gia giao thông thì bị xử phạt ra sao?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; dừng xe trên đường dành riêng cho xe buýt; dừng xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; rời vị trí lái, tắt máy khi dừng xe (trừ trường hợp r",
+    "source": "",
+    "time": 0.02186298370361328,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía b"
+  },
+  {
+    "question": "Sử dụng biển số giả khi lưu thông trên đường bị phạt bao nhiêu?",
+    "status": "success",
+    "answer": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; dừng xe trên đường dành riêng cho xe buýt; dừng xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; rời vị trí lái, tắt máy khi dừng xe (trừ trường hợp r",
+    "source": "",
+    "time": 0.026997089385986328,
+    "tokens": 0,
+    "full_response": "Theo Điều 6 khoản 2 điểm đ, 2. Phạt tiền từ 600.000 đồng đến 800.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Dừng xe không sát theo lề đường, vỉa hè phía b"
   }
 ]

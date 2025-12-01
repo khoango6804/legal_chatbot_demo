@@ -938,6 +938,16 @@ Theo {primary_reference or 'quy định liên quan'}:"""
                     final_answer = "Xin lỗi, hiện chưa có thông tin cụ thể trong cơ sở dữ liệu về câu hỏi này. Vui lòng thử lại với câu hỏi cụ thể hơn về vi phạm giao thông."
                     source = "fallback_no_rag"
                     print(f"[FILTER] Using error message (no RAG)")
+            else:
+                # Not small talk: keep model answer but append RAG citation if available
+                if retrieval_success:
+                    rag_citation = self._build_fallback_answer(retrieval_result)
+                    if rag_citation:
+                        print("[FILTER] Appending RAG citation to model answer")
+                        final_answer = final_answer.strip()
+                        final_answer += "\n\n---\n"
+                        final_answer += rag_citation
+                        source = "model_with_rag_citation"
 
         return {
             "status": "success",

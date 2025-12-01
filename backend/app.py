@@ -115,46 +115,9 @@ async def chat_endpoint(req: ChatRequest):
         if not answer_text.strip():
             answer_text = "Xin lỗi, hiện chưa có thông tin rõ ràng cho tình huống này."
 
+        # Stream only the answer text for demo (ẩn thống kê thời gian, token và source)
         for word in answer_text.split():
             yield word + " "
-
-        generation_time = result.get("generation_time")
-        tokenizer = getattr(helper, "tokenizer", None)
-        token_count = 0
-        tokens_per_second_total = 0.0
-        tokens_per_second_generation = 0.0
-
-        try:
-            if tokenizer and answer_text:
-                token_count = len(tokenizer.encode(answer_text))
-            else:
-                token_count = len(answer_text.split())
-
-            if total_elapsed and token_count:
-                tokens_per_second_total = token_count / total_elapsed
-            if generation_time and generation_time > 0 and token_count:
-                tokens_per_second_generation = token_count / generation_time
-        except Exception as exc:
-            print(f"[API] Warning: unable to compute token stats: {exc}")
-
-        stats_parts = [
-            f"Tổng thời gian: {total_elapsed:.2f}s",
-        ]
-        if generation_time is not None:
-            stats_parts.append(f"Sinh model: {generation_time:.2f}s")
-        stats_parts.append(f"Output tokens: {token_count}")
-        if tokens_per_second_generation > 0:
-            stats_parts.append(f"Tốc độ sinh: {tokens_per_second_generation:.1f} token/s")
-        if tokens_per_second_total > 0 and (
-            tokens_per_second_generation == 0
-            or abs(tokens_per_second_total - tokens_per_second_generation) > 1e-6
-        ):
-            stats_parts.append(f"Tốc độ tổng: {tokens_per_second_total:.1f} token/s")
-        source = result.get("source")
-        if source:
-            stats_parts.append(f"Source: {source}")
-
-        yield "\n[" + " | ".join(stats_parts) + "]"
 
     return StreamingResponse(answer_stream(), media_type="text/plain")
 
