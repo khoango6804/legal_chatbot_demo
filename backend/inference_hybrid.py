@@ -21,6 +21,121 @@ from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 import requests
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+try:
+    from unsloth import FastLanguageModel
+    UNSLOTH_AVAILABLE = True
+except ImportError:
+    UNSLOTH_AVAILABLE = False
+    FastLanguageModel = None
+
+DEFAULT_SMALL_TALK_REPLY = (
+    "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về "
+    "xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!"
+)
+DEFAULT_OUT_OF_SCOPE_REPLY = (
+    "Xin lỗi, mình chỉ hỗ trợ các câu hỏi về luật và xử phạt giao thông đường bộ. "
+    "Nếu bạn có tình huống vi phạm cụ thể, cứ mô tả chi tiết để mình tra cứu giúp."
+)
+SMALL_TALK_PATTERNS = [
+    "bạn là ai",
+    "bạn tên gì",
+    "bạn làm gì",
+    "bạn có khỏe không",
+    "bạn khỏe không",
+    "xin chào",
+    "chào bạn",
+    "hello",
+    "hi ",
+    "hi,",
+    "hi.",
+    "đang làm gì",
+    "gì vậy",
+    "ai đó không",
+    "ở đó không",
+]
+OUT_OF_SCOPE_PATTERNS = [
+    "bạn yêu",
+    "người yêu",
+    "thời tiết",
+    "bóng đá",
+    "chứng khoán",
+    "crypto",
+    "tiền ảo",
+    "công nghệ thông tin",
+    "học tiếng anh",
+    "bán hàng",
+    "ẩm thực",
+]
+LEGAL_KEYWORDS = [
+    "xe",
+    "giao thông",
+    "phạt",
+    "mức phạt",
+    "gplx",
+    "tước",
+    "điều",
+    "khoản",
+    "nồng độ cồn",
+    "tốc độ",
+    "đèn",
+    "lỗi",
+    "mũ bảo hiểm",
+    "dừng",
+    "đỗ",
+    # Thêm các từ khóa về giao thông
+    "vạch",
+    "làn",
+    "đường",
+    "cấm",
+    "tải",
+    "chở",
+    "ngược chiều",
+    "giao lộ",
+    "hầm",
+    "cầu",
+    "còi",
+    "hàng",
+    "khổ",
+    "nguy hiểm",
+    "rẽ",
+    "quay đầu",
+    "chuyển làn",
+    "vượt",
+    "cán",
+    "đi vào",
+    "khu vực",
+    "cao tốc",
+    "một chiều",
+    "ưu tiên",
+    "cứu thương",
+    "công vụ",
+    "đạp điện",
+    "máy điện",
+    "tổ chức",
+    "doanh nghiệp",
+    "vận tải",
+    "bằng lái",
+    "giấy tờ",
+    "đăng ký",
+    "bảo hiểm",
+    "xi-nhan",
+    "xi nhan",
+    "đèn pha",
+    "dây an toàn",
+    "rượu",
+    "bia",
+    "cồn",
+    "tai nạn",
+    "trẻ em",
+    "buýt",
+    "tải",
+    "đông dân cư",
+    "hẹp",
+    "mở cửa",
+    "rác",
+    "cảnh sát",
+    "hiệu lệnh",
+]
 
 from backend.inference import (
     normalize_input_text,
@@ -146,7 +261,47 @@ class HybridTrafficLawAssistant:
         return min(value, self.max_new_tokens_limit)
 
     def _load_model(self):
-        """Load tokenizer/model with fallback."""
+        """Load tokenizer/model with unsloth (if available) or fallback to transformers."""
+        use_unsloth = UNSLOTH_AVAILABLE and os.getenv("USE_UNSLOTH", "true").lower() == "true"
+        
+        if use_unsloth:
+            try:
+                print("[Hybrid] Loading model with unsloth...")
+                # Unsloth uses the same model_name format as transformers
+                model_name = self.model_name
+                
+                dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+                max_seq_length = 2048
+                
+                # Prepare kwargs for unsloth
+                unsloth_kwargs = {
+                    "model_name": model_name,
+                    "max_seq_length": max_seq_length,
+                    "dtype": dtype,
+                    "load_in_4bit": False,  # Set to True if you want 4-bit quantization
+                    "trust_remote_code": True,
+                }
+                
+                # Add token and subfolder if loading from hub
+                if self.model_from_hub:
+                    unsloth_kwargs["token"] = self.hf_token
+                    if self.model_subfolder:
+                        # For unsloth, subfolder might need to be in model_name or handled differently
+                        # Try with subfolder in path first
+                        if "/" not in model_name:
+                            model_name = f"{self.model_repo}/{self.model_subfolder}"
+                        unsloth_kwargs["model_name"] = model_name
+                
+                self.model, self.tokenizer = FastLanguageModel.from_pretrained(**unsloth_kwargs)
+                self.model.eval()
+                print("[Hybrid] Model loaded successfully with unsloth")
+                return
+            except Exception as exc:
+                print(f"[Hybrid] Unsloth load failed: {exc}, falling back to transformers")
+                import traceback
+                traceback.print_exc()
+        
+        # Fallback to transformers
         tokenizer_kwargs = {"trust_remote_code": True}
         model_kwargs = {
             "trust_remote_code": True,
@@ -236,8 +391,9 @@ class HybridTrafficLawAssistant:
         extra_lines = []
         for rel in related[:2]:
             rel = self._validate_chunk(rel)
-            if rel.get("reference") and rel.get("penalty", {}).get("text"):
-                extra_lines.append(f"- {rel['reference']}: {rel['penalty']['text']}")
+            penalty = rel.get("penalty") or {}
+            if rel.get("reference") and penalty.get("text"):
+                extra_lines.append(f"- {rel['reference']}: {penalty['text']}")
         if extra_lines:
             parts.append("Thông tin bổ sung:")
             parts.extend(extra_lines)
@@ -533,6 +689,17 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             answer = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 
         cleaned = self._clean_answer(answer)
+        
+        # Filter out small talk responses (check both cleaned and raw answer)
+        cleaned_lower = cleaned.lower()
+        answer_lower = answer.lower()
+        if (DEFAULT_SMALL_TALK_REPLY[:50].lower() in cleaned_lower or 
+            "mình là trợ lý" in cleaned_lower or 
+            "luôn sẵn sàng" in cleaned_lower or
+            DEFAULT_SMALL_TALK_REPLY[:50].lower() in answer_lower or 
+            "mình là trợ lý" in answer_lower):
+            return "", answer.strip()  # Return empty to trigger fallback
+        
         if self.force_model_output:
             return cleaned or answer.strip(), answer.strip()
 
@@ -584,9 +751,81 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             return "", answer.strip()
         return cleaned, answer.strip()
 
+    # --------------------------------------------------------------- Guardrails
+    def _guardrail_classify(self, question: str) -> Optional[str]:
+        """Detect small talk or out-of-scope queries before RAG/model."""
+        if not question:
+            return None
+        normalized = question.lower().strip()
+        normalized_no_diacritic = strip_diacritics(normalized)
+
+        for phrase in SMALL_TALK_PATTERNS:
+            p = phrase.lower()
+            # Tránh nhận nhầm "hi" bên trong các từ tiếng Việt khi đã bỏ dấu (vd "thì", "khi")
+            # -> các pattern bắt đầu bằng "hi" chỉ kiểm tra trên chuỗi có dấu và phải là từ riêng biệt
+            if p.startswith("hi"):
+                # Use word boundary to avoid matching "hi" inside "khi", "thì", etc.
+                import re
+                if re.search(r'\b' + re.escape(p.strip()) + r'\b', normalized):
+                    return "small_talk"
+            else:
+                if p in normalized or p in normalized_no_diacritic:
+                    return "small_talk"
+
+        for phrase in OUT_OF_SCOPE_PATTERNS:
+            if phrase in normalized or phrase in normalized_no_diacritic:
+                return "out_of_scope"
+
+        # Heuristic: very short question without legal keywords -> out of scope
+        # Tăng ngưỡng từ 4 lên 5 từ và kiểm tra kỹ hơn
+        words = normalized.split()
+        if len(words) <= 5:
+            contains_legal = any(
+                kw in normalized or kw in normalized_no_diacritic for kw in LEGAL_KEYWORDS
+            )
+            # Nếu câu hỏi có từ khóa về phương tiện hoặc hành vi giao thông, không chặn
+            traffic_indicators = [
+                "xe", "máy", "ô tô", "đạp", "tải", "buýt", "mô tô",
+                "đi", "chạy", "dừng", "đỗ", "rẽ", "quay", "vượt", "chở",
+                "đường", "làn", "vạch", "đèn", "cấm", "phạt", "vi phạm"
+            ]
+            has_traffic_indicator = any(
+                ind in normalized or ind in normalized_no_diacritic 
+                for ind in traffic_indicators
+            )
+            if not contains_legal and not has_traffic_indicator:
+                return "out_of_scope"
+
+        return None
+
+    def _guardrail_response(self, mode: str, original_question: str) -> Dict:
+        if mode == "small_talk":
+            return {
+                "status": "success",
+                "question": original_question,
+                "answer": DEFAULT_SMALL_TALK_REPLY,
+                "context": "",
+                "reference": None,
+                "source": "guardrail_small_talk",
+                "model_raw_answer": "",
+            }
+        return {
+            "status": "success",
+            "question": original_question,
+            "answer": DEFAULT_OUT_OF_SCOPE_REPLY,
+            "context": "",
+            "reference": None,
+            "source": "guardrail_out_of_scope",
+            "model_raw_answer": "",
+        }
+
     # -------------------------------------------------------------- Public API
     def answer(self, question: str, max_new_tokens: Optional[int] = None) -> Dict:
         normalized_question = normalize_input_text(question)
+        guardrail_mode = self._guardrail_classify(normalized_question)
+        if guardrail_mode:
+            return self._guardrail_response(guardrail_mode, question)
+
         rewritten = self._rewrite_question(normalized_question)
         if rewritten:
             normalized_question = rewritten
@@ -610,6 +849,25 @@ Theo {primary_reference or 'quy định liên quan'}:"""
                 max_new_tokens=max_new_tokens,
             )
             used_generation = bool(final_answer)
+            
+            # Filter out small talk responses even when RAG succeeds
+            if final_answer:
+                final_lower = final_answer.lower()
+                small_talk_patterns = [
+                    DEFAULT_SMALL_TALK_REPLY[:50].lower(),
+                    "mình là trợ lý",
+                    "luôn sẵn sàng",
+                    "bạn cứ đặt câu hỏi",
+                    "trợ lý pháp luật giao thông",
+                    "sẵn sàng giải đáp"
+                ]
+                is_small_talk = any(pattern in final_lower for pattern in small_talk_patterns)
+                if is_small_talk:
+                    print(f"[FILTER] Detected small talk in model output, clearing answer")
+                    print(f"[FILTER] Model output: {final_answer[:100]}...")
+                    # Model returned small talk despite having RAG context, use fallback
+                    final_answer = ""
+                    used_generation = False
 
         if not final_answer:
             if self.force_model_output:
@@ -623,8 +881,17 @@ Theo {primary_reference or 'quy định liên quan'}:"""
                 else:
                     source = "model_forced_no_rag"
             elif raw_model_answer and not retrieval_success:
-                final_answer = raw_model_answer.strip()
-                source = "model_no_rag"
+                # Filter out small talk responses when RAG fails
+                raw_lower = raw_model_answer.lower()
+                if (DEFAULT_SMALL_TALK_REPLY[:50].lower() in raw_lower or 
+                    "mình là trợ lý" in raw_lower or 
+                    "luôn sẵn sàng" in raw_lower):
+                    # Model returned small talk, use fallback message instead
+                    final_answer = "Xin lỗi, hiện chưa có thông tin cụ thể trong cơ sở dữ liệu về câu hỏi này. Vui lòng thử lại với câu hỏi cụ thể hơn về vi phạm giao thông."
+                    source = "fallback_no_rag"
+                else:
+                    final_answer = raw_model_answer.strip()
+                    source = "model_no_rag"
             else:
                 if retrieval_success:
                     final_answer = self._build_fallback_answer(retrieval_result)
@@ -638,6 +905,39 @@ Theo {primary_reference or 'quy định liên quan'}:"""
                     }
         else:
             source = "model" if retrieval_success else "model_no_rag"
+            
+            # Final check: filter out small talk even in final answer
+            final_lower = final_answer.lower()
+            # More comprehensive small talk detection
+            small_talk_indicators = [
+                DEFAULT_SMALL_TALK_REPLY[:50].lower(),
+                "mình là trợ lý",
+                "luôn sẵn sàng",
+                "bạn cứ đặt câu hỏi",
+                "trợ lý pháp luật giao thông",
+                "trợ lý pháp luật",
+                "sẵn sàng giải đáp",
+                "câu hỏi liên quan đến luật giao thông",
+                "đặt câu hỏi liên quan"
+            ]
+            # Check if answer starts with or contains small talk patterns
+            is_small_talk = any(
+                indicator in final_lower or final_lower.startswith(indicator[:20])
+                for indicator in small_talk_indicators
+            )
+            
+            if is_small_talk:
+                print(f"[FILTER] Detected small talk in final answer, replacing with fallback")
+                print(f"[FILTER] Original answer: {final_answer[:100]}...")
+                # Replace with fallback if retrieval succeeded, otherwise use error message
+                if retrieval_success:
+                    final_answer = self._build_fallback_answer(retrieval_result)
+                    source = "fallback"
+                    print(f"[FILTER] Using fallback answer from RAG")
+                else:
+                    final_answer = "Xin lỗi, hiện chưa có thông tin cụ thể trong cơ sở dữ liệu về câu hỏi này. Vui lòng thử lại với câu hỏi cụ thể hơn về vi phạm giao thông."
+                    source = "fallback_no_rag"
+                    print(f"[FILTER] Using error message (no RAG)")
 
         return {
             "status": "success",

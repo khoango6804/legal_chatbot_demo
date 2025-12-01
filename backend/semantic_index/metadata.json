@@ -1,0 +1,12617 @@
+[
+  {
+    "doc_id": "chunk_0",
+    "article": 1,
+    "khoan": null,
+    "diem": null,
+    "tags": [
+      "quy_dinh"
+    ]
+  },
+  {
+    "doc_id": "chunk_1",
+    "article": 2,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "nguyen_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_2",
+    "article": 2,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_3",
+    "article": 2,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_4",
+    "article": 2,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_5",
+    "article": 2,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_6",
+    "article": 2,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_7",
+    "article": 2,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_8",
+    "article": 2,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_9",
+    "article": 2,
+    "khoan": 9,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_10",
+    "article": 2,
+    "khoan": 10,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_11",
+    "article": 2,
+    "khoan": 11,
+    "diem": null,
+    "tags": [
+      "dua_xe",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_12",
+    "article": 2,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_13",
+    "article": 2,
+    "khoan": 13,
+    "diem": null,
+    "tags": [
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_14",
+    "article": 2,
+    "khoan": 14,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_15",
+    "article": 3,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_16",
+    "article": 3,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_17",
+    "article": 3,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_18",
+    "article": 3,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_19",
+    "article": 3,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_20",
+    "article": 3,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_21",
+    "article": 3,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_22",
+    "article": 4,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_23",
+    "article": 4,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_24",
+    "article": 4,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_25",
+    "article": 4,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_26",
+    "article": 4,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_27",
+    "article": 4,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_28",
+    "article": 5,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_29",
+    "article": 5,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_30",
+    "article": 5,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_31",
+    "article": 5,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_32",
+    "article": 5,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_33",
+    "article": 5,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_34",
+    "article": 5,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_35",
+    "article": 6,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_36",
+    "article": 6,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_37",
+    "article": 6,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_38",
+    "article": 7,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_39",
+    "article": 7,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_40",
+    "article": 7,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_41",
+    "article": 8,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "nguyen_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_42",
+    "article": 8,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_43",
+    "article": 8,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_44",
+    "article": 9,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_45",
+    "article": 9,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_46",
+    "article": 9,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_47",
+    "article": 9,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_48",
+    "article": 9,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_49",
+    "article": 9,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_50",
+    "article": 9,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_51",
+    "article": 9,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_52",
+    "article": 9,
+    "khoan": 9,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_53",
+    "article": 9,
+    "khoan": 10,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_54",
+    "article": 9,
+    "khoan": 11,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_55",
+    "article": 9,
+    "khoan": 12,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_56",
+    "article": 9,
+    "khoan": 13,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_57",
+    "article": 9,
+    "khoan": 14,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_58",
+    "article": 9,
+    "khoan": 15,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_59",
+    "article": 9,
+    "khoan": 16,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_60",
+    "article": 9,
+    "khoan": 17,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_61",
+    "article": 9,
+    "khoan": 18,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_62",
+    "article": 9,
+    "khoan": 19,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_63",
+    "article": 9,
+    "khoan": 20,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_64",
+    "article": 9,
+    "khoan": 21,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_65",
+    "article": 9,
+    "khoan": 22,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_66",
+    "article": 9,
+    "khoan": 23,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_67",
+    "article": 9,
+    "khoan": 24,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_68",
+    "article": 9,
+    "khoan": 25,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_69",
+    "article": 9,
+    "khoan": 26,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_70",
+    "article": 9,
+    "khoan": 27,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_71",
+    "article": 9,
+    "khoan": 28,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_72",
+    "article": 10,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_73",
+    "article": 10,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_74",
+    "article": 10,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_75",
+    "article": 11,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_76",
+    "article": 11,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "den_giao_thong"
+    ]
+  },
+  {
+    "doc_id": "chunk_77",
+    "article": 11,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_78",
+    "article": 11,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "den_giao_thong",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_79",
+    "article": 11,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_80",
+    "article": 11,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_81",
+    "article": 11,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_82",
+    "article": 11,
+    "khoan": 8,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_83",
+    "article": 11,
+    "khoan": 9,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_84",
+    "article": 11,
+    "khoan": 10,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_85",
+    "article": 11,
+    "khoan": 11,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_86",
+    "article": 11,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_87",
+    "article": 11,
+    "khoan": 13,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_88",
+    "article": 11,
+    "khoan": 14,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_89",
+    "article": 12,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_90",
+    "article": 12,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_91",
+    "article": 12,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_92",
+    "article": 12,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_93",
+    "article": 13,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_94",
+    "article": 13,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_95",
+    "article": 13,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_96",
+    "article": 13,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_97",
+    "article": 14,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_98",
+    "article": 14,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_99",
+    "article": 14,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_100",
+    "article": 14,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_101",
+    "article": 14,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_102",
+    "article": 14,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_103",
+    "article": 15,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_104",
+    "article": 15,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_105",
+    "article": 15,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_106",
+    "article": 15,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_107",
+    "article": 16,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_108",
+    "article": 16,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_109",
+    "article": 17,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_110",
+    "article": 17,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_111",
+    "article": 18,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_112",
+    "article": 18,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_113",
+    "article": 18,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_114",
+    "article": 18,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_115",
+    "article": 18,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_116",
+    "article": 18,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_117",
+    "article": 18,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_118",
+    "article": 19,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_119",
+    "article": 19,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_120",
+    "article": 20,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_121",
+    "article": 20,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_122",
+    "article": 20,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_123",
+    "article": 21,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_124",
+    "article": 21,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_125",
+    "article": 22,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_126",
+    "article": 22,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_127",
+    "article": 22,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_128",
+    "article": 23,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_129",
+    "article": 23,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_130",
+    "article": 23,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_131",
+    "article": 23,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_132",
+    "article": 24,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_133",
+    "article": 24,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_134",
+    "article": 24,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_135",
+    "article": 25,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_136",
+    "article": 25,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_137",
+    "article": 25,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_138",
+    "article": 26,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_139",
+    "article": 26,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_140",
+    "article": 26,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_141",
+    "article": 27,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_142",
+    "article": 27,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_143",
+    "article": 27,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "den_giao_thong"
+    ]
+  },
+  {
+    "doc_id": "chunk_144",
+    "article": 27,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "den_giao_thong",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_145",
+    "article": 27,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_146",
+    "article": 27,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_147",
+    "article": 27,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_148",
+    "article": 28,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_149",
+    "article": 28,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_150",
+    "article": 29,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_151",
+    "article": 29,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_152",
+    "article": 29,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_153",
+    "article": 30,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_154",
+    "article": 30,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_155",
+    "article": 31,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_156",
+    "article": 31,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_157",
+    "article": 31,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_158",
+    "article": 31,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_159",
+    "article": 31,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_160",
+    "article": 32,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_161",
+    "article": 32,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_162",
+    "article": 32,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_163",
+    "article": 33,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_164",
+    "article": 33,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_165",
+    "article": 33,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_166",
+    "article": 33,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_167",
+    "article": 33,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_168",
+    "article": 34,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "phuong_tien_giao_thong"
+    ]
+  },
+  {
+    "doc_id": "chunk_169",
+    "article": 34,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "dua_xe",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_170",
+    "article": 34,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_171",
+    "article": 34,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_172",
+    "article": 34,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "chunk_173",
+    "article": 34,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_174",
+    "article": 35,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_175",
+    "article": 35,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_176",
+    "article": 35,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_177",
+    "article": 35,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_178",
+    "article": 35,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_179",
+    "article": 35,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_180",
+    "article": 36,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_181",
+    "article": 36,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_182",
+    "article": 36,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_183",
+    "article": 36,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_184",
+    "article": 37,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_185",
+    "article": 37,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_186",
+    "article": 37,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_187",
+    "article": 37,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_188",
+    "article": 37,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_189",
+    "article": 37,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_190",
+    "article": 37,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_191",
+    "article": 38,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_192",
+    "article": 38,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_193",
+    "article": 38,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_194",
+    "article": 39,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_195",
+    "article": 39,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_196",
+    "article": 39,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_197",
+    "article": 39,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_198",
+    "article": 39,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_199",
+    "article": 39,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_200",
+    "article": 39,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_201",
+    "article": 39,
+    "khoan": 8,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_202",
+    "article": 40,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_203",
+    "article": 40,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_204",
+    "article": 40,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_205",
+    "article": 40,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_206",
+    "article": 41,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_207",
+    "article": 41,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_208",
+    "article": 41,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_209",
+    "article": 41,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_210",
+    "article": 41,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_211",
+    "article": 41,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_212",
+    "article": 41,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_213",
+    "article": 41,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_214",
+    "article": 42,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_215",
+    "article": 42,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_216",
+    "article": 42,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_217",
+    "article": 42,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_218",
+    "article": 42,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_219",
+    "article": 42,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_220",
+    "article": 43,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_221",
+    "article": 43,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_222",
+    "article": 44,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_223",
+    "article": 44,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_224",
+    "article": 44,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_225",
+    "article": 44,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_226",
+    "article": 44,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_227",
+    "article": 45,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_228",
+    "article": 45,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_229",
+    "article": 46,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_230",
+    "article": 46,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_231",
+    "article": 46,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_232",
+    "article": 46,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_233",
+    "article": 46,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_234",
+    "article": 46,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_235",
+    "article": 47,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_236",
+    "article": 47,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_237",
+    "article": 48,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_238",
+    "article": 48,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_239",
+    "article": 49,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_240",
+    "article": 49,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_241",
+    "article": 50,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_242",
+    "article": 50,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_243",
+    "article": 51,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_244",
+    "article": 51,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_245",
+    "article": 51,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_246",
+    "article": 51,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_247",
+    "article": 51,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_248",
+    "article": 51,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_249",
+    "article": 52,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_250",
+    "article": 52,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_251",
+    "article": 52,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_252",
+    "article": 52,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_253",
+    "article": 52,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_254",
+    "article": 52,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_255",
+    "article": 52,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_256",
+    "article": 52,
+    "khoan": 8,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_257",
+    "article": 52,
+    "khoan": 9,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_258",
+    "article": 53,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_259",
+    "article": 53,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_260",
+    "article": 53,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_261",
+    "article": 53,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "chunk_262",
+    "article": 53,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_263",
+    "article": 53,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_264",
+    "article": 53,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_265",
+    "article": 54,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_266",
+    "article": 54,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_267",
+    "article": 54,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_268",
+    "article": 55,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_269",
+    "article": 55,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_270",
+    "article": 55,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_271",
+    "article": 55,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_272",
+    "article": 56,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_273",
+    "article": 56,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_274",
+    "article": 56,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_275",
+    "article": 56,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_276",
+    "article": 56,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_277",
+    "article": 57,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_278",
+    "article": 57,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_279",
+    "article": 57,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_280",
+    "article": 57,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_281",
+    "article": 57,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_282",
+    "article": 57,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_283",
+    "article": 57,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_284",
+    "article": 57,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_285",
+    "article": 57,
+    "khoan": 9,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_286",
+    "article": 58,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_287",
+    "article": 58,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_288",
+    "article": 58,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_289",
+    "article": 58,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_290",
+    "article": 58,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_291",
+    "article": 58,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_292",
+    "article": 59,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_293",
+    "article": 59,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_294",
+    "article": 59,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_295",
+    "article": 60,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_296",
+    "article": 60,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_297",
+    "article": 60,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_298",
+    "article": 60,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_299",
+    "article": 60,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_300",
+    "article": 60,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_301",
+    "article": 60,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_302",
+    "article": 60,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_303",
+    "article": 61,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_304",
+    "article": 61,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_305",
+    "article": 61,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_306",
+    "article": 61,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_307",
+    "article": 61,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_308",
+    "article": 61,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_309",
+    "article": 61,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_310",
+    "article": 62,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_311",
+    "article": 62,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_312",
+    "article": 62,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_313",
+    "article": 62,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_314",
+    "article": 62,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_315",
+    "article": 62,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_316",
+    "article": 62,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_317",
+    "article": 63,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_318",
+    "article": 63,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_319",
+    "article": 63,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_320",
+    "article": 63,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_321",
+    "article": 63,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_322",
+    "article": 64,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_323",
+    "article": 64,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_324",
+    "article": 65,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_325",
+    "article": 65,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_326",
+    "article": 65,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_327",
+    "article": 65,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_328",
+    "article": 65,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_329",
+    "article": 65,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "nguyen_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_330",
+    "article": 65,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_331",
+    "article": 65,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_332",
+    "article": 66,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_333",
+    "article": 66,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_334",
+    "article": 66,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_335",
+    "article": 66,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_336",
+    "article": 67,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_337",
+    "article": 67,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_338",
+    "article": 67,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_339",
+    "article": 67,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_340",
+    "article": 67,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_341",
+    "article": 67,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_342",
+    "article": 67,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_343",
+    "article": 68,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_344",
+    "article": 68,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_345",
+    "article": 68,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_346",
+    "article": 69,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_347",
+    "article": 69,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_348",
+    "article": 69,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_349",
+    "article": 69,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_350",
+    "article": 70,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_351",
+    "article": 70,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_352",
+    "article": 70,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_353",
+    "article": 71,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_354",
+    "article": 71,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_355",
+    "article": 71,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_356",
+    "article": 71,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_357",
+    "article": 72,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_358",
+    "article": 72,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_359",
+    "article": 73,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_360",
+    "article": 73,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_361",
+    "article": 74,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_362",
+    "article": 74,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_363",
+    "article": 74,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_364",
+    "article": 75,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_365",
+    "article": 75,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_366",
+    "article": 75,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_367",
+    "article": 75,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_368",
+    "article": 75,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_369",
+    "article": 76,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_370",
+    "article": 76,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_371",
+    "article": 76,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_372",
+    "article": 77,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_373",
+    "article": 77,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_374",
+    "article": 77,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_375",
+    "article": 77,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_376",
+    "article": 78,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_377",
+    "article": 78,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_378",
+    "article": 79,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_379",
+    "article": 79,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_380",
+    "article": 80,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_381",
+    "article": 80,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_382",
+    "article": 80,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_383",
+    "article": 80,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_384",
+    "article": 81,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_385",
+    "article": 81,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_386",
+    "article": 81,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_387",
+    "article": 81,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_388",
+    "article": 81,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_389",
+    "article": 81,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_390",
+    "article": 82,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_391",
+    "article": 82,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_392",
+    "article": 82,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_393",
+    "article": 82,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_394",
+    "article": 82,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_395",
+    "article": 83,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "nguyen_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_396",
+    "article": 83,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_397",
+    "article": 83,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac",
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_398",
+    "article": 83,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_399",
+    "article": 84,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_400",
+    "article": 84,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_401",
+    "article": 84,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_402",
+    "article": 84,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_403",
+    "article": 84,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_404",
+    "article": 85,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_405",
+    "article": 85,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_406",
+    "article": 85,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "quy_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_407",
+    "article": 85,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "nguyen_tac"
+    ]
+  },
+  {
+    "doc_id": "chunk_408",
+    "article": 85,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_409",
+    "article": 86,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_410",
+    "article": 86,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_411",
+    "article": 86,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_412",
+    "article": 86,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_413",
+    "article": 86,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_414",
+    "article": 86,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_415",
+    "article": 86,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_416",
+    "article": 86,
+    "khoan": 8,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_417",
+    "article": 86,
+    "khoan": 9,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_418",
+    "article": 86,
+    "khoan": 10,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_419",
+    "article": 86,
+    "khoan": 11,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_420",
+    "article": 86,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_421",
+    "article": 86,
+    "khoan": 13,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_422",
+    "article": 87,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_423",
+    "article": 87,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_424",
+    "article": 87,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_425",
+    "article": 87,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_426",
+    "article": 87,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_427",
+    "article": 87,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_428",
+    "article": 87,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_429",
+    "article": 87,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_430",
+    "article": 88,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_431",
+    "article": 88,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_432",
+    "article": 88,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_433",
+    "article": 88,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_434",
+    "article": 89,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_435",
+    "article": 89,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_436",
+    "article": 89,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_437",
+    "article": 89,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_438",
+    "article": 89,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "chunk_439",
+    "article": 89,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "chunk_440",
+    "article": 89,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art1_k1_a",
+    "article": 1,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art1_k1_b",
+    "article": 1,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art1_k2",
+    "article": 1,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art2_k1",
+    "article": 2,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art2_k2_a",
+    "article": 2,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_b",
+    "article": 2,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_c",
+    "article": 2,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_d",
+    "article": 2,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_đ",
+    "article": 2,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_e",
+    "article": 2,
+    "khoan": 2,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_g",
+    "article": 2,
+    "khoan": 2,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k2_h",
+    "article": 2,
+    "khoan": 2,
+    "diem": "h",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k3",
+    "article": 2,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k4",
+    "article": 2,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art2_k5",
+    "article": 2,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "dua_xe",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k1_a",
+    "article": 3,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k1_b",
+    "article": 3,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k1_c",
+    "article": 3,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k2_a",
+    "article": 3,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k2_b",
+    "article": 3,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k2_c",
+    "article": 3,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_a",
+    "article": 3,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_b",
+    "article": 3,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_c",
+    "article": 3,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_d",
+    "article": 3,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_đ",
+    "article": 3,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": [
+      "an_toan",
+      "den_tin_hieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_e",
+    "article": 3,
+    "khoan": 3,
+    "diem": "e",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_g",
+    "article": 3,
+    "khoan": 3,
+    "diem": "g",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_h",
+    "article": 3,
+    "khoan": 3,
+    "diem": "h",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_i",
+    "article": 3,
+    "khoan": 3,
+    "diem": "i",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_k",
+    "article": 3,
+    "khoan": 3,
+    "diem": "k",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_l",
+    "article": 3,
+    "khoan": 3,
+    "diem": "l",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_m",
+    "article": 3,
+    "khoan": 3,
+    "diem": "m",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_n",
+    "article": 3,
+    "khoan": 3,
+    "diem": "n",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_o",
+    "article": 3,
+    "khoan": 3,
+    "diem": "o",
+    "tags": [
+      "an_toan",
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_p",
+    "article": 3,
+    "khoan": 3,
+    "diem": "p",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_q",
+    "article": 3,
+    "khoan": 3,
+    "diem": "q",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_r",
+    "article": 3,
+    "khoan": 3,
+    "diem": "r",
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_s",
+    "article": 3,
+    "khoan": 3,
+    "diem": "s",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k3_t",
+    "article": 3,
+    "khoan": 3,
+    "diem": "t",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k4_a",
+    "article": 3,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art3_k4_b",
+    "article": 3,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art4_k1",
+    "article": 4,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art4_k2",
+    "article": 4,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "dien_thoai",
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art4_k3_a",
+    "article": 4,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art4_k3_b",
+    "article": 4,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_a",
+    "article": 5,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "dua_xe",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_b",
+    "article": 5,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_c",
+    "article": 5,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "dua_xe",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_d",
+    "article": 5,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "dua_xe",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_đ",
+    "article": 5,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": [
+      "dua_xe",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_e",
+    "article": 5,
+    "khoan": 1,
+    "diem": "e",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k1_g",
+    "article": 5,
+    "khoan": 1,
+    "diem": "g",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k2",
+    "article": 5,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k3_a",
+    "article": 5,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k3_b",
+    "article": 5,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k3_c",
+    "article": 5,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k4",
+    "article": 5,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k5",
+    "article": 5,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k6",
+    "article": 5,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art5_k7",
+    "article": 5,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k1_a",
+    "article": 6,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k1_b",
+    "article": 6,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k1_c",
+    "article": 6,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k1_d",
+    "article": 6,
+    "khoan": 1,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k1_đ",
+    "article": 6,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k2_a",
+    "article": 6,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "chuyen_lan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k2_b",
+    "article": 6,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k2_c",
+    "article": 6,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k2_d",
+    "article": 6,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k2_đ",
+    "article": 6,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "an_toan",
+      "dien_thoai",
+      "dung_do_xe",
+      "nguoi_di_bo",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_a",
+    "article": 6,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_b",
+    "article": 6,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_c",
+    "article": 6,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_d",
+    "article": 6,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_đ",
+    "article": 6,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": [
+      "den_tin_hieu",
+      "dung_do_xe",
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_e",
+    "article": 6,
+    "khoan": 3,
+    "diem": "e",
+    "tags": [
+      "dien_thoai",
+      "dung_do_xe",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_g",
+    "article": 6,
+    "khoan": 3,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k3_h",
+    "article": 6,
+    "khoan": 3,
+    "diem": "h",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_i",
+    "article": 6,
+    "khoan": 3,
+    "diem": "i",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_k",
+    "article": 6,
+    "khoan": 3,
+    "diem": "k",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_l",
+    "article": 6,
+    "khoan": 3,
+    "diem": "l",
+    "tags": [
+      "an_toan",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_m",
+    "article": 6,
+    "khoan": 3,
+    "diem": "m",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_n",
+    "article": 6,
+    "khoan": 3,
+    "diem": "n",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k3_o",
+    "article": 6,
+    "khoan": 3,
+    "diem": "o",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k3_p",
+    "article": 6,
+    "khoan": 3,
+    "diem": "p",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_a",
+    "article": 6,
+    "khoan": 4,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k4_b",
+    "article": 6,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "dung_do_xe",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_c",
+    "article": 6,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_d",
+    "article": 6,
+    "khoan": 4,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "khong_nhuong_duong",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_đ",
+    "article": 6,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": [
+      "an_toan",
+      "dung_do_xe",
+      "lui_xe",
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_e",
+    "article": 6,
+    "khoan": 4,
+    "diem": "e",
+    "tags": [
+      "lui_xe",
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_g",
+    "article": 6,
+    "khoan": 4,
+    "diem": "g",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_h",
+    "article": 6,
+    "khoan": 4,
+    "diem": "h",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_i",
+    "article": 6,
+    "khoan": 4,
+    "diem": "i",
+    "tags": [
+      "nguoi_di_bo",
+      "quay_dau",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_k",
+    "article": 6,
+    "khoan": 4,
+    "diem": "k",
+    "tags": [
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k4_l",
+    "article": 6,
+    "khoan": 4,
+    "diem": "l",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_a",
+    "article": 6,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_b",
+    "article": 6,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_c",
+    "article": 6,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_d",
+    "article": 6,
+    "khoan": 5,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "cao_toc",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_đ",
+    "article": 6,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_e",
+    "article": 6,
+    "khoan": 5,
+    "diem": "e",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_g",
+    "article": 6,
+    "khoan": 5,
+    "diem": "g",
+    "tags": [
+      "cao_toc",
+      "chuyen_lan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_h",
+    "article": 6,
+    "khoan": 5,
+    "diem": "h",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_i",
+    "article": 6,
+    "khoan": 5,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k5_k",
+    "article": 6,
+    "khoan": 5,
+    "diem": "k",
+    "tags": [
+      "dung_do_xe",
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_l",
+    "article": 6,
+    "khoan": 5,
+    "diem": "l",
+    "tags": [
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_m",
+    "article": 6,
+    "khoan": 5,
+    "diem": "m",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_n",
+    "article": 6,
+    "khoan": 5,
+    "diem": "n",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_o",
+    "article": 6,
+    "khoan": 5,
+    "diem": "o",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_p",
+    "article": 6,
+    "khoan": 5,
+    "diem": "p",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k5_q",
+    "article": 6,
+    "khoan": 5,
+    "diem": "q",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k6_a",
+    "article": 6,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k6_b",
+    "article": 6,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k6_c",
+    "article": 6,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k6_d",
+    "article": 6,
+    "khoan": 6,
+    "diem": "d",
+    "tags": [
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k7_a",
+    "article": 6,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k7_b",
+    "article": 6,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "cao_toc",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k7_c",
+    "article": 6,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "cao_toc",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k8",
+    "article": 6,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k9_a",
+    "article": 6,
+    "khoan": 9,
+    "diem": "a",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k9_b",
+    "article": 6,
+    "khoan": 9,
+    "diem": "b",
+    "tags": [
+      "den_tin_hieu",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k9_c",
+    "article": 6,
+    "khoan": 9,
+    "diem": "c",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k9_d",
+    "article": 6,
+    "khoan": 9,
+    "diem": "d",
+    "tags": [
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k10_a",
+    "article": 6,
+    "khoan": 10,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "chuyen_lan",
+      "dung_do_xe",
+      "lui_xe",
+      "quay_dau",
+      "tai_nan",
+      "toc_do",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k10_b",
+    "article": 6,
+    "khoan": 10,
+    "diem": "b",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k11_a",
+    "article": 6,
+    "khoan": 11,
+    "diem": "a",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k11_b",
+    "article": 6,
+    "khoan": 11,
+    "diem": "b",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k11_c",
+    "article": 6,
+    "khoan": 11,
+    "diem": "c",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k11_d",
+    "article": 6,
+    "khoan": 11,
+    "diem": "d",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k11_đ",
+    "article": 6,
+    "khoan": 11,
+    "diem": "đ",
+    "tags": [
+      "cao_toc",
+      "lui_xe",
+      "nguoc_chieu",
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k12",
+    "article": 6,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k13",
+    "article": 6,
+    "khoan": 13,
+    "diem": null,
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k14",
+    "article": 6,
+    "khoan": 14,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art6_k15_a",
+    "article": 6,
+    "khoan": 15,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k15_b",
+    "article": 6,
+    "khoan": 15,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k15_c",
+    "article": 6,
+    "khoan": 15,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k16_a",
+    "article": 6,
+    "khoan": 16,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k16_b",
+    "article": 6,
+    "khoan": 16,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k16_c",
+    "article": 6,
+    "khoan": 16,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art6_k16_d",
+    "article": 6,
+    "khoan": 16,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_a",
+    "article": 7,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_b",
+    "article": 7,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_c",
+    "article": 7,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "lui_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_d",
+    "article": 7,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_đ",
+    "article": 7,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k1_e",
+    "article": 7,
+    "khoan": 1,
+    "diem": "e",
+    "tags": [
+      "chuyen_lan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_g",
+    "article": 7,
+    "khoan": 1,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k1_h",
+    "article": 7,
+    "khoan": 1,
+    "diem": "h",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k1_i",
+    "article": 7,
+    "khoan": 1,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k1_k",
+    "article": 7,
+    "khoan": 1,
+    "diem": "k",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_a",
+    "article": 7,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_b",
+    "article": 7,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_c",
+    "article": 7,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "khong_nhuong_duong",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_d",
+    "article": 7,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "dung_do_xe",
+      "khong_nhuong_duong",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_đ",
+    "article": 7,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_e",
+    "article": 7,
+    "khoan": 2,
+    "diem": "e",
+    "tags": [
+      "an_toan",
+      "dung_do_xe",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_g",
+    "article": 7,
+    "khoan": 2,
+    "diem": "g",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_h",
+    "article": 7,
+    "khoan": 2,
+    "diem": "h",
+    "tags": [
+      "mu_bao_hiem"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_i",
+    "article": 7,
+    "khoan": 2,
+    "diem": "i",
+    "tags": [
+      "cho_nguoi",
+      "mu_bao_hiem"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k2_k",
+    "article": 7,
+    "khoan": 2,
+    "diem": "k",
+    "tags": [
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_a",
+    "article": 7,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_b",
+    "article": 7,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k3_c",
+    "article": 7,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_d",
+    "article": 7,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_đ",
+    "article": 7,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_e",
+    "article": 7,
+    "khoan": 3,
+    "diem": "e",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_g",
+    "article": 7,
+    "khoan": 3,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k3_h",
+    "article": 7,
+    "khoan": 3,
+    "diem": "h",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k3_i",
+    "article": 7,
+    "khoan": 3,
+    "diem": "i",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k3_k",
+    "article": 7,
+    "khoan": 3,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k3_l",
+    "article": 7,
+    "khoan": 3,
+    "diem": "l",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k4_a",
+    "article": 7,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k4_b",
+    "article": 7,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k4_c",
+    "article": 7,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k4_d",
+    "article": 7,
+    "khoan": 4,
+    "diem": "d",
+    "tags": [
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k4_đ",
+    "article": 7,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k5_a",
+    "article": 7,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k5_b",
+    "article": 7,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k5_c",
+    "article": 7,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k6_a",
+    "article": 7,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k6_b",
+    "article": 7,
+    "khoan": 6,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k6_c",
+    "article": 7,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k6_d",
+    "article": 7,
+    "khoan": 6,
+    "diem": "d",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k7_a",
+    "article": 7,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "nguoc_chieu",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k7_b",
+    "article": 7,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "cao_toc"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k7_c",
+    "article": 7,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "den_tin_hieu",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k7_d",
+    "article": 7,
+    "khoan": 7,
+    "diem": "d",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k7_đ",
+    "article": 7,
+    "khoan": 7,
+    "diem": "đ",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k8_a",
+    "article": 7,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k8_b",
+    "article": 7,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_a",
+    "article": 7,
+    "khoan": 9,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k9_b",
+    "article": 7,
+    "khoan": 9,
+    "diem": "b",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_c",
+    "article": 7,
+    "khoan": 9,
+    "diem": "c",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_d",
+    "article": 7,
+    "khoan": 9,
+    "diem": "d",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_đ",
+    "article": 7,
+    "khoan": 9,
+    "diem": "đ",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_e",
+    "article": 7,
+    "khoan": 9,
+    "diem": "e",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_g",
+    "article": 7,
+    "khoan": 9,
+    "diem": "g",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_h",
+    "article": 7,
+    "khoan": 9,
+    "diem": "h",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k9_i",
+    "article": 7,
+    "khoan": 9,
+    "diem": "i",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k9_k",
+    "article": 7,
+    "khoan": 9,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k10_a",
+    "article": 7,
+    "khoan": 10,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cao_toc",
+      "chuyen_lan",
+      "dung_do_xe",
+      "lui_xe",
+      "nguoc_chieu",
+      "quay_dau",
+      "tai_nan",
+      "toc_do",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k10_b",
+    "article": 7,
+    "khoan": 10,
+    "diem": "b",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k11_a",
+    "article": 7,
+    "khoan": 11,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k11_b",
+    "article": 7,
+    "khoan": 11,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k11_c",
+    "article": 7,
+    "khoan": 11,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art7_k12_a",
+    "article": 7,
+    "khoan": 12,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k12_b",
+    "article": 7,
+    "khoan": 12,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k12_c",
+    "article": 7,
+    "khoan": 12,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k13_a",
+    "article": 7,
+    "khoan": 13,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k13_b",
+    "article": 7,
+    "khoan": 13,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k13_c",
+    "article": 7,
+    "khoan": 13,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art7_k13_d",
+    "article": 7,
+    "khoan": 13,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k1_a",
+    "article": 8,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k1_b",
+    "article": 8,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k2_a",
+    "article": 8,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k2_b",
+    "article": 8,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "den_tin_hieu",
+      "dung_do_xe",
+      "nguoc_chieu",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k2_c",
+    "article": 8,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "dien_thoai",
+      "dung_do_xe",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k2_d",
+    "article": 8,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k2_đ",
+    "article": 8,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k3_a",
+    "article": 8,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k3_b",
+    "article": 8,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k3_c",
+    "article": 8,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art8_k3_d",
+    "article": 8,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoc_chieu",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k3_đ",
+    "article": 8,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k4_a",
+    "article": 8,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k4_b",
+    "article": 8,
+    "khoan": 4,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art8_k4_c",
+    "article": 8,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k4_d",
+    "article": 8,
+    "khoan": 4,
+    "diem": "d",
+    "tags": [
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k4_đ",
+    "article": 8,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": [
+      "nguoi_di_bo",
+      "quay_dau",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k4_e",
+    "article": 8,
+    "khoan": 4,
+    "diem": "e",
+    "tags": [
+      "lui_xe",
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k5_a",
+    "article": 8,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "lui_xe",
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k5_b",
+    "article": 8,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k5_c",
+    "article": 8,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k5_d",
+    "article": 8,
+    "khoan": 5,
+    "diem": "d",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k5_đ",
+    "article": 8,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": [
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k5_e",
+    "article": 8,
+    "khoan": 5,
+    "diem": "e",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoc_chieu",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_a",
+    "article": 8,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_b",
+    "article": 8,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "cao_toc",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_c",
+    "article": 8,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_d",
+    "article": 8,
+    "khoan": 6,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art8_k6_đ",
+    "article": 8,
+    "khoan": 6,
+    "diem": "đ",
+    "tags": [
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_e",
+    "article": 8,
+    "khoan": 6,
+    "diem": "e",
+    "tags": [
+      "an_toan",
+      "cao_toc",
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_g",
+    "article": 8,
+    "khoan": 6,
+    "diem": "g",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_h",
+    "article": 8,
+    "khoan": 6,
+    "diem": "h",
+    "tags": [
+      "cao_toc",
+      "chuyen_lan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k6_i",
+    "article": 8,
+    "khoan": 6,
+    "diem": "i",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k7_a",
+    "article": 8,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k7_b",
+    "article": 8,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k7_c",
+    "article": 8,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "den_tin_hieu",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k7_d",
+    "article": 8,
+    "khoan": 7,
+    "diem": "d",
+    "tags": [
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k8_a",
+    "article": 8,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "chuyen_lan",
+      "dung_do_xe",
+      "lui_xe",
+      "nguoc_chieu",
+      "quay_dau",
+      "tai_nan",
+      "toc_do",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k8_b",
+    "article": 8,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "cao_toc",
+      "dien_thoai",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k8_c",
+    "article": 8,
+    "khoan": 8,
+    "diem": "c",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k8_d",
+    "article": 8,
+    "khoan": 8,
+    "diem": "d",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k9_a",
+    "article": 8,
+    "khoan": 9,
+    "diem": "a",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k9_b",
+    "article": 8,
+    "khoan": 9,
+    "diem": "b",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k9_c",
+    "article": 8,
+    "khoan": 9,
+    "diem": "c",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k9_d",
+    "article": 8,
+    "khoan": 9,
+    "diem": "d",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k9_đ",
+    "article": 8,
+    "khoan": 9,
+    "diem": "đ",
+    "tags": [
+      "cao_toc",
+      "lui_xe",
+      "nguoc_chieu",
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art8_k9_e",
+    "article": 8,
+    "khoan": 9,
+    "diem": "e",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_a",
+    "article": 9,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art9_k1_b",
+    "article": 9,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_c",
+    "article": 9,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_d",
+    "article": 9,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_đ",
+    "article": 9,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_e",
+    "article": 9,
+    "khoan": 1,
+    "diem": "e",
+    "tags": [
+      "dung_do_xe",
+      "quay_dau"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_g",
+    "article": 9,
+    "khoan": 1,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art9_k1_h",
+    "article": 9,
+    "khoan": 1,
+    "diem": "h",
+    "tags": [
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_i",
+    "article": 9,
+    "khoan": 1,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art9_k1_k",
+    "article": 9,
+    "khoan": 1,
+    "diem": "k",
+    "tags": [
+      "dung_do_xe",
+      "khong_nhuong_duong",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_l",
+    "article": 9,
+    "khoan": 1,
+    "diem": "l",
+    "tags": [
+      "dung_do_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_m",
+    "article": 9,
+    "khoan": 1,
+    "diem": "m",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_n",
+    "article": 9,
+    "khoan": 1,
+    "diem": "n",
+    "tags": [
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_o",
+    "article": 9,
+    "khoan": 1,
+    "diem": "o",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k1_p",
+    "article": 9,
+    "khoan": 1,
+    "diem": "p",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k2_a",
+    "article": 9,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art9_k2_b",
+    "article": 9,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k2_c",
+    "article": 9,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k2_d",
+    "article": 9,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "khong_nhuong_duong",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k2_đ",
+    "article": 9,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "den_tin_hieu",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k3_a",
+    "article": 9,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art9_k3_b",
+    "article": 9,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art9_k3_c",
+    "article": 9,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "nguoc_chieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k3_d",
+    "article": 9,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k4_a",
+    "article": 9,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k4_b",
+    "article": 9,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k4_c",
+    "article": 9,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "khong_chap_hanh",
+      "nong_do_con"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k4_d",
+    "article": 9,
+    "khoan": 4,
+    "diem": "d",
+    "tags": [
+      "mu_bao_hiem"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k4_đ",
+    "article": 9,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": [
+      "cho_nguoi",
+      "mu_bao_hiem"
+    ]
+  },
+  {
+    "doc_id": "ND168_art9_k5",
+    "article": 9,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "cao_toc"
+    ]
+  },
+  {
+    "doc_id": "ND168_art10_k1_a",
+    "article": 10,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "nguoi_di_bo",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art10_k1_b",
+    "article": 10,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "den_tin_hieu",
+      "khong_chap_hanh",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art10_k1_c",
+    "article": 10,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "khong_chap_hanh",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art10_k2_a",
+    "article": 10,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "cao_toc",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art10_k2_b",
+    "article": 10,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "khong_nhuong_duong",
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art10_k2_c",
+    "article": 10,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "nguoi_di_bo"
+    ]
+  },
+  {
+    "doc_id": "ND168_art11_k1_a",
+    "article": 11,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art11_k1_b",
+    "article": 11,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "den_tin_hieu",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art11_k1_c",
+    "article": 11,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art11_k1_d",
+    "article": 11,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art11_k1_đ",
+    "article": 11,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art11_k1_e",
+    "article": 11,
+    "khoan": 1,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art11_k1_g",
+    "article": 11,
+    "khoan": 1,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art11_k2_a",
+    "article": 11,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art11_k2_b",
+    "article": 11,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art11_k2_c",
+    "article": 11,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art11_k3",
+    "article": 11,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "cao_toc"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k1",
+    "article": 12,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k2_a",
+    "article": 12,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k2_b",
+    "article": 12,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k2_c",
+    "article": 12,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k2_d",
+    "article": 12,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k2_đ",
+    "article": 12,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k2_e",
+    "article": 12,
+    "khoan": 2,
+    "diem": "e",
+    "tags": [
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k2_g",
+    "article": 12,
+    "khoan": 2,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k3",
+    "article": 12,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "den_tin_hieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k4",
+    "article": 12,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k5_a",
+    "article": 12,
+    "khoan": 5,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k5_b",
+    "article": 12,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "mu_bao_hiem"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k6_a",
+    "article": 12,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k6_b",
+    "article": 12,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "khong_nhuong_duong",
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k6_c",
+    "article": 12,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k6_d",
+    "article": 12,
+    "khoan": 6,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k7",
+    "article": 12,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "dien_thoai",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k8",
+    "article": 12,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k9",
+    "article": 12,
+    "khoan": 9,
+    "diem": null,
+    "tags": [
+      "dien_thoai",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k10",
+    "article": 12,
+    "khoan": 10,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k11_a",
+    "article": 12,
+    "khoan": 11,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k11_b",
+    "article": 12,
+    "khoan": 11,
+    "diem": "b",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k11_c",
+    "article": 12,
+    "khoan": 11,
+    "diem": "c",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k12",
+    "article": 12,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "giay_to",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k13",
+    "article": 12,
+    "khoan": 13,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k14_a",
+    "article": 12,
+    "khoan": 14,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k14_b",
+    "article": 12,
+    "khoan": 14,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k15",
+    "article": 12,
+    "khoan": 15,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k16_a",
+    "article": 12,
+    "khoan": 16,
+    "diem": "a",
+    "tags": [
+      "den_tin_hieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art12_k16_b",
+    "article": 12,
+    "khoan": 16,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art12_k17",
+    "article": 12,
+    "khoan": 17,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k1",
+    "article": 13,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k2_a",
+    "article": 13,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "den_tin_hieu",
+      "dien_thoai",
+      "toc_do"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k2_b",
+    "article": 13,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k2_c",
+    "article": 13,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k3_a",
+    "article": 13,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k3_b",
+    "article": 13,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k3_c",
+    "article": 13,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k3_d",
+    "article": 13,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k4_a",
+    "article": 13,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k4_b",
+    "article": 13,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k4_c",
+    "article": 13,
+    "khoan": 4,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k5_a",
+    "article": 13,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k5_b",
+    "article": 13,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k5_c",
+    "article": 13,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k5_d",
+    "article": 13,
+    "khoan": 5,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k6_a",
+    "article": 13,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k6_b",
+    "article": 13,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k7_a",
+    "article": 13,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k7_b",
+    "article": 13,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k8_a",
+    "article": 13,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k8_b",
+    "article": 13,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k9_a",
+    "article": 13,
+    "khoan": 9,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k9_b",
+    "article": 13,
+    "khoan": 9,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k10_a",
+    "article": 13,
+    "khoan": 10,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k10_b",
+    "article": 13,
+    "khoan": 10,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k11_a",
+    "article": 13,
+    "khoan": 11,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k11_b",
+    "article": 13,
+    "khoan": 11,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k11_c",
+    "article": 13,
+    "khoan": 11,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art13_k11_d",
+    "article": 13,
+    "khoan": 11,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k12",
+    "article": 13,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k13_a",
+    "article": 13,
+    "khoan": 13,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k13_b",
+    "article": 13,
+    "khoan": 13,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art13_k13_c",
+    "article": 13,
+    "khoan": 13,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k1_a",
+    "article": 14,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k1_b",
+    "article": 14,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "den_tin_hieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k1_c",
+    "article": 14,
+    "khoan": 1,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art14_k1_d",
+    "article": 14,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k1_đ",
+    "article": 14,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art14_k2_a",
+    "article": 14,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k2_b",
+    "article": 14,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k2_c",
+    "article": 14,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k2_d",
+    "article": 14,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k2_đ",
+    "article": 14,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art14_k3_a",
+    "article": 14,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k3_b",
+    "article": 14,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k4",
+    "article": 14,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art14_k5_a",
+    "article": 14,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k5_b",
+    "article": 14,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k6_a",
+    "article": 14,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k6_b",
+    "article": 14,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k7",
+    "article": 14,
+    "khoan": 7,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k8_a",
+    "article": 14,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art14_k8_b",
+    "article": 14,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art15_k1",
+    "article": 15,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "den_tin_hieu"
+    ]
+  },
+  {
+    "doc_id": "ND168_art15_k2",
+    "article": 15,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art16_k1_a",
+    "article": 16,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k1_b",
+    "article": 16,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k1_c",
+    "article": 16,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k1_d",
+    "article": 16,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k1_đ",
+    "article": 16,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k1_e",
+    "article": 16,
+    "khoan": 1,
+    "diem": "e",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k2_a",
+    "article": 16,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art16_k2_b",
+    "article": 16,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k2_c",
+    "article": 16,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k2_đ",
+    "article": 16,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k2_đ",
+    "article": 16,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k3",
+    "article": 16,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art16_k4_a",
+    "article": 16,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k4_b",
+    "article": 16,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k5_a",
+    "article": 16,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k5_b",
+    "article": 16,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art16_k6",
+    "article": 16,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art17_k1",
+    "article": 17,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art17_k2_a",
+    "article": 17,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang"
+    ]
+  },
+  {
+    "doc_id": "ND168_art17_k2_b",
+    "article": 17,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art17_k3",
+    "article": 17,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art17_k4",
+    "article": 17,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art17_k5",
+    "article": 17,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k1",
+    "article": 18,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k2_a",
+    "article": 18,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art18_k2_b",
+    "article": 18,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art18_k2_c",
+    "article": 18,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k2_d",
+    "article": 18,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k3_a",
+    "article": 18,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k3_b",
+    "article": 18,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k3_c",
+    "article": 18,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k4_a",
+    "article": 18,
+    "khoan": 4,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art18_k4_b",
+    "article": 18,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k4_c",
+    "article": 18,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k5_a",
+    "article": 18,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k5_b",
+    "article": 18,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k5_c",
+    "article": 18,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k6",
+    "article": 18,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k7_a",
+    "article": 18,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k7_b",
+    "article": 18,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k7_c",
+    "article": 18,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k7_d",
+    "article": 18,
+    "khoan": 7,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k8_a",
+    "article": 18,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k8_b",
+    "article": 18,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k8_c",
+    "article": 18,
+    "khoan": 8,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k9_a",
+    "article": 18,
+    "khoan": 9,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k9_b",
+    "article": 18,
+    "khoan": 9,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k10",
+    "article": 18,
+    "khoan": 10,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k11",
+    "article": 18,
+    "khoan": 11,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art18_k12",
+    "article": 18,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art19_k1",
+    "article": 19,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art19_k2",
+    "article": 19,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k1",
+    "article": 20,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k2",
+    "article": 20,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k3_a",
+    "article": 20,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k3_b",
+    "article": 20,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k3_c",
+    "article": 20,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k3_d",
+    "article": 20,
+    "khoan": 3,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k3_đ",
+    "article": 20,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k3_e",
+    "article": 20,
+    "khoan": 3,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k3_g",
+    "article": 20,
+    "khoan": 3,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k3_h",
+    "article": 20,
+    "khoan": 3,
+    "diem": "h",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k3_i",
+    "article": 20,
+    "khoan": 3,
+    "diem": "i",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k3_k",
+    "article": 20,
+    "khoan": 3,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k4",
+    "article": 20,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k5_a",
+    "article": 20,
+    "khoan": 5,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_b",
+    "article": 20,
+    "khoan": 5,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_c",
+    "article": 20,
+    "khoan": 5,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_d",
+    "article": 20,
+    "khoan": 5,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_đ",
+    "article": 20,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k5_e",
+    "article": 20,
+    "khoan": 5,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_g",
+    "article": 20,
+    "khoan": 5,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_h",
+    "article": 20,
+    "khoan": 5,
+    "diem": "h",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k5_i",
+    "article": 20,
+    "khoan": 5,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_k",
+    "article": 20,
+    "khoan": 5,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k5_l",
+    "article": 20,
+    "khoan": 5,
+    "diem": "l",
+    "tags": [
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k5_m",
+    "article": 20,
+    "khoan": 5,
+    "diem": "m",
+    "tags": [
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k6_a",
+    "article": 20,
+    "khoan": 6,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k6_b",
+    "article": 20,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k6_c",
+    "article": 20,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k6_d",
+    "article": 20,
+    "khoan": 6,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k6_đ",
+    "article": 20,
+    "khoan": 6,
+    "diem": "đ",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k6_e",
+    "article": 20,
+    "khoan": 6,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k7",
+    "article": 20,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k8",
+    "article": 20,
+    "khoan": 8,
+    "diem": null,
+    "tags": [
+      "cao_toc"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k9",
+    "article": 20,
+    "khoan": 9,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art20_k10_a",
+    "article": 20,
+    "khoan": 10,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k10_b",
+    "article": 20,
+    "khoan": 10,
+    "diem": "b",
+    "tags": [
+      "giay_to",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k10_c",
+    "article": 20,
+    "khoan": 10,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art20_k10_d",
+    "article": 20,
+    "khoan": 10,
+    "diem": "d",
+    "tags": [
+      "giay_to",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k1_a",
+    "article": 21,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k1_b",
+    "article": 21,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k2_a",
+    "article": 21,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k2_b",
+    "article": 21,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "cho_hang"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k2_c",
+    "article": 21,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k2_d",
+    "article": 21,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k2_đ",
+    "article": 21,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k3_a",
+    "article": 21,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k3_b",
+    "article": 21,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k4",
+    "article": 21,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "cho_hang"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k5_a",
+    "article": 21,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k5_b",
+    "article": 21,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k5_c",
+    "article": 21,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k5_d",
+    "article": 21,
+    "khoan": 5,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k6_a",
+    "article": 21,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k6_b",
+    "article": 21,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k6_c",
+    "article": 21,
+    "khoan": 6,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k6_d",
+    "article": 21,
+    "khoan": 6,
+    "diem": "d",
+    "tags": [
+      "cho_hang"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k6_đ",
+    "article": 21,
+    "khoan": 6,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k7_a",
+    "article": 21,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k7_b",
+    "article": 21,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k8_a",
+    "article": 21,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k8_b",
+    "article": 21,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k8_c",
+    "article": 21,
+    "khoan": 8,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k8_d",
+    "article": 21,
+    "khoan": 8,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k8_đ",
+    "article": 21,
+    "khoan": 8,
+    "diem": "đ",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k9",
+    "article": 21,
+    "khoan": 9,
+    "diem": null,
+    "tags": [
+      "cao_toc"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k10_a",
+    "article": 21,
+    "khoan": 10,
+    "diem": "a",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k10_b",
+    "article": 21,
+    "khoan": 10,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k11",
+    "article": 21,
+    "khoan": 11,
+    "diem": null,
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k12",
+    "article": 21,
+    "khoan": 12,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art21_k13_a",
+    "article": 21,
+    "khoan": 13,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k13_b",
+    "article": 21,
+    "khoan": 13,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k13_c",
+    "article": 21,
+    "khoan": 13,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k13_d",
+    "article": 21,
+    "khoan": 13,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art21_k13_đ",
+    "article": 21,
+    "khoan": 13,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k1_a",
+    "article": 22,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "cho_hang"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k1_b",
+    "article": 22,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k2",
+    "article": 22,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k3_a",
+    "article": 22,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k3_b",
+    "article": 22,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k3_c",
+    "article": 22,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k3_d",
+    "article": 22,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k4",
+    "article": 22,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art22_k5",
+    "article": 22,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k6_a",
+    "article": 22,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art22_k6_b",
+    "article": 22,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art23_k1",
+    "article": 23,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art23_k2",
+    "article": 23,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art23_k3",
+    "article": 23,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art23_k4",
+    "article": 23,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art23_k5",
+    "article": 23,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art23_k6",
+    "article": 23,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art23_k7_a",
+    "article": 23,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art23_k7_b",
+    "article": 23,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art24_k1",
+    "article": 24,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art24_k2",
+    "article": 24,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art24_k3",
+    "article": 24,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art25_k1",
+    "article": 25,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art25_k2",
+    "article": 25,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k1_a",
+    "article": 26,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k1_b",
+    "article": 26,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k2_a",
+    "article": 26,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k2_b",
+    "article": 26,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k2_c",
+    "article": 26,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k2_d",
+    "article": 26,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k2_đ",
+    "article": 26,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k2_e",
+    "article": 26,
+    "khoan": 2,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k3",
+    "article": 26,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k4_a",
+    "article": 26,
+    "khoan": 4,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k4_b",
+    "article": 26,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k4_c",
+    "article": 26,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k4_d",
+    "article": 26,
+    "khoan": 4,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k4_đ",
+    "article": 26,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k4_e",
+    "article": 26,
+    "khoan": 4,
+    "diem": "e",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k4_g",
+    "article": 26,
+    "khoan": 4,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k5",
+    "article": 26,
+    "khoan": 5,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k6_a",
+    "article": 26,
+    "khoan": 6,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k6_b",
+    "article": 26,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k6_c",
+    "article": 26,
+    "khoan": 6,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k6_d",
+    "article": 26,
+    "khoan": 6,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k7_a",
+    "article": 26,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k7_b",
+    "article": 26,
+    "khoan": 7,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k7_c",
+    "article": 26,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k7_d",
+    "article": 26,
+    "khoan": 7,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k7_đ",
+    "article": 26,
+    "khoan": 7,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k7_e",
+    "article": 26,
+    "khoan": 7,
+    "diem": "e",
+    "tags": [
+      "an_toan",
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k7_g",
+    "article": 26,
+    "khoan": 7,
+    "diem": "g",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k7_h",
+    "article": 26,
+    "khoan": 7,
+    "diem": "h",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k7_i",
+    "article": 26,
+    "khoan": 7,
+    "diem": "i",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k8_a",
+    "article": 26,
+    "khoan": 8,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k8_b",
+    "article": 26,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k8_c",
+    "article": 26,
+    "khoan": 8,
+    "diem": "c",
+    "tags": [
+      "cao_toc"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k9_a",
+    "article": 26,
+    "khoan": 9,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k9_b",
+    "article": 26,
+    "khoan": 9,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k10_a",
+    "article": 26,
+    "khoan": 10,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k10_b",
+    "article": 26,
+    "khoan": 10,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k11",
+    "article": 26,
+    "khoan": 11,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k12",
+    "article": 26,
+    "khoan": 12,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k13_a",
+    "article": 26,
+    "khoan": 13,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k13_b",
+    "article": 26,
+    "khoan": 13,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k13_c",
+    "article": 26,
+    "khoan": 13,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k13_d",
+    "article": 26,
+    "khoan": 13,
+    "diem": "d",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k13_đ",
+    "article": 26,
+    "khoan": 13,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art26_k14_a",
+    "article": 26,
+    "khoan": 14,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art26_k14_b",
+    "article": 26,
+    "khoan": 14,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art27_k1_a",
+    "article": 27,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art27_k1_b",
+    "article": 27,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art27_k1_c",
+    "article": 27,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art27_k2",
+    "article": 27,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art27_k3_a",
+    "article": 27,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art27_k3_b",
+    "article": 27,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art27_k3_c",
+    "article": 27,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art27_k3_d",
+    "article": 27,
+    "khoan": 3,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art27_k4",
+    "article": 27,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art28_k1",
+    "article": 28,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art28_k2",
+    "article": 28,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art28_k3",
+    "article": 28,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art28_k4_a",
+    "article": 28,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art28_k4_b",
+    "article": 28,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art29_k1",
+    "article": 29,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art29_k2",
+    "article": 29,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art29_k3",
+    "article": 29,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art29_k4",
+    "article": 29,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art30_k1",
+    "article": 30,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art30_k2",
+    "article": 30,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art30_k3",
+    "article": 30,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art31_k1",
+    "article": 31,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art31_k2",
+    "article": 31,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art31_k3",
+    "article": 31,
+    "khoan": 3,
+    "diem": null,
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art31_k4",
+    "article": 31,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k1_a",
+    "article": 32,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k1_b",
+    "article": 32,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k2_a",
+    "article": 32,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k2_b",
+    "article": 32,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k3_a",
+    "article": 32,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k3_b",
+    "article": 32,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k3_c",
+    "article": 32,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k4",
+    "article": 32,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k5",
+    "article": 32,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k6",
+    "article": 32,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k7_a",
+    "article": 32,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_b",
+    "article": 32,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_c",
+    "article": 32,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_d",
+    "article": 32,
+    "khoan": 7,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_đ",
+    "article": 32,
+    "khoan": 7,
+    "diem": "đ",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_e",
+    "article": 32,
+    "khoan": 7,
+    "diem": "e",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_g",
+    "article": 32,
+    "khoan": 7,
+    "diem": "g",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_h",
+    "article": 32,
+    "khoan": 7,
+    "diem": "h",
+    "tags": [
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_i",
+    "article": 32,
+    "khoan": 7,
+    "diem": "i",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_k",
+    "article": 32,
+    "khoan": 7,
+    "diem": "k",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_l",
+    "article": 32,
+    "khoan": 7,
+    "diem": "l",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_m",
+    "article": 32,
+    "khoan": 7,
+    "diem": "m",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_n",
+    "article": 32,
+    "khoan": 7,
+    "diem": "n",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k7_o",
+    "article": 32,
+    "khoan": 7,
+    "diem": "o",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_a",
+    "article": 32,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_b",
+    "article": 32,
+    "khoan": 8,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k8_c",
+    "article": 32,
+    "khoan": 8,
+    "diem": "c",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_d",
+    "article": 32,
+    "khoan": 8,
+    "diem": "d",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_đ",
+    "article": 32,
+    "khoan": 8,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_e",
+    "article": 32,
+    "khoan": 8,
+    "diem": "e",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_g",
+    "article": 32,
+    "khoan": 8,
+    "diem": "g",
+    "tags": [
+      "bien_so",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k8_h",
+    "article": 32,
+    "khoan": 8,
+    "diem": "h",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k9_a",
+    "article": 32,
+    "khoan": 9,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k9_b",
+    "article": 32,
+    "khoan": 9,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k9_c",
+    "article": 32,
+    "khoan": 9,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k9_d",
+    "article": 32,
+    "khoan": 9,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k9_đ",
+    "article": 32,
+    "khoan": 9,
+    "diem": "đ",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k9_e",
+    "article": 32,
+    "khoan": 9,
+    "diem": "e",
+    "tags": [
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k10",
+    "article": 32,
+    "khoan": 10,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k11_a",
+    "article": 32,
+    "khoan": 11,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k11_b",
+    "article": 32,
+    "khoan": 11,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k11_c",
+    "article": 32,
+    "khoan": 11,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k11_d",
+    "article": 32,
+    "khoan": 11,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k11_đ",
+    "article": 32,
+    "khoan": 11,
+    "diem": "đ",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k12_a",
+    "article": 32,
+    "khoan": 12,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k12_b",
+    "article": 32,
+    "khoan": 12,
+    "diem": "b",
+    "tags": [
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k12_c",
+    "article": 32,
+    "khoan": 12,
+    "diem": "c",
+    "tags": [
+      "bien_so",
+      "cho_hang",
+      "cho_nguoi",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k12_d",
+    "article": 32,
+    "khoan": 12,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k13_a",
+    "article": 32,
+    "khoan": 13,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k13_b",
+    "article": 32,
+    "khoan": 13,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k13_c",
+    "article": 32,
+    "khoan": 13,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k13_d",
+    "article": 32,
+    "khoan": 13,
+    "diem": "d",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k13_đ",
+    "article": 32,
+    "khoan": 13,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k14_a",
+    "article": 32,
+    "khoan": 14,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_b",
+    "article": 32,
+    "khoan": 14,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_c",
+    "article": 32,
+    "khoan": 14,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_d",
+    "article": 32,
+    "khoan": 14,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_đ",
+    "article": 32,
+    "khoan": 14,
+    "diem": "đ",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_e",
+    "article": 32,
+    "khoan": 14,
+    "diem": "e",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_g",
+    "article": 32,
+    "khoan": 14,
+    "diem": "g",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_h",
+    "article": 32,
+    "khoan": 14,
+    "diem": "h",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k14_i",
+    "article": 32,
+    "khoan": 14,
+    "diem": "i",
+    "tags": [
+      "an_toan",
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k15",
+    "article": 32,
+    "khoan": 15,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k16_a",
+    "article": 32,
+    "khoan": 16,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k16_b",
+    "article": 32,
+    "khoan": 16,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k16_c",
+    "article": 32,
+    "khoan": 16,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_a",
+    "article": 32,
+    "khoan": 17,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_b",
+    "article": 32,
+    "khoan": 17,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_c",
+    "article": 32,
+    "khoan": 17,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_d",
+    "article": 32,
+    "khoan": 17,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_đ",
+    "article": 32,
+    "khoan": 17,
+    "diem": "đ",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_e",
+    "article": 32,
+    "khoan": 17,
+    "diem": "e",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k17_g",
+    "article": 32,
+    "khoan": 17,
+    "diem": "g",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k18_a",
+    "article": 32,
+    "khoan": 18,
+    "diem": "a",
+    "tags": [
+      "bien_so",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k18_b",
+    "article": 32,
+    "khoan": 18,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k18_c",
+    "article": 32,
+    "khoan": 18,
+    "diem": "c",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k18_d",
+    "article": 32,
+    "khoan": 18,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k18_đ",
+    "article": 32,
+    "khoan": 18,
+    "diem": "đ",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_a",
+    "article": 32,
+    "khoan": 19,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_b",
+    "article": 32,
+    "khoan": 19,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_c",
+    "article": 32,
+    "khoan": 19,
+    "diem": "c",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_d",
+    "article": 32,
+    "khoan": 19,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_đ",
+    "article": 32,
+    "khoan": 19,
+    "diem": "đ",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_e",
+    "article": 32,
+    "khoan": 19,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k19_g",
+    "article": 32,
+    "khoan": 19,
+    "diem": "g",
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_h",
+    "article": 32,
+    "khoan": 19,
+    "diem": "h",
+    "tags": [
+      "an_toan",
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_i",
+    "article": 32,
+    "khoan": 19,
+    "diem": "i",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k19_k",
+    "article": 32,
+    "khoan": 19,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art32_k19_l",
+    "article": 32,
+    "khoan": 19,
+    "diem": "l",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k20",
+    "article": 32,
+    "khoan": 20,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_a",
+    "article": 32,
+    "khoan": 21,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_b",
+    "article": 32,
+    "khoan": 21,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_c",
+    "article": 32,
+    "khoan": 21,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_d",
+    "article": 32,
+    "khoan": 21,
+    "diem": "d",
+    "tags": [
+      "giay_to",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_đ",
+    "article": 32,
+    "khoan": 21,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_e",
+    "article": 32,
+    "khoan": 21,
+    "diem": "e",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_g",
+    "article": 32,
+    "khoan": 21,
+    "diem": "g",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art32_k21_h",
+    "article": 32,
+    "khoan": 21,
+    "diem": "h",
+    "tags": [
+      "giay_to",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art33_k1_a",
+    "article": 33,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art33_k1_b",
+    "article": 33,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art33_k2_a",
+    "article": 33,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art33_k2_b",
+    "article": 33,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art33_k3",
+    "article": 33,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art33_k4",
+    "article": 33,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art34_k1",
+    "article": 34,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k2",
+    "article": 34,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k3_a",
+    "article": 34,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "giay_to",
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k3_b",
+    "article": 34,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k3_c",
+    "article": 34,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k3_d",
+    "article": 34,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k4_a",
+    "article": 34,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k4_b",
+    "article": 34,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k4_c",
+    "article": 34,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k5_a",
+    "article": 34,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "cho_hang",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k5_b",
+    "article": 34,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "cho_hang",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k6",
+    "article": 34,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art34_k7_a",
+    "article": 34,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k7_b",
+    "article": 34,
+    "khoan": 7,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k7_c",
+    "article": 34,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art34_k7_d",
+    "article": 34,
+    "khoan": 7,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art35_k1",
+    "article": 35,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "toc_do",
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art35_k2",
+    "article": 35,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art35_k3_a",
+    "article": 35,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art35_k3_b",
+    "article": 35,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "dua_xe"
+    ]
+  },
+  {
+    "doc_id": "ND168_art35_k4",
+    "article": 35,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "dua_xe",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art36_k1_a",
+    "article": 36,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art36_k1_b",
+    "article": 36,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "bien_so",
+      "khong_nhuong_duong"
+    ]
+  },
+  {
+    "doc_id": "ND168_art36_k2_a",
+    "article": 36,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art36_k2_b",
+    "article": 36,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art36_k2_c",
+    "article": 36,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art36_k2_d",
+    "article": 36,
+    "khoan": 2,
+    "diem": "d",
+    "tags": [
+      "vuot"
+    ]
+  },
+  {
+    "doc_id": "ND168_art37_k1_a",
+    "article": 37,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art37_k1_b",
+    "article": 37,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art37_k2",
+    "article": 37,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art37_k3_a",
+    "article": 37,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art37_k3_b",
+    "article": 37,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art37_k3_c",
+    "article": 37,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art37_k4_a",
+    "article": 37,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "bien_so"
+    ]
+  },
+  {
+    "doc_id": "ND168_art37_k4_b",
+    "article": 37,
+    "khoan": 4,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art37_k5",
+    "article": 37,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art37_k6",
+    "article": 37,
+    "khoan": 6,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art37_k7",
+    "article": 37,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k1_a",
+    "article": 38,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k1_b",
+    "article": 38,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k2_a",
+    "article": 38,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k2_b",
+    "article": 38,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k3",
+    "article": 38,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k4",
+    "article": 38,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art38_k5",
+    "article": 38,
+    "khoan": 5,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k1_a",
+    "article": 39,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k1_b",
+    "article": 39,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k1_c",
+    "article": 39,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k1_d",
+    "article": 39,
+    "khoan": 1,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k1_đ",
+    "article": 39,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k1_e",
+    "article": 39,
+    "khoan": 1,
+    "diem": "e",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k2_a",
+    "article": 39,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k2_b",
+    "article": 39,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k2_c",
+    "article": 39,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_a",
+    "article": 39,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_b",
+    "article": 39,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k3_c",
+    "article": 39,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_d",
+    "article": 39,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k3_đ",
+    "article": 39,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_e",
+    "article": 39,
+    "khoan": 3,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_g",
+    "article": 39,
+    "khoan": 3,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_h",
+    "article": 39,
+    "khoan": 3,
+    "diem": "h",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k3_i",
+    "article": 39,
+    "khoan": 3,
+    "diem": "i",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k3_k",
+    "article": 39,
+    "khoan": 3,
+    "diem": "k",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k4_a",
+    "article": 39,
+    "khoan": 4,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k4_b",
+    "article": 39,
+    "khoan": 4,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k4_c",
+    "article": 39,
+    "khoan": 4,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k4_d",
+    "article": 39,
+    "khoan": 4,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k4_đ",
+    "article": 39,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k4_e",
+    "article": 39,
+    "khoan": 4,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k4_g",
+    "article": 39,
+    "khoan": 4,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k4_h",
+    "article": 39,
+    "khoan": 4,
+    "diem": "h",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k4_i",
+    "article": 39,
+    "khoan": 4,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k4_k",
+    "article": 39,
+    "khoan": 4,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k5_a",
+    "article": 39,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k5_b",
+    "article": 39,
+    "khoan": 5,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k5_c",
+    "article": 39,
+    "khoan": 5,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k5_d",
+    "article": 39,
+    "khoan": 5,
+    "diem": "d",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k5_đ",
+    "article": 39,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k5_e",
+    "article": 39,
+    "khoan": 5,
+    "diem": "e",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k5_g",
+    "article": 39,
+    "khoan": 5,
+    "diem": "g",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k5_h",
+    "article": 39,
+    "khoan": 5,
+    "diem": "h",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k5_i",
+    "article": 39,
+    "khoan": 5,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k5_k",
+    "article": 39,
+    "khoan": 5,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k6",
+    "article": 39,
+    "khoan": 6,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k7_a",
+    "article": 39,
+    "khoan": 7,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k7_b",
+    "article": 39,
+    "khoan": 7,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k7_c",
+    "article": 39,
+    "khoan": 7,
+    "diem": "c",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k8",
+    "article": 39,
+    "khoan": 8,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k9_a",
+    "article": 39,
+    "khoan": 9,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k9_b",
+    "article": 39,
+    "khoan": 9,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art39_k9_c",
+    "article": 39,
+    "khoan": 9,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k9_đ",
+    "article": 39,
+    "khoan": 9,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art39_k10",
+    "article": 39,
+    "khoan": 10,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_a",
+    "article": 40,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_b",
+    "article": 40,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_c",
+    "article": 40,
+    "khoan": 1,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_a",
+    "article": 40,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_b",
+    "article": 40,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_c",
+    "article": 40,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_d",
+    "article": 40,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_đ",
+    "article": 40,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_e",
+    "article": 40,
+    "khoan": 2,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_g",
+    "article": 40,
+    "khoan": 2,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_a",
+    "article": 40,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_b",
+    "article": 40,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_c",
+    "article": 40,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_d",
+    "article": 40,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art40_k3_đ",
+    "article": 40,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_e",
+    "article": 40,
+    "khoan": 3,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k4_a",
+    "article": 40,
+    "khoan": 4,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k4_b",
+    "article": 40,
+    "khoan": 4,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k4_c",
+    "article": 40,
+    "khoan": 4,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k5_a",
+    "article": 40,
+    "khoan": 5,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k5_b",
+    "article": 40,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art40_k6_a",
+    "article": 40,
+    "khoan": 6,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k6_b",
+    "article": 40,
+    "khoan": 6,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art41_k1",
+    "article": 41,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art41_k2_a",
+    "article": 41,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art41_k2_b",
+    "article": 41,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art41_k2_c",
+    "article": 41,
+    "khoan": 2,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art41_k2_d",
+    "article": 41,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_a",
+    "article": 40,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_b",
+    "article": 40,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_c",
+    "article": 40,
+    "khoan": 1,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k1_d",
+    "article": 40,
+    "khoan": 1,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_a",
+    "article": 40,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_b",
+    "article": 40,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_c",
+    "article": 40,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art40_k2_d",
+    "article": 40,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k2_đ",
+    "article": 40,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_a",
+    "article": 40,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_b",
+    "article": 40,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_c",
+    "article": 40,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art40_k3_d",
+    "article": 40,
+    "khoan": 3,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art40_k3_đ",
+    "article": 40,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k1_a",
+    "article": 43,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k1_b",
+    "article": 43,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k2_a",
+    "article": 43,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k2_b",
+    "article": 43,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k3_a",
+    "article": 43,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k3_b",
+    "article": 43,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k3_c",
+    "article": 43,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k3_d",
+    "article": 43,
+    "khoan": 3,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k4_a",
+    "article": 43,
+    "khoan": 4,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k4_b",
+    "article": 43,
+    "khoan": 4,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k4_c",
+    "article": 43,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art43_k4_d",
+    "article": 43,
+    "khoan": 4,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k4_đ",
+    "article": 43,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k5_a",
+    "article": 43,
+    "khoan": 5,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k5_b",
+    "article": 43,
+    "khoan": 5,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k5_c",
+    "article": 43,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art43_k5_d",
+    "article": 43,
+    "khoan": 5,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k5_đ",
+    "article": 43,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k6_a",
+    "article": 43,
+    "khoan": 6,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k6_b",
+    "article": 43,
+    "khoan": 6,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k6_c",
+    "article": 43,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art43_k6_d",
+    "article": 43,
+    "khoan": 6,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art43_k6_đ",
+    "article": 43,
+    "khoan": 6,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k1_a",
+    "article": 44,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k1_b",
+    "article": 44,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k1_c",
+    "article": 44,
+    "khoan": 1,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k1_d",
+    "article": 44,
+    "khoan": 1,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k2_a",
+    "article": 44,
+    "khoan": 2,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k2_b",
+    "article": 44,
+    "khoan": 2,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k2_c",
+    "article": 44,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art44_k2_d",
+    "article": 44,
+    "khoan": 2,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k2_đ",
+    "article": 44,
+    "khoan": 2,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k3_a",
+    "article": 44,
+    "khoan": 3,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k3_b",
+    "article": 44,
+    "khoan": 3,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k3_c",
+    "article": 44,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art44_k3_d",
+    "article": 44,
+    "khoan": 3,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k3_đ",
+    "article": 44,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k4_a",
+    "article": 44,
+    "khoan": 4,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k4_b",
+    "article": 44,
+    "khoan": 4,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k4_c",
+    "article": 44,
+    "khoan": 4,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art44_k4_d",
+    "article": 44,
+    "khoan": 4,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art44_k4_đ",
+    "article": 44,
+    "khoan": 4,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art45_k1",
+    "article": 45,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art45_k2",
+    "article": 45,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art45_k3",
+    "article": 45,
+    "khoan": 3,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art46_k1",
+    "article": 46,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art46_k2",
+    "article": 46,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k1",
+    "article": 47,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k2",
+    "article": 47,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_a",
+    "article": 47,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_b",
+    "article": 47,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_c",
+    "article": 47,
+    "khoan": 3,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_d",
+    "article": 47,
+    "khoan": 3,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_đ",
+    "article": 47,
+    "khoan": 3,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_e",
+    "article": 47,
+    "khoan": 3,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_g",
+    "article": 47,
+    "khoan": 3,
+    "diem": "g",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_h",
+    "article": 47,
+    "khoan": 3,
+    "diem": "h",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_i",
+    "article": 47,
+    "khoan": 3,
+    "diem": "i",
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_k",
+    "article": 47,
+    "khoan": 3,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_l",
+    "article": 47,
+    "khoan": 3,
+    "diem": "l",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_m",
+    "article": 47,
+    "khoan": 3,
+    "diem": "m",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_n",
+    "article": 47,
+    "khoan": 3,
+    "diem": "n",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_o",
+    "article": 47,
+    "khoan": 3,
+    "diem": "o",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_p",
+    "article": 47,
+    "khoan": 3,
+    "diem": "p",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k3_q",
+    "article": 47,
+    "khoan": 3,
+    "diem": "q",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_r",
+    "article": 47,
+    "khoan": 3,
+    "diem": "r",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_s",
+    "article": 47,
+    "khoan": 3,
+    "diem": "s",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k3_t",
+    "article": 47,
+    "khoan": 3,
+    "diem": "t",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k4",
+    "article": 47,
+    "khoan": 4,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k5_a",
+    "article": 47,
+    "khoan": 5,
+    "diem": "a",
+    "tags": [
+      "cho_nguoi",
+      "dien_thoai",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_b",
+    "article": 47,
+    "khoan": 5,
+    "diem": "b",
+    "tags": [
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_c",
+    "article": 47,
+    "khoan": 5,
+    "diem": "c",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_d",
+    "article": 47,
+    "khoan": 5,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_đ",
+    "article": 47,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_e",
+    "article": 47,
+    "khoan": 5,
+    "diem": "e",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_g",
+    "article": 47,
+    "khoan": 5,
+    "diem": "g",
+    "tags": [
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k5_h",
+    "article": 47,
+    "khoan": 5,
+    "diem": "h",
+    "tags": [
+      "cho_nguoi",
+      "via_he"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k6_a",
+    "article": 47,
+    "khoan": 6,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k6_b",
+    "article": 47,
+    "khoan": 6,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k6_c",
+    "article": 47,
+    "khoan": 6,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k6_d",
+    "article": 47,
+    "khoan": 6,
+    "diem": "d",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k6_đ",
+    "article": 47,
+    "khoan": 6,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k6_e",
+    "article": 47,
+    "khoan": 6,
+    "diem": "e",
+    "tags": [
+      "bien_so",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k6_g",
+    "article": 47,
+    "khoan": 6,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k7",
+    "article": 47,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art47_k8_a",
+    "article": 47,
+    "khoan": 8,
+    "diem": "a",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k8_b",
+    "article": 47,
+    "khoan": 8,
+    "diem": "b",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k8_c",
+    "article": 47,
+    "khoan": 8,
+    "diem": "c",
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k9",
+    "article": 47,
+    "khoan": 9,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k10",
+    "article": 47,
+    "khoan": 10,
+    "diem": null,
+    "tags": [
+      "giay_to",
+      "tai_nan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k11_a",
+    "article": 47,
+    "khoan": 11,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k11_b",
+    "article": 47,
+    "khoan": 11,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k11_c",
+    "article": 47,
+    "khoan": 11,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art47_k12",
+    "article": 47,
+    "khoan": 12,
+    "diem": null,
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art48_k1_a",
+    "article": 48,
+    "khoan": 1,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_b",
+    "article": 48,
+    "khoan": 1,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_c",
+    "article": 48,
+    "khoan": 1,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_d",
+    "article": 48,
+    "khoan": 1,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_đ",
+    "article": 48,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_e",
+    "article": 48,
+    "khoan": 1,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_g",
+    "article": 48,
+    "khoan": 1,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_h",
+    "article": 48,
+    "khoan": 1,
+    "diem": "h",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_i",
+    "article": 48,
+    "khoan": 1,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_k",
+    "article": 48,
+    "khoan": 1,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_l",
+    "article": 48,
+    "khoan": 1,
+    "diem": "l",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_m",
+    "article": 48,
+    "khoan": 1,
+    "diem": "m",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_n",
+    "article": 48,
+    "khoan": 1,
+    "diem": "n",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k1_o",
+    "article": 48,
+    "khoan": 1,
+    "diem": "o",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k2",
+    "article": 48,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art48_k3_a",
+    "article": 48,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art48_k3_b",
+    "article": 48,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art48_k3_c",
+    "article": 48,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art48_k3_d",
+    "article": 48,
+    "khoan": 3,
+    "diem": "d",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art48_k4",
+    "article": 48,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "khong_chap_hanh"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k1_a",
+    "article": 50,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k1_b",
+    "article": 50,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k1_c",
+    "article": 50,
+    "khoan": 1,
+    "diem": "c",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k1_d",
+    "article": 50,
+    "khoan": 1,
+    "diem": "d",
+    "tags": [
+      "cho_hang",
+      "cho_nguoi",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k1_đ",
+    "article": 50,
+    "khoan": 1,
+    "diem": "đ",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k2",
+    "article": 50,
+    "khoan": 2,
+    "diem": null,
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k3_a",
+    "article": 50,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art50_k3_b",
+    "article": 50,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k1_a",
+    "article": 51,
+    "khoan": 1,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k1_b",
+    "article": 51,
+    "khoan": 1,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k2_a",
+    "article": 51,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k2_b",
+    "article": 51,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k2_c",
+    "article": 51,
+    "khoan": 2,
+    "diem": "c",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k3_a",
+    "article": 51,
+    "khoan": 3,
+    "diem": "a",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k3_b",
+    "article": 51,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art51_k3_c",
+    "article": 51,
+    "khoan": 3,
+    "diem": "c",
+    "tags": [
+      "dien_thoai",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k1",
+    "article": 52,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k2_a",
+    "article": 52,
+    "khoan": 2,
+    "diem": "a",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k2_b",
+    "article": 52,
+    "khoan": 2,
+    "diem": "b",
+    "tags": [
+      "an_toan",
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k3_b",
+    "article": 52,
+    "khoan": 3,
+    "diem": "b",
+    "tags": [
+      "giay_to"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k4",
+    "article": 52,
+    "khoan": 4,
+    "diem": null,
+    "tags": [
+      "dien_thoai"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k5_a",
+    "article": 52,
+    "khoan": 5,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k5_b",
+    "article": 52,
+    "khoan": 5,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k5_c",
+    "article": 52,
+    "khoan": 5,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k5_d",
+    "article": 52,
+    "khoan": 5,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k5_đ",
+    "article": 52,
+    "khoan": 5,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k6_a",
+    "article": 52,
+    "khoan": 6,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k6_b",
+    "article": 52,
+    "khoan": 6,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k6_c",
+    "article": 52,
+    "khoan": 6,
+    "diem": "c",
+    "tags": [
+      "cho_nguoi"
+    ]
+  },
+  {
+    "doc_id": "ND168_art52_k7",
+    "article": 52,
+    "khoan": 7,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_a",
+    "article": 52,
+    "khoan": 8,
+    "diem": "a",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_b",
+    "article": 52,
+    "khoan": 8,
+    "diem": "b",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_c",
+    "article": 52,
+    "khoan": 8,
+    "diem": "c",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_d",
+    "article": 52,
+    "khoan": 8,
+    "diem": "d",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_đ",
+    "article": 52,
+    "khoan": 8,
+    "diem": "đ",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_e",
+    "article": 52,
+    "khoan": 8,
+    "diem": "e",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_g",
+    "article": 52,
+    "khoan": 8,
+    "diem": "g",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_h",
+    "article": 52,
+    "khoan": 8,
+    "diem": "h",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_i",
+    "article": 52,
+    "khoan": 8,
+    "diem": "i",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_k",
+    "article": 52,
+    "khoan": 8,
+    "diem": "k",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_l",
+    "article": 52,
+    "khoan": 8,
+    "diem": "l",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_m",
+    "article": 52,
+    "khoan": 8,
+    "diem": "m",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_n",
+    "article": 52,
+    "khoan": 8,
+    "diem": "n",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_o",
+    "article": 52,
+    "khoan": 8,
+    "diem": "o",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art52_k8_p",
+    "article": 52,
+    "khoan": 8,
+    "diem": "p",
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art74_k1",
+    "article": 74,
+    "khoan": 1,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art74_k2",
+    "article": 74,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  },
+  {
+    "doc_id": "ND168_art54_k1",
+    "article": 54,
+    "khoan": 1,
+    "diem": null,
+    "tags": [
+      "an_toan"
+    ]
+  },
+  {
+    "doc_id": "ND168_art54_k2",
+    "article": 54,
+    "khoan": 2,
+    "diem": null,
+    "tags": []
+  }
+]

@@ -1,0 +1,356 @@
+{
+  "cycle": 3,
+  "timestamp": "2025-11-30T13:01:45.615505",
+  "results": [
+    {
+      "question": "xe máy vượt đèn đỏ thì sao",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu",
+      "time": 0.007004499435424805,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "xe máy vượt đèn đỏ bị phạt bao nhiêu",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 7 điểm c, 7. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Không chấp hành hiệu lệnh của đèn tín hiệu",
+      "time": 0.027276277542114258,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "xe máy đua xe bị phạt gì",
+      "status": "success",
+      "answer": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường gi",
+      "time": 0.05931282043457031,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "đua xe máy phạt bao nhiêu",
+      "status": "success",
+      "answer": "Theo Điều 35 khoản 3 điểm a, 3. Tịch thu phương tiện đối với người điều khiển phương tiện thực hiện một trong các hành vi vi phạm sau đây: a) Đua xe gắn máy, xe đạp máy, xe đạp trái phép trên đường gi",
+      "time": 0.18814468383789062,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "xe máy chạy quá tốc độ 60km/h",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 8 điểm a, 8. Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định trê",
+      "time": 0.048398733139038086,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "ô tô vượt tốc độ 80km/h",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 7 điểm a, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe chạy quá tốc độ quy định t",
+      "time": 0.024758577346801758,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "không đội mũ bảo hiểm",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe ",
+      "time": 0.00600433349609375,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "xe máy không đội mũ bảo hiểm phạt bao nhiêu",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 2 điểm h, 2. Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: h) Không đội “mũ bảo hiểm cho người đi mô tô, xe ",
+      "time": 0.00752568244934082,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "sử dụng điện thoại khi lái xe",
+      "status": "small_talk",
+      "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
+      "time": 0.0063855648040771484,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": true
+    },
+    {
+      "question": "nghe điện thoại khi đang điều khiển xe máy",
+      "status": "small_talk",
+      "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
+      "time": 0.007535696029663086,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": true
+    },
+    {
+      "question": "rẽ phải không đúng quy định",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn",
+      "time": 0.007648944854736328,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "quay đầu xe sai quy định",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 11 điểm đ, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: đ) Điều khiển xe đi ngược chiều trên đườn",
+      "time": 0.00602412223815918,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "chuyển làn không đúng quy định",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc",
+      "time": 0.0221560001373291,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "chuyển làn không bật xi-nhan",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc",
+      "time": 0.07859325408935547,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "cán vạch phân làn",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 5 điểm l, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chuyển hướng không nhường quyền đi trước c",
+      "time": 0.040459394454956055,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "cán vạch kẻ đường",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 5 điểm l, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chuyển hướng không nhường quyền đi trước c",
+      "time": 0.007515430450439453,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "dừng xe sai quy định",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc",
+      "time": 0.019890308380126953,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "đỗ xe ở làn khẩn cấp",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc",
+      "time": 0.20866847038269043,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "đi vào đường cấm",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 5 điểm i, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: i) Đi vào khu vực cấm, đường có biển báo hiệu",
+      "time": 0.0060040950775146484,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "xe máy đi vào khu vực cấm",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 6 điểm b, 6. Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Đi vào khu vực cấm, đường có biển báo hiệu",
+      "time": 0.02758479118347168,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "không có bằng lái xe",
+      "status": "success",
+      "answer": "Theo Điều 18 khoản 9 điểm b, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe ô tô và các loại xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn",
+      "time": 0.006026268005371094,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "không mang bằng lái xe",
+      "status": "success",
+      "answer": "Theo Điều 18 khoản 5 điểm b, 5. Phạt tiền từ 2.000.000 đồng đến 4.000.000 đồng đối với người điều khiển xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW và c",
+      "time": 0.13790297508239746,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "không bật đèn khi đi ban đêm",
+      "status": "small_talk",
+      "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
+      "time": 0.0662698745727539,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": true
+    },
+    {
+      "question": "không bật xi-nhan khi rẽ",
+      "status": "small_talk",
+      "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
+      "time": 0.006022214889526367,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": true
+    },
+    {
+      "question": "sử dụng đèn pha trong thành phố",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 5 điểm c, 5. Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: c) Tránh xe đi ngược chiều không đúng quy địn",
+      "time": 0.006051301956176758,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "không thắt dây an toàn",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 3 điểm l, 3. Phạt tiền từ 800.000 đồng đến 1.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: l) Chở người trên xe ô tô không thắt dây đai an",
+      "time": 0.01652693748474121,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "vượt ẩu gây nguy hiểm",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi n",
+      "time": 0.0280914306640625,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "lấn làn khi vượt",
+      "status": "small_talk",
+      "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
+      "time": 0.09961271286010742,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": true
+    },
+    {
+      "question": "đi ngược chiều",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi n",
+      "time": 0.01567840576171875,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "đi vào đường ngược chiều",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 9 điểm d, 9. Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: d) Đi ngược chiều của đường một chiều, đi n",
+      "time": 0.0037374496459960938,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "chở quá tải",
+      "status": "success",
+      "answer": "Theo Điều 21 khoản 8 điểm a, 8. Phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng đối với một trong các hành vi sau đây: a) Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối l",
+      "time": 0.036477088928222656,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "xe máy chở 3 người",
+      "status": "success",
+      "answer": "Theo Điều 7 khoản 1 điểm a, 1. Phạt tiền từ 200.000 đồng đến 400.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Không chấp hành hiệu lệnh, chỉ dẫn của biển bá",
+      "time": 0.15430212020874023,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "chở hàng quá khổ",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn ",
+      "time": 0.18617510795593262,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "chở hàng không đúng quy định",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 7 điểm b, 7. Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: b) Điều khiển xe chở người bốn bánh có gắn ",
+      "time": 0.09826278686523438,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "uống rượu bia lái xe",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu ",
+      "time": 0.15505456924438477,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "nồng độ cồn vượt quá",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 11 điểm a, 11. Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe trên đường mà trong máu ",
+      "time": 0.07097935676574707,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "gây tai nạn giao thông",
+      "status": "success",
+      "answer": "Theo Điều 6 khoản 10 điểm a, 10. Phạt tiền từ 20.000.000 đồng đến 22.000.000 đồng đối với người điều khiển xe thực hiện một trong các hành vi vi phạm sau đây: a) Điều khiển xe không quan sát, giảm tốc",
+      "time": 0.0170285701751709,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": false
+    },
+    {
+      "question": "bỏ chạy sau khi gây tai nạn",
+      "status": "small_talk",
+      "answer": "Mình là trợ lý pháp luật giao thông, luôn sẵn sàng giải đáp các câu hỏi về xử phạt, mức phạt, trừ điểm, tước GPLX… Bạn cứ đặt câu hỏi liên quan đến luật giao thông nhé!",
+      "time": 0.0060236454010009766,
+      "has_legal_info": true,
+      "is_guardrail": false,
+      "is_small_talk": true
+    }
+  ],
+  "stats": {
+    "success": 32,
+    "blocked": 0,
+    "small_talk": 6,
+    "no_info": 0,
+    "no_legal_info": 0,
+    "error": 0
+  }
+}

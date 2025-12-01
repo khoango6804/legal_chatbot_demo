@@ -6,6 +6,33 @@ let isDarkMode = false;
 let lastQuestion = '';
 let lastAnswer = '';
 
+function escapeHTML(text) {
+    return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
+
+function formatAIMessageHTML(text) {
+    const escaped = escapeHTML(text);
+    const lines = escaped.split(/\n/);
+    return lines.map(line => {
+        const trimmed = line.trim().toLowerCase();
+        if (trimmed.startsWith('tổng thời gian')) {
+            return `<span class="stats-line">${line}</span>`;
+        }
+        return line;
+    }).join('<br>');
+}
+
+function renderMessageText(element, sender, text) {
+    if (sender === 'ai') {
+        element.innerHTML = formatAIMessageHTML(text);
+    } else {
+        element.textContent = text;
+    }
+}
+
 // DOM elements
 const chatMessages = document.getElementById('chat-messages');
 const chatInput = document.getElementById('chat-input');
@@ -159,7 +186,7 @@ function sendMessage() {
                 if (done) {
                     removeTypingIndicator();
                     if (aiMessageElement) {
-                        aiMessageElement.textContent = aiMessage;
+                        renderMessageText(aiMessageElement, 'ai', aiMessage);
                     }
                     saveCurrentChat();
                     showRatingPanel();
@@ -173,7 +200,7 @@ function sendMessage() {
                     removeTypingIndicator();
                     aiMessageElement = addMessage('ai', aiMessage);
                 } else {
-                    aiMessageElement.textContent = aiMessage;
+                    renderMessageText(aiMessageElement, 'ai', aiMessage);
                 }
                 
                 // Update chat history with the complete AI response
@@ -209,7 +236,7 @@ function addMessage(sender, text) {
     messageDiv.innerHTML = `
         <div class="message-content">
             <div class="message-avatar" style="background: ${avatarBg}">${avatar}</div>
-            <div class="message-text">${text}</div>
+            <div class="message-text"></div>
         </div>
     `;
     
@@ -225,7 +252,10 @@ function addMessage(sender, text) {
         }
     }
     
-    return messageDiv.querySelector('.message-text');
+    const messageTextElement = messageDiv.querySelector('.message-text');
+    renderMessageText(messageTextElement, sender, text);
+    
+    return messageTextElement;
 }
 
 function addTypingIndicator() {

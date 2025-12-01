@@ -627,6 +627,13 @@ html, body {
     white-space: pre-wrap;
 }
 
+.message-text .stats-line {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+}
+
 /* Input Container */
 .input-container {
     padding: var(--spacing-lg) var(--spacing-xl) var(--spacing-xl);

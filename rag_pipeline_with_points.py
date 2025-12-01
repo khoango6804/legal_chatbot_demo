@@ -6,12 +6,26 @@ Extends rag_pipeline_qwen3.py with point deduction tracking
 """
 
 import json
+import os
 import re
-from typing import List, Dict, Set, Tuple, Optional
+from pathlib import Path
+from typing import Any, List, Dict, Set, Tuple, Optional
 from dataclasses import dataclass
 from collections import defaultdict
 
+import numpy as np
+
+try:
+    from sentence_transformers import SentenceTransformer
+except ImportError:
+    SentenceTransformer = None
+
 # Behavior keyword mapping
+SEMANTIC_DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+CROSS_VEHICLE_TAGS = {"dua_xe", "co_vu_dua_xe"}
+CROSS_VEHICLE_ARTICLES = {35}
+
+
 BEHAVIOR_KEYWORDS = {
     "den_tin_hieu": [
         "vượt đèn",
@@ -20,17 +34,69 @@ BEHAVIOR_KEYWORDS = {
         "không chấp hành tín hiệu đèn",
         "không dừng đèn đỏ",
         "đèn tín hiệu",
+        "đèn giao thông",
+        "đèn đỏ",
+        "đèn vàng",
+        "đi thẳng khi đèn đỏ",
+        "tín hiệu đèn giao thông"
     ],
-    "re_phai": ["rẽ phải", "rẽ trái", "quay đầu xe", "chuyển hướng"],
+    "re_phai": ["rẽ phải", "rẽ trái", "quay đầu xe", "quay đầu", "chuyển hướng"],
     "can_vach": ["cán vạch", "vạch phân làn", "vạch kẻ đường", "cán lên vạch"],
     "chuyen_lan": ["chuyển làn", "đổi làn", "sang làn"],
-    "luot_trai_pha_cam": ["lấn làn", "đi ngược chiều", "vượt ẩu", "đi không đúng làn"],
-    "qua_toc_do": ["quá tốc độ", "vượt tốc độ", "chạy quá tốc độ"],
-    "khong_doi_mu": ["không đội mũ", "mũ bảo hiểm", "không đội nón"],
-    "dung_do_sai": ["dừng xe", "đỗ xe", "đậu xe sai quy định"],
-    "chay_khu_cam": ["khu vực cấm", "nơi cấm dừng", "nơi cấm đỗ"],
-    "dien_thoai": ["điện thoại", "nghe điện thoại", "dùng điện thoại", "sử dụng điện thoại", "thiết bị điện tử"],
+    "luot_trai_pha_cam": [
+        "lấn làn",
+        "đi ngược chiều",
+        "vượt ẩu",
+        "đi không đúng làn",
+        "đường ngược chiều",
+        "ngược chiều",
+        "đi vào đường ngược chiều"
+    ],
+    "qua_toc_do": [
+        "quá tốc độ",
+        "vượt tốc độ",
+        "chạy quá tốc độ",
+        "chạy nhanh hơn",
+        "đi nhanh hơn"
+    ],
+    "khong_doi_mu": [
+        "không đội mũ",
+        "mũ bảo hiểm",
+        "không đội nón",
+        "chỉ có một mũ",
+        "thiếu mũ"
+    ],
+    "dung_do_sai": [
+        "dừng xe",
+        "đỗ xe",
+        "đậu xe sai quy định",
+        "làn khẩn cấp",
+        "dải dừng khẩn cấp",
+        "chắn cửa nhà"
+    ],
+    "chay_khu_cam": [
+        "khu vực cấm",
+        "nơi cấm dừng",
+        "nơi cấm đỗ",
+        "đường cấm",
+        "đi vào đường cấm",
+        "cấm đường",
+        "khu vực hạn chế",
+        "làn buýt",
+        "brt"
+    ],
+    "dien_thoai": [
+        "điện thoại",
+        "nghe điện thoại",
+        "dùng điện thoại",
+        "sử dụng điện thoại",
+        "thiết bị điện tử",
+        "laptop",
+        "máy tính bảng"
+    ],
     "khong_bat_den": ["không bật đèn", "không bật xi-nhan", "không có đèn", "không sử dụng đèn"],
+    "den_pha": ["đèn pha", "đèn chiếu xa", "đèn chiếu sáng gây chói"],
+    "mo_cua": ["mở cửa xe", "mở cửa ô tô", "để cửa xe mở"],
     "cho_qua_nguoi": [
         "chở quá người",
         "quá số người",
@@ -40,38 +106,144 @@ BEHAVIOR_KEYWORDS = {
         "chở 3",
         "chở ba người",
         "đi 3 người",
-        "đi ba người"
+        "đi ba người",
+        "chở quá số người",
+        "vượt quá số người",
+        "chở quá"
     ],
-    "khong_bang_lai": ["không có bằng lái", "không giấy phép", "chưa có bằng"],
-    "gay_tai_nan": ["gây tai nạn", "tai nạn giao thông", "va chạm gây thương tích"],
-    "uong_ruou_bia": ["nồng độ cồn", "uống rượu", "uống bia", "say rượu", "có cồn"],
+    "khong_bang_lai": [
+        "không có bằng lái",
+        "không giấy phép",
+        "chưa có bằng",
+        "giấy phép giả",
+        "bằng lái hết hạn",
+        "giấy phép lái xe giả",
+        "giấy phép lái xe hết hạn"
+    ],
+    "gay_tai_nan": [
+        "gây tai nạn",
+        "tai nạn giao thông",
+        "va chạm gây thương tích",
+        "đâm người",
+        "đâm phải",
+        "tông người",
+        "va chạm",
+        "đụng người"
+    ],
+    "uong_ruou_bia": [
+        "nồng độ cồn",
+        "uống rượu",
+        "uống bia",
+        "say rượu",
+        "có cồn",
+        "mg/l",
+        "mg/100ml"
+    ],
     "lang_lach": ["lạng lách", "đánh võng", "drift", "biểu diễn"],
     "boc_dau": ["bốc đầu", "chạy bằng một bánh", "nâng bánh trước", "wheelie", "chạy một bánh"],
-    "khong_nhuong_duong": ["không nhường đường", "cản trở xe ưu tiên", "không giảm tốc"],
+    "khong_nhuong_duong": [
+        "không nhường đường",
+        "cản trở xe ưu tiên",
+        "không giảm tốc",
+        "biển nhường đường"
+    ],
     "vuot_xe_sai": ["vượt xe", "vượt bên phải", "vượt không đúng"],
     "tram_cam": ["cầm máy", "không tắt máy", "để máy nổ", "còi", "rú ga", "nẹt pô"],
-    "cho_hang": ["chở hàng", "quá tải", "chở quá khổ", "vượt quá tải trọng"],
+    "cao_toc": [
+        "cao tốc",
+        "đường cao tốc",
+        "làn khẩn cấp",
+        "dải khẩn cấp",
+        "làn dừng khẩn cấp"
+    ],
+    "cho_hang": [
+        "chở hàng",
+        "quá tải",
+        "chở quá khổ",
+        "vượt quá tải trọng",
+        "tải trọng",
+        "trọng tải",
+        "vượt trọng tải",
+        "tụt bạt",
+        "rơi vãi",
+        "không phủ bạt"
+    ],
     "dieu_khien_nguy_hiem": ["buông cả hai tay", "dùng chân điều khiển", "ngồi về một bên", "nằm trên yên", 
                              "thay người điều khiển", "quay người về phía sau", "bịt mắt điều khiển",
                              "buông tay", "không cầm tay lái", "điều khiển bằng chân"],
-    "khong_bien_so": ["không gắn biển số", "biển số xe", "biển kiểm soát", "không có biển số", "gắn biển số không đúng"],
-    "khong_giay_to": ["không mang giấy", "giấy chứng nhận", "chứng nhận đăng ký", "không có giấy tờ"],
-    "khong_day_an_toan": [
+    "khong_bien_so": [
+        "không gắn biển số",
+        "biển số xe",
+        "biển kiểm soát",
+        "không có biển số",
+        "gắn biển số không đúng",
+        "che biển số",
+        "che mờ biển số",
+        "che mờ"
+    ],
+    "thiet_bi": [
+        "gương chiếu hậu",
+        "camera hành trình",
+        "thiết bị giám sát hành trình",
+        "bình chữa cháy",
+        "thiết bị bắt buộc"
+    ],
+    "khong_giay_to": [
+        "không mang giấy",
+        "giấy chứng nhận",
+        "chứng nhận đăng ký",
+        "không có giấy tờ",
+        "đăng ký xe"
+    ],
+    "day_an_toan": [
         "không thắt dây an toàn",
         "không thắt dây đai",
         "không cài dây an toàn",
         "không cài dây đai",
         "không đeo dây an toàn",
         "không sử dụng dây an toàn",
-        "không mang dây an toàn"
+        "không mang dây an toàn",
+        "ghế an toàn",
+        "ghế trẻ em",
+        "khách không thắt dây"
     ],
     "khong_mang_bang_lai": ["không mang theo giấy phép lái xe", "không mang theo bằng lái", "không mang giấy phép", "không mang bằng lái"],
-    "khong_bang_lai": ["không có giấy phép lái xe", "không có bằng lái"],
-    "keo_xe": ["kéo xe", "kéo rơ moóc", "kéo theo xe khác"],
-    "dan_hang_ngang": ["dàn hàng ngang", "chạy dàn hàng", "đi song song"],
+    "khong_bang_lai": [
+        "không có giấy phép lái xe",
+        "không có bằng lái",
+        "giấy phép giả",
+        "bằng lái hết hạn",
+        "giấy phép lái xe giả",
+        "giấy phép lái xe hết hạn"
+    ],
+    "keo_xe": [
+        "kéo xe",
+        "kéo rơ moóc",
+        "kéo theo xe khác",
+        "kéo theo người",
+        "ván trượt"
+    ],
+    "dan_hang_ngang": [
+        "dàn hàng ngang",
+        "chạy dàn hàng",
+        "đi song song",
+        "đi thành đoàn"
+    ],
     "chay_trong_ham": ["chạy trong hầm", "hầm đường bộ"],
     "khong_thu_phi": ["không thu phí", "không dừng thu phí", "thu phí điện tử"],
-    "van_tai": ["vận tải", "kinh doanh vận tải", "hoạt động vận tải"],
+    "duong_sat": ["đường sắt", "rào chắn", "giao cắt đường sắt"],
+    "den_uu_tien": [
+        "đèn ưu tiên",
+        "thiết bị ưu tiên",
+        "thiết bị phát tín hiệu ưu tiên"
+    ],
+    "moi_truong": [
+        "khói đen",
+        "khí thải vượt chuẩn",
+        "khí thải",
+        "giảm khói"
+    ],
+    "van_tai": ["vận tải", "kinh doanh vận tải", "hoạt động vận tải", "đồng hồ tính tiền", "giám sát hành trình", "camera hành trình"],
     "tai_pham": ["tái phạm", "vi phạm lần 2", "vi phạm lại"],
     "dua_xe": ["đua xe", "đua xe trái phép", "chạy đua", "đua tốc độ"],
     "co_vu_dua_xe": ["cổ vũ đua xe", "tụ tập đua xe", "cổ vũ", "tụ tập để cổ vũ", "giúp sức đua xe", "xúi giục đua xe"]
@@ -79,10 +251,61 @@ BEHAVIOR_KEYWORDS = {
 
 # Escalation indicators
 ESCALATION_INDICATORS = {
-    "gay_tai_nan": ["gây tai nạn", "làm chết người", "gây thương tích", "tai nạn giao thông"],
+    "gay_tai_nan": [
+        "gây tai nạn",
+        "làm chết người",
+        "gây thương tích",
+        "tai nạn giao thông",
+        "đâm",
+        "tông",
+        "va chạm",
+        "đụng"
+    ],
     "tron_chay": ["bỏ chạy", "tẩu thoát", "rời khỏi hiện trường"],
     "vi_pham_nghiem_trong": ["vi phạm nghiêm trọng", "tái phạm", "vi phạm nhiều lần"],
     "khong_chap_hanh": ["không chấp hành", "cản trở", "chống đối"]
+}
+
+TAG_CONTENT_RULES = {
+    "den_tin_hieu": {
+        "positive": [
+            "không chấp hành",
+            "đèn tín hiệu",
+            "tín hiệu giao thông",
+            "vượt đèn"
+        ],
+        "negative": [
+            "dừng xe",
+            "đỗ xe",
+            "che khuất",
+            "dải phân cách"
+        ],
+        "skip_vehicle_text_filter": True
+    },
+    "dien_thoai": {
+        "positive": [
+            "điện thoại",
+            "thiết bị điện tử",
+            "thiết bị viễn thông",
+            "thiết bị liên lạc"
+        ],
+        "negative": [
+            "trẻ em",
+            "ghế",
+            "dây đai",
+            "an toàn cho trẻ"
+        ],
+        "skip_vehicle_text_filter": True
+    },
+    "cho_hang": {
+        "positive": [
+            "tải trọng",
+            "trọng tải",
+            "khối lượng",
+            "50%",
+            "vượt quá tải"
+        ]
+    }
 }
 
 
@@ -92,6 +315,7 @@ class ChunkMetadata:
     article: int
     khoan: int
     diem: Optional[str]
+    doc_id: Optional[str]
     tags: Set[str]
     is_escalation: bool
     escalation_refs: Set[Tuple[int, int, Optional[str]]]
@@ -113,8 +337,26 @@ class TrafficLawRAGWithPoints:
         self.behavior_index: Dict[str, List[int]] = defaultdict(list)
         self.escalation_chunks: List[int] = []
         self.reference_index: Dict[Tuple[int, int, Optional[str]], List[int]] = defaultdict(list)
+        self.doc_id_to_chunk_idx: Dict[str, int] = {}
+
+        # Semantic retrieval state
+        self.semantic_embeddings: Optional[np.ndarray] = None
+        self.semantic_metadata: List[Dict[str, Any]] = []
+        self.semantic_encoder = None
+        self.semantic_index_config: Dict[str, Any] = {}
+        self.semantic_search_enabled = False
+        self.semantic_index_dir = Path(
+            os.getenv(
+                "SEMANTIC_INDEX_DIR",
+                Path(__file__).resolve().parent / "semantic_index",
+            )
+        )
+        self.semantic_top_k = int(os.getenv("SEMANTIC_TOP_K", "15"))
+        self.semantic_min_score = float(os.getenv("SEMANTIC_MIN_SCORE", "0.35"))
+        self.semantic_encoder_name = None
         
         self._load_and_process_data()
+        self._setup_semantic_search()
     
     def _extract_tags(self, text: str) -> Set[str]:
         """Extract behavior tags from text"""
@@ -126,8 +368,55 @@ class TrafficLawRAGWithPoints:
                 if keyword in text_lower:
                     tags.add(tag)
                     break
+
+        if "khong_day_an_toan" in tags and "day_an_toan" not in tags:
+            tags.add("day_an_toan")
+            tags.discard("khong_day_an_toan")
         
         return tags
+    
+    def _filter_by_keyword_rules(
+        self,
+        chunks: List["ChunkMetadata"],
+        query_tags: Set[str],
+    ) -> List["ChunkMetadata"]:
+        """Refine candidate chunks using tag-specific positive/negative keywords."""
+        if not chunks:
+            return chunks
+        
+        filtered_chunks = chunks
+        for tag in query_tags:
+            rules = TAG_CONTENT_RULES.get(tag)
+            if not rules:
+                continue
+            
+            positives = [kw.lower() for kw in rules.get("positive", [])]
+            negatives = [kw.lower() for kw in rules.get("negative", [])]
+            
+            scored_chunks = []
+            for chunk in filtered_chunks:
+                content = (chunk.content or "").lower()
+                positive_score = sum(1 for kw in positives if kw in content)
+                negative_score = sum(1 for kw in negatives if kw in content)
+                total_score = positive_score - negative_score
+                scored_chunks.append((total_score, positive_score, chunk.penalty_max or 0, chunk.priority, chunk))
+            
+            # Determine best score; if all scores <=0 skip to avoid over-filtering
+            best_score = max(score for score, _, _, _, _ in scored_chunks)
+            if best_score <= 0:
+                continue
+            
+            filtered_chunks = [
+                chunk for score, pos_score, _, _, chunk in scored_chunks
+                if score == best_score and pos_score > 0
+            ]
+            if not filtered_chunks:
+                # Fallback to original if filtering eliminated everything
+                filtered_chunks = [chunk for _, _, _, _, chunk in scored_chunks]
+            else:
+                print(f"   Applied keyword rules for tag '{tag}', remaining {len(filtered_chunks)} chunks")
+        
+        return filtered_chunks
     
     def _detect_vehicle_type(self, query: str) -> int:
         """Detect vehicle type from query (returns article number)"""
@@ -394,14 +683,22 @@ class TrafficLawRAGWithPoints:
             article = record.get('article_num') or record.get('article')
             khoan = record.get('khoan_num') or record.get('khoan')
             diem = record.get('diem_letter') or record.get('diem')
+            doc_id = record.get('doc_id') or f"chunk_{idx}"
             
             if not content or not article or not khoan:
                 continue
             
             # USE tags from JSON if available (more accurate), otherwise extract from content
             tags = set(record.get('tags', []))
-            if not tags:
-                tags = self._extract_tags(content)
+            extracted_tags = self._extract_tags(content)
+            if tags:
+                tags.update(extracted_tags)
+                # Normalize legacy tags to align with query extraction
+                if "khong_day_an_toan" in tags and "day_an_toan" not in tags:
+                    tags.add("day_an_toan")
+                    tags.discard("khong_day_an_toan")
+            else:
+                tags = extracted_tags
             
             # USE is_escalation from JSON if available, otherwise detect
             is_escalation = record.get('is_escalation', False)
@@ -444,6 +741,7 @@ class TrafficLawRAGWithPoints:
                 article=article,
                 khoan=khoan,
                 diem=diem,
+                doc_id=doc_id,
                 tags=tags,
                 is_escalation=is_escalation,
                 escalation_refs=escalation_refs,
@@ -458,6 +756,8 @@ class TrafficLawRAGWithPoints:
             
             chunk_idx = len(self.chunks)
             self.chunks.append(chunk)
+            if doc_id not in self.doc_id_to_chunk_idx:
+                self.doc_id_to_chunk_idx[doc_id] = chunk_idx
             
             for tag in tags:
                 self.behavior_index[tag].append(chunk_idx)
@@ -479,6 +779,8 @@ class TrafficLawRAGWithPoints:
         query_tags = self._extract_tags(query)
         query_lower = query.lower()
         has_tai_nan = any(keyword in query_lower for keyword in ESCALATION_INDICATORS["gay_tai_nan"])
+        load_keywords = ['tải trọng', 'trọng tải', 'quá tải', 'vượt tải']
+        is_load_query = any(keyword in query_lower for keyword in load_keywords)
         
         # SPECIAL CASE: For individuals, "không mang" (not carrying) is legally same as "không có" (not having)
         # Only business transport has special lower penalty for "không mang"
@@ -515,10 +817,13 @@ class TrafficLawRAGWithPoints:
             print(f"   Engine size: {engine_size_tag}")
         
         if not query_tags:
-            return {
-                "status": "no_tags",
-                "message": "Không phát hiện hành vi cụ thể trong câu hỏi"
-            }
+            if self.semantic_search_enabled:
+                print("   No behavior tags detected -> relying on semantic retrieval")
+            else:
+                return {
+                    "status": "no_tags",
+                    "message": "Không phát hiện hành vi cụ thể trong câu hỏi"
+                }
         
         # If speed violation detected, find the appropriate khoan
         target_khoan = None
@@ -533,6 +838,19 @@ class TrafficLawRAGWithPoints:
         for tag in query_tags:
             if tag in self.behavior_index:
                 behavior_chunk_indices.update(self.behavior_index[tag])
+
+        semantic_chunk_indices: List[Tuple[int, float]] = []
+        if self.semantic_search_enabled:
+            semantic_chunk_indices = self._semantic_search(query, top_k=self.semantic_top_k)
+            if semantic_chunk_indices:
+                semantic_log = ", ".join(
+                    f"{self.chunks[idx].article}-{self.chunks[idx].khoan}:{score:.2f}"
+                    for idx, score in semantic_chunk_indices[:5]
+                )
+                print(f"   Semantic hits: {semantic_log}")
+                behavior_chunk_indices.update(idx for idx, _ in semantic_chunk_indices)
+            else:
+                print("   Semantic retrieval returned no confident matches")
         
         if not behavior_chunk_indices:
             return {
@@ -553,7 +871,10 @@ class TrafficLawRAGWithPoints:
         # FILTER BY SUBJECT TYPE: Default to individual (Điều 6-21), unless "tổ chức" mentioned
         if not is_organization:
             # Individual violations: Điều 6-21 (traffic violations by individuals)
-            individual_chunks = [c for c in behavior_chunks if 6 <= c.article <= 21]
+            individual_chunks = [
+                c for c in behavior_chunks
+                if (6 <= c.article <= 21) or c.article in CROSS_VEHICLE_ARTICLES
+            ]
             if individual_chunks:
                 behavior_chunks = individual_chunks
                 print(f"   Filtered to {len(behavior_chunks)} individual chunks (Điều 6-21)")
@@ -566,14 +887,128 @@ class TrafficLawRAGWithPoints:
         
         # FILTER BY VEHICLE TYPE: If vehicle type detected, prioritize matching article
         # This prevents xe ô tô queries from matching Điều 7 (mô tô) rules
-        vehicle_filtered_chunks = [c for c in behavior_chunks if c.article == vehicle_article]
-        if vehicle_filtered_chunks:
-            behavior_chunks = vehicle_filtered_chunks
-            print(f"   Filtered to {len(behavior_chunks)} chunks for vehicle article {vehicle_article}")
-            # Debug: show what's in behavior_chunks
-            for c in behavior_chunks:
-                print(f"      - Điều {c.article} khoản {c.khoan} điểm {c.diem}: is_escalation={c.is_escalation}, penalty={c.penalty_min}-{c.penalty_max}")
+        original_behavior_chunks = behavior_chunks[:]
+        cross_vehicle_tags = {"dua_xe", "co_vu_dua_xe"}
+        skip_vehicle_article_filter = False
+        skip_reason = ""
+        if is_load_query:
+            skip_vehicle_article_filter = True
+            skip_reason = "load-related query"
+        elif query_tags & cross_vehicle_tags:
+            skip_vehicle_article_filter = True
+            skip_reason = "đua xe áp dụng chung (Điều 35)"
+
+        if not skip_vehicle_article_filter:
+            vehicle_filtered_chunks = [c for c in behavior_chunks if c.article == vehicle_article]
+            if vehicle_filtered_chunks:
+                behavior_chunks = vehicle_filtered_chunks
+                print(f"   Filtered to {len(behavior_chunks)} chunks for vehicle article {vehicle_article}")
+                # Debug: show what's in behavior_chunks
+                for c in behavior_chunks:
+                    print(f"      - Điều {c.article} khoản {c.khoan} điểm {c.diem}: is_escalation={c.is_escalation}, penalty={c.penalty_min}-{c.penalty_max}")
+        else:
+            print(f"   Skipped strict vehicle filtering ({skip_reason or 'special-case query'})")
         
+        # Additional semantic filtering using query cues
+        skip_vehicle_text_filter = any(
+            TAG_CONTENT_RULES.get(tag, {}).get("skip_vehicle_text_filter")
+            for tag in query_tags
+        )
+
+        if behavior_chunks:
+            content_filters_applied = False
+            # Prioritize chunks whose text mentions the detected vehicle type explicitly
+            if vehicle_article == 7 and not skip_vehicle_text_filter:
+                moto_terms = ['xe mô tô', 'xe gắn máy', 'xe máy', 'mô tô', 'xe hai bánh']
+                moto_specific = [
+                    c for c in behavior_chunks
+                    if any(term in (c.content or "").lower() for term in moto_terms)
+                ]
+                if moto_specific:
+                    behavior_chunks = moto_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} mô tô chunks by text match")
+            elif vehicle_article == 6 and not skip_vehicle_text_filter:
+                car_terms = ['xe ô tô', 'ô tô', 'xe hơi', 'xe tải', 'xe khách']
+                car_specific = [
+                    c for c in behavior_chunks
+                    if any(term in (c.content or "").lower() for term in car_terms)
+                ]
+                if car_specific:
+                    behavior_chunks = car_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} ô tô chunks by text match")
+
+            # Focus on overload/tải trọng violations when query mentions them
+            if is_load_query:
+                load_terms = ['tải trọng', 'trọng tải', 'khối lượng', 'quá tải', 'quá khổ']
+                load_specific = [
+                    c for c in behavior_chunks
+                    if any(term in (c.content or "").lower() for term in load_terms)
+                ]
+                if load_specific:
+                    behavior_chunks = load_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} overload chunks by content")
+                else:
+                    # fallback to original chunks if filtering removed everything
+                    behavior_chunks = original_behavior_chunks
+                    print("   No overload chunk found by content; reverting to original behavior set")
+
+            # Focus on ngược chiều violations
+            if 'ngược chiều' in query_lower:
+                reverse_specific = [
+                    c for c in behavior_chunks
+                    if 'ngược chiều' in (c.content or "").lower()
+                ]
+                if reverse_specific:
+                    behavior_chunks = reverse_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} ngược chiều chunks by content")
+
+            # Focus on đường cấm violations
+            if any(keyword in query_lower for keyword in ['đường cấm', 'khu cấm', 'cấm đường']):
+                restricted_terms = ['đường cấm', 'khu vực cấm', 'cấm đi', 'khu cấm']
+                restricted_specific = [
+                    c for c in behavior_chunks
+                    if any(term in (c.content or "").lower() for term in restricted_terms)
+                ]
+                if restricted_specific:
+                    behavior_chunks = restricted_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} đường cấm chunks by content")
+
+            # Focus on đèn tín hiệu violations
+            if 'den_tin_hieu' in query_tags:
+                light_terms = ['đèn tín hiệu', 'tín hiệu giao thông', 'đèn đỏ']
+                light_specific = [
+                    c for c in behavior_chunks
+                    if any(term in (c.content or "").lower() for term in light_terms)
+                ]
+                if light_specific:
+                    behavior_chunks = light_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} đèn tín hiệu chunks by content")
+
+            # Focus on điện thoại / thiết bị cầm tay
+            if 'dien_thoai' in query_tags:
+                phone_terms = ['điện thoại', 'thiết bị điện tử', 'thiết bị phát tín hiệu', 'thiết bị liên lạc', 'dùng điện thoại']
+                phone_specific = [
+                    c for c in behavior_chunks
+                    if any(term in (c.content or "").lower() for term in phone_terms)
+                ]
+                if phone_specific:
+                    behavior_chunks = phone_specific
+                    content_filters_applied = True
+                    print(f"   Filtered to {len(behavior_chunks)} điện thoại chunks by content")
+
+            if content_filters_applied:
+                # Re-order after content-based filtering to keep highest penalty first
+                behavior_chunks.sort(key=lambda c: (c.penalty_max or 0, c.priority), reverse=True)
+
+        # Apply tag-specific keyword rules to disambiguate similar chunks
+        behavior_chunks = self._filter_by_keyword_rules(behavior_chunks, query_tags)
+
         # If we have a target khoan for speed, further filter by khoan
         if target_khoan and target_article:
             speed_filtered_chunks = [
@@ -923,6 +1358,121 @@ class TrafficLawRAGWithPoints:
             ],
             "escalations_applied": len([c for c in matched_chunks if c.is_escalation])
         }
+
+    # ------------------------------------------------------------------ Semantic
+    def _setup_semantic_search(self) -> None:
+        """Load semantic index from disk if available."""
+        embeddings_path = self.semantic_index_dir / "embeddings.npy"
+        metadata_path = self.semantic_index_dir / "metadata.json"
+        config_path = self.semantic_index_dir / "config.json"
+
+        if not embeddings_path.exists() or not metadata_path.exists():
+            print(f"[semantic] No index found in {self.semantic_index_dir}, skip semantic retrieval.")
+            return
+
+        try:
+            raw_embeddings = np.load(embeddings_path)
+            with metadata_path.open("r", encoding="utf-8") as f:
+                metadata = json.load(f)
+            config = {}
+            if config_path.exists():
+                with config_path.open("r", encoding="utf-8") as f:
+                    config = json.load(f)
+            if raw_embeddings.shape[0] != len(metadata):
+                raise ValueError("Embeddings count does not match metadata entries.")
+
+            filtered_embeddings = []
+            filtered_metadata = []
+            dropped = 0
+            for emb, meta in zip(raw_embeddings, metadata):
+                doc_id = meta.get("doc_id")
+                if doc_id not in self.doc_id_to_chunk_idx:
+                    dropped += 1
+                    continue
+                filtered_embeddings.append(emb.astype("float32"))
+                filtered_metadata.append(meta)
+
+            if not filtered_embeddings:
+                print("[semantic] Index does not overlap with current chunks.")
+                return
+
+            self.semantic_embeddings = np.stack(filtered_embeddings)
+            self.semantic_metadata = filtered_metadata
+            self.semantic_index_config = config or {}
+            self.semantic_encoder_name = self.semantic_index_config.get("model_name", SEMANTIC_DEFAULT_MODEL)
+
+            if SentenceTransformer is None:
+                print("[semantic] sentence-transformers not installed -> semantic retrieval disabled.")
+                return
+
+            self.semantic_search_enabled = True
+            print(f"[semantic] Loaded {len(self.semantic_metadata)} indexed chunks (dropped {dropped}).")
+        except Exception as exc:
+            print(f"[semantic] Failed to load semantic index: {exc}")
+            self.semantic_search_enabled = False
+
+    def _get_semantic_encoder(self):
+        if not self.semantic_search_enabled:
+            return None
+        if self.semantic_encoder is not None:
+            return self.semantic_encoder
+        if SentenceTransformer is None:
+            print("[semantic] sentence-transformers unavailable at runtime.")
+            self.semantic_search_enabled = False
+            return None
+        model_name = self.semantic_encoder_name or SEMANTIC_DEFAULT_MODEL
+        try:
+            self.semantic_encoder = SentenceTransformer(model_name)
+            print(f"[semantic] Loaded encoder '{model_name}'.")
+        except Exception as exc:
+            print(f"[semantic] Failed to load encoder '{model_name}': {exc}")
+            self.semantic_search_enabled = False
+            self.semantic_encoder = None
+        return self.semantic_encoder
+
+    def _semantic_search(self, query: str, top_k: int = 10) -> List[Tuple[int, float]]:
+        if not self.semantic_search_enabled or self.semantic_embeddings is None:
+            return []
+        encoder = self._get_semantic_encoder()
+        if encoder is None:
+            return []
+        try:
+            query_emb = encoder.encode(
+                query,
+                convert_to_numpy=True,
+                normalize_embeddings=self.semantic_index_config.get("normalize_embeddings", True),
+            ).astype("float32")
+        except Exception as exc:
+            print(f"[semantic] Encoding failed: {exc}")
+            return []
+
+        if query_emb.ndim > 1:
+            query_emb = query_emb[0]
+
+        if not self.semantic_index_config.get("normalize_embeddings", True):
+            norm = np.linalg.norm(query_emb)
+            if norm:
+                query_emb = query_emb / norm
+
+        scores = self.semantic_embeddings @ query_emb
+        if scores.size == 0:
+            return []
+
+        k = min(top_k, scores.shape[0])
+        top_idx = np.argpartition(scores, -k)[-k:]
+        sorted_idx = top_idx[np.argsort(scores[top_idx])[::-1]]
+
+        results: List[Tuple[int, float]] = []
+        for idx in sorted_idx:
+            score = float(scores[idx])
+            if score < self.semantic_min_score:
+                continue
+            doc_id = self.semantic_metadata[idx].get("doc_id")
+            chunk_idx = self.doc_id_to_chunk_idx.get(doc_id)
+            if chunk_idx is None:
+                continue
+            results.append((chunk_idx, score))
+        return results
     
     def _format_penalty(self, min_val: Optional[int], max_val: Optional[int]) -> str:
         """Format penalty amount in Vietnamese"""
