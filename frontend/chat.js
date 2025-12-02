@@ -65,6 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
     handleResponsiveSidebar();
     setupEventListeners();
     createWelcomeContainer();
+    // Ensure welcome container is visible on initial load
+    if (chatHistory.length === 0) {
+        welcomeContainer.style.display = 'block';
+    }
     window.addEventListener('resize', handleResponsiveSidebar);
 });
 
@@ -86,14 +90,7 @@ function setupEventListeners() {
         maxTokensInput.addEventListener('change', handleMaxTokensChange);
     }
 
-    // Suggestion buttons
-    document.addEventListener('click', function(e) {
-        if (e.target.closest('.suggestion-card')) {
-            const suggestion = e.target.closest('.suggestion-card').getAttribute('data-suggestion');
-            chatInput.value = suggestion;
-            sendMessage();
-        }
-    });
+    // Suggestion buttons (removed - no longer used)
 
     // Modal events
     cancelRename.addEventListener('click', closeRenameModal);
@@ -141,13 +138,18 @@ function sendMessage() {
     // Lưu câu hỏi để có thể gửi feedback
     lastQuestion = message;
 
+    // Check if this is the first message
+    const isFirstMessage = chatHistory.length === 0;
+
     // Add user message
     addMessage('user', message);
     chatInput.value = '';
     handleInputChange();
 
-    // Hide welcome container
-    welcomeContainer.style.display = 'none';
+    // Hide welcome container after first message is sent
+    if (isFirstMessage) {
+        welcomeContainer.style.display = 'none';
+    }
 
     // Show typing indicator
     addTypingIndicator();
@@ -581,58 +583,7 @@ function createWelcomeContainer() {
                     <h1>Chào mừng bạn đến với Legal AI</h1>
                     <p class="welcome-subtitle">
                         Đặt câu hỏi về luật giao thông đường bộ – tôi sẽ tra cứu điều khoản, mức phạt, điểm trừ và đưa ra câu trả lời đầy đủ.
-                        Chọn một tình huống phổ biến dưới đây hoặc nhập câu hỏi cụ thể của bạn.
                     </p>
-                </div>
-
-                <div class="suggestions-grid traffic">
-                    <button class="suggestion-card" data-suggestion="An toàn giao thông được hiểu như thế nào theo Luật?">
-                        <div class="suggestion-icon">🚦</div>
-                        <div class="suggestion-content">
-                            <h3>Khái niệm ATGT</h3>
-                            <p>Hiểu an toàn giao thông theo luật hiện hành</p>
-                        </div>
-                    </button>
-
-                    <button class="suggestion-card" data-suggestion="Không thắt dây an toàn khi ngồi ô tô bị phạt bao nhiêu?">
-                        <div class="suggestion-icon">🪢</div>
-                        <div class="suggestion-content">
-                            <h3>Dây an toàn ô tô</h3>
-                            <p>Mức phạt khi không cài dây đúng quy định</p>
-                        </div>
-                    </button>
-
-                    <button class="suggestion-card" data-suggestion="Đi xe máy không đội mũ bảo hiểm thì bị xử phạt ra sao?">
-                        <div class="suggestion-icon">🪖</div>
-                        <div class="suggestion-content">
-                            <h3>Mũ bảo hiểm</h3>
-                            <p>Trách nhiệm của người điều khiển và người ngồi sau</p>
-                        </div>
-                    </button>
-
-                    <button class="suggestion-card" data-suggestion="Vượt đèn đỏ bằng xe máy sẽ bị phạt thế nào?">
-                        <div class="suggestion-icon">🚨</div>
-                        <div class="suggestion-content">
-                            <h3>Vượt đèn đỏ</h3>
-                            <p>Mức phạt và tước GPLX khi vượt tín hiệu</p>
-                        </div>
-                    </button>
-
-                    <button class="suggestion-card" data-suggestion="Xe ô tô chạy quá tốc độ 20km/h bị phạt bao nhiêu?">
-                        <div class="suggestion-icon">⚡</div>
-                        <div class="suggestion-content">
-                            <h3>Quá tốc độ</h3>
-                            <p>Khung xử phạt cho ô tô khi vượt tốc độ</p>
-                        </div>
-                    </button>
-
-                    <button class="suggestion-card" data-suggestion="Xe máy chở ba người có bị xử phạt không?">
-                        <div class="suggestion-icon">🛵</div>
-                        <div class="suggestion-content">
-                            <h3>Chở quá người</h3>
-                            <p>Giới hạn số người và các trường hợp ngoại lệ</p>
-                        </div>
-                    </button>
                 </div>
             </div>
         `;

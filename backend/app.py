@@ -111,6 +111,12 @@ async def chat_endpoint(req: ChatRequest):
                 yield word + " "
             return
 
+        # Check if it's small talk - add 3 second delay for natural feel
+        source = result.get("source", "")
+        if source == "guardrail_small_talk":
+            # Simulate thinking delay (3 seconds) for more natural conversation
+            time.sleep(3.0)
+
         answer_text = result.get("answer") or ""
         if not answer_text.strip():
             answer_text = "Xin lỗi, hiện chưa có thông tin rõ ràng cho tình huống này."

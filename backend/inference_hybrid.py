@@ -447,6 +447,36 @@ class HybridTrafficLawAssistant:
         answer = " ".join(answer.split())
         return answer
 
+    def _build_rag_citation_only(self, retrieval_result: Dict) -> str:
+        """Build citation with only reference and related chunks (no primary chunk details)."""
+        if retrieval_result.get("status") != "success":
+            return ""
+        
+        primary = retrieval_result.get("primary_chunk") or {}
+        segments = []
+        
+        # Only include reference, not full details (model already answered)
+        ref = primary.get("reference")
+        if ref:
+            segments.append(f"Trích dẫn: {ref}")
+        
+        # Include related chunks as additional info
+        related = retrieval_result.get("related_chunks") or []
+        extras = []
+        for rel in related[:2]:
+            rel_ref = rel.get("reference")
+            rel_pen = (rel.get("penalty") or {}).get("text")
+            if rel_ref and rel_pen:
+                extras.append(f"{rel_ref}: {rel_pen}")
+        
+        if extras:
+            segments.append("Thông tin bổ sung: " + "; ".join(extras) + ".")
+        
+        if not segments:
+            return ""
+        
+        return " ".join(segments)
+
     # -------------------------------------------------------- Question rewrite
     def _rewrite_question(self, question: str) -> Optional[str]:
         """Optionally call external API to reformulate the question."""
@@ -941,13 +971,28 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             else:
                 # Not small talk: keep model answer but append RAG citation if available
                 if retrieval_success:
-                    rag_citation = self._build_fallback_answer(retrieval_result)
-                    if rag_citation:
-                        print("[FILTER] Appending RAG citation to model answer")
-                        final_answer = final_answer.strip()
-                        final_answer += "\n\n---\n"
-                        final_answer += rag_citation
-                        source = "model_with_rag_citation"
+                    primary = retrieval_result.get("primary_chunk", {}) or {}
+                    primary_ref = primary.get("reference", "")
+                    
+                    # Check if model answer already contains the reference and penalty info
+                    # If yes, don't append citation to avoid duplication
+                    final_lower = final_answer.lower()
+                    has_reference = primary_ref and primary_ref.lower() in final_lower
+                    has_penalty = "mức phạt" in final_lower or "phạt" in final_lower
+                    
+                    # Only append citation if model answer doesn't already have complete info
+                    if not (has_reference and has_penalty):
+                        # Only append reference and related chunks, not full fallback (to avoid duplication)
+                        rag_citation = self._build_rag_citation_only(retrieval_result)
+                        if rag_citation:
+                            print("[FILTER] Appending RAG citation to model answer")
+                            final_answer = final_answer.strip()
+                            final_answer += "\n\n---\n"
+                            final_answer += rag_citation
+                            source = "model_with_rag_citation"
+                    else:
+                        print("[FILTER] Model answer already contains complete info, skipping citation")
+                        source = "model"
 
         return {
             "status": "success",
