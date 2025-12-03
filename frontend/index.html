@@ -114,17 +114,26 @@
                 </div>
                 <div class="input-footer">
                     <span class="input-hint">Nhấn Enter để gửi, Shift+Enter để xuống dòng</span>
-                    <label class="token-control" for="max-tokens">
-                        Max tokens
-                        <select id="max-tokens">
-                            <option value="64">64</option>
-                            <option value="128">128</option>
-                            <option value="256" selected>256</option>
-                            <option value="512">512</option>
-                            <option value="1024">1024</option>
-                            <option value="2048">2048</option>
-                        </select>
-                    </label>
+                    <div class="input-controls">
+                        <label class="rag-toggle" for="rag-toggle">
+                            <span class="toggle-label">RAG</span>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="rag-toggle" checked>
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </label>
+                        <label class="token-control" for="max-tokens">
+                            Max tokens
+                            <select id="max-tokens">
+                                <option value="64">64</option>
+                                <option value="128">128</option>
+                                <option value="256" selected>256</option>
+                                <option value="512">512</option>
+                                <option value="1024">1024</option>
+                                <option value="2048">2048</option>
+                            </select>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

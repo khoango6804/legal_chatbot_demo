@@ -835,19 +835,24 @@ class TrafficLawRAGWithPoints:
                 print(f"   Target: Điều {target_article} khoản {target_khoan} for {speed_kmh}km/h")
         
         behavior_chunk_indices = set()
+        # Tag-based retrieval
         for tag in query_tags:
             if tag in self.behavior_index:
                 behavior_chunk_indices.update(self.behavior_index[tag])
+        
+        if behavior_chunk_indices:
+            print(f"   Tag-based retrieval found {len(behavior_chunk_indices)} chunks")
 
         semantic_chunk_indices: List[Tuple[int, float]] = []
         if self.semantic_search_enabled:
+            print("   Running semantic search...")
             semantic_chunk_indices = self._semantic_search(query, top_k=self.semantic_top_k)
             if semantic_chunk_indices:
                 semantic_log = ", ".join(
                     f"{self.chunks[idx].article}-{self.chunks[idx].khoan}:{score:.2f}"
                     for idx, score in semantic_chunk_indices[:5]
                 )
-                print(f"   Semantic hits: {semantic_log}")
+                print(f"   Semantic search found {len(semantic_chunk_indices)} chunks: {semantic_log}")
                 behavior_chunk_indices.update(idx for idx, _ in semantic_chunk_indices)
             else:
                 print("   Semantic retrieval returned no confident matches")

@@ -66,6 +66,35 @@ OUT_OF_SCOPE_PATTERNS = [
     "bán hàng",
     "ẩm thực",
 ]
+
+# Patterns for non-traffic legal domains (criminal law, civil law, etc.)
+NON_TRAFFIC_LEGAL_PATTERNS = [
+    "luật hình sự",
+    "hình sự",
+    "tội",
+    "tù",
+    "án",
+    "hình phạt",
+    "bị cáo",
+    "vụ án",
+    "tòa án",
+    "kiện",
+    "luật dân sự",
+    "dân sự",
+    "hợp đồng",
+    "thừa kế",
+    "ly hôn",
+    "tranh chấp",
+    "luật lao động",
+    "lao động",
+    "bảo hiểm xã hội",
+    "luật doanh nghiệp",
+    "doanh nghiệp",
+    "thuế",
+    "luật thuế",
+    "hải quan",
+    "xuất nhập khẩu",
+]
 LEGAL_KEYWORDS = [
     "xe",
     "giao thông",
@@ -606,8 +635,9 @@ class HybridTrafficLawAssistant:
 
     # -------------------------------------------------------------- Generation
     def _build_prompt(self, question: str, context: str, primary_reference: str) -> str:
-        system_message = """Bạn là trợ lý pháp luật giao thông Việt Nam. Trả lời CHÍNH XÁC theo dữ liệu cung cấp.
+        system_message = """Bạn là trợ lý pháp luật GIAO THÔNG Việt Nam. CHỈ trả lời câu hỏi về luật và xử phạt GIAO THÔNG ĐƯỜNG BỘ.
 Quy tắc:
+- CHỈ trả lời câu hỏi về giao thông. Nếu câu hỏi về luật hình sự, dân sự, lao động, thuế, hoặc lĩnh vực khác, hãy từ chối và hướng dẫn người dùng hỏi về giao thông.
 - Luôn nêu đủ mức phạt tiền + trừ điểm + tước GPLX (nếu có).
 - Sao chép đúng số tiền, số tháng, số điểm.
 - Không thêm thông tin ngoài dữ liệu.
@@ -702,8 +732,9 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=tokens,
-                temperature=0.05,
-                top_p=0.3,
+                temperature=0.6,
+                top_p=0.95,
+                top_k=20,
                 do_sample=True,
                 repetition_penalty=1.2,
                 pad_token_id=self.tokenizer.eos_token_id,
@@ -806,6 +837,11 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             if phrase in normalized or phrase in normalized_no_diacritic:
                 return "out_of_scope"
 
+        # Check for non-traffic legal domains (criminal law, civil law, etc.)
+        for phrase in NON_TRAFFIC_LEGAL_PATTERNS:
+            if phrase in normalized or phrase in normalized_no_diacritic:
+                return "out_of_scope"
+
         # Heuristic: very short question without legal keywords -> out of scope
         # Tăng ngưỡng từ 4 lên 5 từ và kiểm tra kỹ hơn
         words = normalized.split()
@@ -849,8 +885,97 @@ Theo {primary_reference or 'quy định liên quan'}:"""
             "model_raw_answer": "",
         }
 
+    def _answer_without_rag(self, question: str, max_new_tokens: Optional[int] = None) -> Dict:
+        """Generate answer directly from model without RAG retrieval."""
+        if not self.use_generation or not self.model or not self.tokenizer:
+            return {
+                "status": "failed",
+                "message": "Model không khả dụng. Vui lòng bật RAG để sử dụng cơ sở dữ liệu.",
+            }
+        
+        # Build prompt without RAG context
+        system_message = """Bạn là trợ lý pháp luật GIAO THÔNG Việt Nam. CHỈ trả lời câu hỏi về luật và xử phạt GIAO THÔNG ĐƯỜNG BỘ.
+Quy tắc:
+- CHỈ trả lời câu hỏi về giao thông. Nếu câu hỏi về luật hình sự, dân sự, lao động, thuế, hoặc lĩnh vực khác, hãy từ chối và hướng dẫn người dùng hỏi về giao thông.
+- Trả lời chính xác về mức phạt, trừ điểm, tước GPLX nếu bạn biết.
+- Nếu không chắc chắn, hãy nói rõ bạn không có thông tin cụ thể.
+- Trả lời 2-3 câu, tiếng Việt chuẩn."""
+        
+        prompt = f"""<|im_start|>system
+{system_message}<|im_end|>
+<|im_start|>user
+Câu hỏi: {question}
+<|im_end|>
+<|im_start|>assistant
+"""
+        
+        inputs = self.tokenizer(
+            prompt, return_tensors="pt", truncation=True, max_length=2048
+        )
+        device = next(self.model.parameters()).device
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        
+        tokens = self._normalize_max_tokens(max_new_tokens)
+        with torch.no_grad():
+            outputs = self.model.generate(
+                **inputs,
+                max_new_tokens=tokens,
+                temperature=0.7,
+                top_p=0.8,
+                top_k=20,
+                do_sample=True,
+                repetition_penalty=1.2,
+                pad_token_id=self.tokenizer.eos_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+            )
+        
+        raw_text = self.tokenizer.decode(outputs[0], skip_special_tokens=False)
+        if "<|im_start|>assistant" in raw_text:
+            answer = raw_text.split("<|im_start|>assistant")[-1]
+            if "<|im_end|>" in answer:
+                answer = answer.split("<|im_end|>")[0]
+        else:
+            answer = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+        
+        cleaned = self._clean_answer(answer)
+        if len(cleaned) < 20 or needs_vietnamese_fallback(cleaned):
+            cleaned = answer.strip()
+        
+        # Check if answer indicates out-of-scope (non-traffic legal domain)
+        cleaned_lower = cleaned.lower()
+        out_of_scope_indicators = [
+            "hình sự",
+            "dân sự",
+            "lao động",
+            "thuế",
+            "không phải giao thông",
+            "không liên quan đến giao thông",
+            "chỉ hỗ trợ giao thông",
+        ]
+        if any(indicator in cleaned_lower for indicator in out_of_scope_indicators):
+            # Model correctly rejected out-of-scope question
+            return {
+                "status": "success",
+                "question": question,
+                "answer": DEFAULT_OUT_OF_SCOPE_REPLY,
+                "context": "",
+                "reference": None,
+                "source": "model_no_rag_rejected",
+                "model_raw_answer": answer.strip(),
+            }
+        
+        return {
+            "status": "success",
+            "question": question,
+            "answer": cleaned,
+            "context": "",
+            "reference": None,
+            "source": "model_no_rag",
+            "model_raw_answer": answer.strip(),
+        }
+
     # -------------------------------------------------------------- Public API
-    def answer(self, question: str, max_new_tokens: Optional[int] = None) -> Dict:
+    def answer(self, question: str, max_new_tokens: Optional[int] = None, use_rag: bool = True) -> Dict:
         normalized_question = normalize_input_text(question)
         guardrail_mode = self._guardrail_classify(normalized_question)
         if guardrail_mode:
@@ -859,6 +984,11 @@ Theo {primary_reference or 'quy định liên quan'}:"""
         rewritten = self._rewrite_question(normalized_question)
         if rewritten:
             normalized_question = rewritten
+
+        # Skip RAG if disabled
+        if not use_rag:
+            # Direct model generation without RAG context
+            return self._answer_without_rag(normalized_question, max_new_tokens)
 
         retrieval_result = self._retrieve_with_variations(normalized_question)
 
@@ -920,8 +1050,23 @@ Theo {primary_reference or 'quy định liên quan'}:"""
                     final_answer = "Xin lỗi, hiện chưa có thông tin cụ thể trong cơ sở dữ liệu về câu hỏi này. Vui lòng thử lại với câu hỏi cụ thể hơn về vi phạm giao thông."
                     source = "fallback_no_rag"
                 else:
-                    final_answer = raw_model_answer.strip()
-                    source = "model_no_rag"
+                    # Check if model correctly rejected out-of-scope question
+                    out_of_scope_indicators = [
+                        "hình sự",
+                        "dân sự",
+                        "lao động",
+                        "thuế",
+                        "không phải giao thông",
+                        "không liên quan đến giao thông",
+                        "chỉ hỗ trợ giao thông",
+                    ]
+                    if any(indicator in raw_lower for indicator in out_of_scope_indicators):
+                        # Model correctly rejected, use out-of-scope reply
+                        final_answer = DEFAULT_OUT_OF_SCOPE_REPLY
+                        source = "model_no_rag_rejected"
+                    else:
+                        final_answer = raw_model_answer.strip()
+                        source = "model_no_rag"
             else:
                 if retrieval_success:
                     final_answer = self._build_fallback_answer(retrieval_result)

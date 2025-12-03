@@ -741,6 +741,95 @@ html, body {
     gap: var(--spacing-sm);
 }
 
+.input-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-left: auto;
+}
+
+.rag-toggle {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    cursor: pointer;
+    user-select: none;
+}
+
+.rag-toggle .toggle-label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+.toggle-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+    background-color: var(--primary-color);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-slider:before {
+    transform: translateX(20px);
+}
+
+.toggle-switch input[type="checkbox"]:focus + .toggle-slider {
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+.toggle-switch:hover .toggle-slider {
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.15);
+}
+
+[data-theme="dark"] .toggle-slider {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+    background-color: var(--primary-color);
+}
+
+[data-theme="dark"] .toggle-slider:before {
+    background-color: #fff;
+}
+
 .input-hint {
     font-size: var(--font-size-xs);
     color: var(--text-tertiary);
@@ -752,7 +841,6 @@ html, body {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    margin-left: auto;
 }
 
 .token-control select {

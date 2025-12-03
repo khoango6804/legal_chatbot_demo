@@ -69,6 +69,7 @@ class ChatRequest(BaseModel):
     question: str
     chat_history: list = []  # List of [user_message, ai_response] pairs
     max_tokens: Optional[int] = None
+    use_rag: bool = True  # Enable/disable RAG retrieval
 
 class FeedbackRequest(BaseModel):
     question: str
@@ -94,10 +95,13 @@ async def chat_endpoint(req: ChatRequest):
 
     def answer_stream():
         helper = get_hybrid_assistant()
+        use_rag = req.use_rag if hasattr(req, 'use_rag') else True
         try:
             start_time = time.perf_counter()
             result = helper.answer(
-                normalized_question, max_new_tokens=requested_max_tokens
+                normalized_question, 
+                max_new_tokens=requested_max_tokens,
+                use_rag=use_rag
             )
             total_elapsed = time.perf_counter() - start_time
         except Exception as exc:
@@ -111,11 +115,14 @@ async def chat_endpoint(req: ChatRequest):
                 yield word + " "
             return
 
-        # Check if it's small talk - add 3 second delay for natural feel
+        # Add delay for natural conversation feel
         source = result.get("source", "")
         if source == "guardrail_small_talk":
-            # Simulate thinking delay (3 seconds) for more natural conversation
+            # Small talk: 3 second delay for more natural conversation
             time.sleep(3.0)
+        else:
+            # Other responses: 2 second delay to simulate thinking
+            time.sleep(2.0)
 
         answer_text = result.get("answer") or ""
         if not answer_text.strip():

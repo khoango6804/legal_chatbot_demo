@@ -38,6 +38,7 @@ const chatMessages = document.getElementById('chat-messages');
 const chatInput = document.getElementById('chat-input');
 const sendButton = document.getElementById('send-button');
 const maxTokensInput = document.getElementById('max-tokens');
+const ragToggle = document.getElementById('rag-toggle');
 const newChatBtn = document.getElementById('new-chat-btn');
 const clearHistoryBtn = document.getElementById('clear-history-btn');
 const exportChatBtn = document.getElementById('export-chat-btn');
@@ -56,12 +57,14 @@ const saveRename = document.getElementById('save-rename');
 
 // Initialize
 const MAX_TOKENS_STORAGE_KEY = 'legal-ai-max-tokens';
+const RAG_TOGGLE_STORAGE_KEY = 'legal-ai-rag-enabled';
 const MAX_TOKEN_OPTIONS = [64, 128, 256, 512, 1024, 2048];
 const DEFAULT_MAX_TOKENS = 256;
 
 document.addEventListener('DOMContentLoaded', function() {
     loadSavedChats();
     loadMaxTokensPreference();
+    loadRagTogglePreference();
     handleResponsiveSidebar();
     setupEventListeners();
     createWelcomeContainer();
@@ -88,6 +91,10 @@ function setupEventListeners() {
 
     if (maxTokensInput) {
         maxTokensInput.addEventListener('change', handleMaxTokensChange);
+    }
+    
+    if (ragToggle) {
+        ragToggle.addEventListener('change', handleRagToggleChange);
     }
 
     // Suggestion buttons (removed - no longer used)
@@ -158,7 +165,8 @@ function sendMessage() {
     const apiUrl = typeof getAPIUrl !== 'undefined' ? getAPIUrl('/chat') : '/chat';
     const payload = {
         question: message,
-        chat_history: chatHistory
+        chat_history: chatHistory,
+        use_rag: ragToggle ? ragToggle.checked : true  // Default to true if toggle not found
     };
     const maxTokens = getMaxTokens();
     if (maxTokens !== null) {
@@ -415,6 +423,21 @@ function getMaxTokens() {
         return null;
     }
     return value;
+}
+
+function loadRagTogglePreference() {
+    if (!ragToggle) return;
+    const saved = localStorage.getItem(RAG_TOGGLE_STORAGE_KEY);
+    if (saved !== null) {
+        ragToggle.checked = saved === 'true';
+    } else {
+        ragToggle.checked = true; // Default to enabled
+    }
+}
+
+function handleRagToggleChange() {
+    if (!ragToggle) return;
+    localStorage.setItem(RAG_TOGGLE_STORAGE_KEY, ragToggle.checked.toString());
 }
 
 function saveCurrentChat() {
